@@ -3,16 +3,17 @@ import { usePassword } from '@/contexts/PasswordContext';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Lock } from 'lucide-react';
+import { Lock, Loader2 } from 'lucide-react';
 
 export function PasswordLogin() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  const { authenticate } = usePassword();
+  const { authenticate, isLoading } = usePassword();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const success = authenticate(password);
+    setError('');
+    const success = await authenticate(password);
     if (!success) {
       setError('Incorrect password. Please try again.');
       setPassword('');
@@ -53,8 +54,15 @@ export function PasswordLogin() {
                 <p className="text-sm text-red-600">{error}</p>
               )}
             </div>
-            <Button type="submit" className="w-full" size="lg">
-              Access DayHub
+            <Button type="submit" className="w-full" size="lg" disabled={isLoading}>
+              {isLoading ? (
+                <>
+                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                  Logging in...
+                </>
+              ) : (
+                'Access DayHub'
+              )}
             </Button>
           </form>
           <div className="mt-6 text-center text-sm text-muted-foreground">

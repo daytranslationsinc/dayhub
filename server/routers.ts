@@ -7,6 +7,10 @@ import { TRPCError } from "@trpc/server";
 import { systemRouter } from "./_core/systemRouter";
 import * as availabilityRequestsDb from "./availabilityRequests";
 import { interpreterAuthRouter } from "./interpreterAuthRouters";
+import { ENV } from "./_core/env";
+import { SignJWT } from "jose";
+import { COOKIE_NAME, ONE_YEAR_MS } from "@shared/const";
+import { getSessionCookieOptions } from "./_core/cookies";
 
 /**
  * Auth router for authentication
@@ -17,6 +21,63 @@ const authRouter = router({
     // Logout is handled by clearing cookies in the frontend
     return { success: true };
   }),
+
+  // Simple static password login for admin
+  adminLogin: publicProcedure
+    .input(z.object({ password: z.string() }))
+    .mutation(async ({ input, ctx }) => {
+      if (input.password !== ENV.adminPassword) {
+        throw new TRPCError({
+          code: "UNAUTHORIZED",
+          message: "Invalid password",
+        });
+      }
+
+      // Create or get admin user
+      const adminOpenId = "admin-static-user";
+      let adminUser = await db.getUserByOpenId(adminOpenId);
+
+      if (!adminUser) {
+        // Create admin user
+        await db.upsertUser({
+          openId: adminOpenId,
+          name: "Admin",
+          email: "admin@dayhub.local",
+          loginMethod: "password",
+          lastSignedIn: new Date(),
+        });
+        adminUser = await db.getUserByOpenId(adminOpenId);
+
+        // Update role to admin directly in database
+        const conn = await mysql.createConnection(process.env.DATABASE_URL!);
+        await conn.execute("UPDATE users SET role = 'admin' WHERE openId = ?", [adminOpenId]);
+        await conn.end();
+
+        adminUser = await db.getUserByOpenId(adminOpenId);
+      } else {
+        await db.upsertUser({
+          openId: adminOpenId,
+          lastSignedIn: new Date(),
+        });
+      }
+
+      // Create session token
+      const secretKey = new TextEncoder().encode(ENV.cookieSecret);
+      const sessionToken = await new SignJWT({
+        openId: adminOpenId,
+        appId: ENV.appId || "dayhub",
+        name: "Admin",
+      })
+        .setProtectedHeader({ alg: "HS256", typ: "JWT" })
+        .setExpirationTime(Math.floor((Date.now() + ONE_YEAR_MS) / 1000))
+        .sign(secretKey);
+
+      // Set cookie
+      const cookieOptions = getSessionCookieOptions(ctx.req);
+      ctx.res.cookie(COOKIE_NAME, sessionToken, { ...cookieOptions, maxAge: ONE_YEAR_MS });
+
+      return { success: true, user: adminUser };
+    }),
 });
 
 /**
