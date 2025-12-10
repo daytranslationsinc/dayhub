@@ -8,12 +8,9 @@ import { addDistanceToInterpreters, filterByRadius } from "./geocoding";
 const dbUrl = process.env.DATABASE_URL!;
 const cleanUrl = dbUrl.replace(/\?ssl=.*$/, "");
 
-// Configure SSL based on environment
-// Railway internal MySQL doesn't require SSL, TiDB does
-const isRailwayInternal = cleanUrl.includes('.railway.internal');
+// Configure connection - Railway MySQL (both internal and proxy) doesn't need SSL
 const connection = mysql.createPool({
   uri: cleanUrl,
-  ssl: isRailwayInternal ? false : {},
   waitForConnections: true,
   connectionLimit: 10,
 });
