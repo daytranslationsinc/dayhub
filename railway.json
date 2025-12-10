@@ -5,7 +5,7 @@
     "buildCommand": "pnpm install && pnpm run build"
   },
   "deploy": {
-    "startCommand": "pnpm db:push && NODE_ENV=production node dist/index.js",
+    "startCommand": "NODE_ENV=production node dist/index.js",
     "healthcheckPath": "/",
     "healthcheckTimeout": 100,
     "restartPolicyType": "ON_FAILURE",
