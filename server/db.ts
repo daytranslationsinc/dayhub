@@ -4,12 +4,16 @@ import { interpreters, callLogs, users, reviews, bookings, favorites, interprete
 import { eq, like, and, desc, or, sql, isNotNull, asc, gte, lte } from "drizzle-orm";
 import { addDistanceToInterpreters, filterByRadius } from "./geocoding";
 
-// Initialize database connection with proper SSL for TiDB
+// Initialize database connection
 const dbUrl = process.env.DATABASE_URL!;
 const cleanUrl = dbUrl.replace(/\?ssl=.*$/, "");
+
+// Configure SSL based on environment
+// Railway internal MySQL doesn't require SSL, TiDB does
+const isRailwayInternal = cleanUrl.includes('.railway.internal');
 const connection = mysql.createPool({
   uri: cleanUrl,
-  ssl: {},
+  ssl: isRailwayInternal ? false : {},
   waitForConnections: true,
   connectionLimit: 10,
 });
