@@ -8,9 +8,9 @@ import { systemRouter } from "./_core/systemRouter";
 import * as availabilityRequestsDb from "./availabilityRequests";
 import { interpreterAuthRouter } from "./interpreterAuthRouters";
 import { ENV } from "./_core/env";
-import { SignJWT } from "jose";
 import { COOKIE_NAME, ONE_YEAR_MS } from "@shared/const";
 import { getSessionCookieOptions } from "./_core/cookies";
+import { sdk } from "./_core/sdk";
 
 /**
  * Auth router for authentication
@@ -61,16 +61,11 @@ const authRouter = router({
         });
       }
 
-      // Create session token
-      const secretKey = new TextEncoder().encode(ENV.cookieSecret);
-      const sessionToken = await new SignJWT({
-        openId: adminOpenId,
-        appId: ENV.appId || "dayhub",
+      // Create session token using sdk
+      const sessionToken = await sdk.createSessionToken(adminOpenId, {
         name: "Admin",
-      })
-        .setProtectedHeader({ alg: "HS256", typ: "JWT" })
-        .setExpirationTime(Math.floor((Date.now() + ONE_YEAR_MS) / 1000))
-        .sign(secretKey);
+        expiresInMs: ONE_YEAR_MS,
+      });
 
       // Set cookie
       const cookieOptions = getSessionCookieOptions(ctx.req);
