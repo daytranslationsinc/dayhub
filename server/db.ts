@@ -4,8 +4,10 @@ import { interpreters, callLogs, users, reviews, bookings, favorites, interprete
 import { eq, like, and, desc, or, sql, isNotNull, asc, gte, lte } from "drizzle-orm";
 import { addDistanceToInterpreters, filterByRadius } from "./geocoding";
 
-// Initialize database connection
-const connection = mysql.createPool(process.env.DATABASE_URL!);
+// Initialize database connection with proper SSL for TiDB
+const dbUrl = process.env.DATABASE_URL!;
+const cleanUrl = dbUrl.replace(/\?ssl=.*$/, "");
+const connection = mysql.createPool({ uri: cleanUrl, ssl: { rejectUnauthorized: true } });
 export const db = drizzle(connection);
 
 /**
