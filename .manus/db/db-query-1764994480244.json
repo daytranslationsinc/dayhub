@@ -1,0 +1,90 @@
+{
+  "query": "SELECT id, firstName, lastName, city, state, isActive FROM interpreters LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute SELECT id, firstName, lastName, city, state, isActive FROM interpreters LIMIT 10;",
+  "rows": [
+    {
+      "id": "1",
+      "firstName": "Maria",
+      "lastName": "Rodriguez",
+      "city": "Miami",
+      "state": "FL",
+      "isActive": "1"
+    },
+    {
+      "id": "2",
+      "firstName": "Carlos",
+      "lastName": "Hernandez",
+      "city": "Los Angeles",
+      "state": "CA",
+      "isActive": "1"
+    },
+    {
+      "id": "3",
+      "firstName": "Maria",
+      "lastName": "Rodriguez",
+      "city": "Miami",
+      "state": "FL",
+      "isActive": "1"
+    },
+    {
+      "id": "4",
+      "firstName": "Carlos",
+      "lastName": "Hernandez",
+      "city": "Los Angeles",
+      "state": "CA",
+      "isActive": "1"
+    },
+    {
+      "id": "5",
+      "firstName": "Isabel",
+      "lastName": "Sanchez",
+      "city": "Chicago",
+      "state": "IL",
+      "isActive": "1"
+    },
+    {
+      "id": "6",
+      "firstName": "Jean",
+      "lastName": "Dubois",
+      "city": "New York",
+      "state": "NY",
+      "isActive": "1"
+    },
+    {
+      "id": "7",
+      "firstName": "Sophie",
+      "lastName": "Laurent",
+      "city": "Washington",
+      "state": "DC",
+      "isActive": "1"
+    },
+    {
+      "id": "8",
+      "firstName": "Wei",
+      "lastName": "Zhang",
+      "city": "San Francisco",
+      "state": "CA",
+      "isActive": "1"
+    },
+    {
+      "id": "9",
+      "firstName": "Li",
+      "lastName": "Chen",
+      "city": "Seattle",
+      "state": "WA",
+      "isActive": "1"
+    },
+    {
+      "id": "10",
+      "firstName": "Sarah",
+      "lastName": "Johnson",
+      "city": "Boston",
+      "state": "MA",
+      "isActive": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tfirstName\tlastName\tcity\tstate\tisActive\n1\tMaria\tRodriguez\tMiami\tFL\t1\n2\tCarlos\tHernandez\tLos Angeles\tCA\t1\n3\tMaria\tRodriguez\tMiami\tFL\t1\n4\tCarlos\tHernandez\tLos Angeles\tCA\t1\n5\tIsabel\tSanchez\tChicago\tIL\t1\n6\tJean\tDubois\tNew York\tNY\t1\n7\tSophie\tLaurent\tWashington\tDC\t1\n8\tWei\tZhang\tSan Francisco\tCA\t1\n9\tLi\tChen\tSeattle\tWA\t1\n10\tSarah\tJohnson\tBoston\tMA\t1\n",
+  "stderr": "",
+  "execution_time_ms": 51
+}

@@ -1,0 +1,410 @@
+{
+  "query": "SELECT DISTINCT state, COUNT(*) as count FROM interpreters WHERE state IS NOT NULL GROUP BY state ORDER BY count DESC LIMIT 100;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute SELECT DISTINCT state, COUNT(*) as count FROM interpreters WHERE state IS NOT NULL GROUP BY state ORDER BY count DESC LIMIT 100;",
+  "rows": [
+    {
+      "state": "TX",
+      "count": "2972"
+    },
+    {
+      "state": "CA",
+      "count": "1476"
+    },
+    {
+      "state": "OR",
+      "count": "1394"
+    },
+    {
+      "state": "FL",
+      "count": "653"
+    },
+    {
+      "state": "AZ",
+      "count": "578"
+    },
+    {
+      "state": "MD",
+      "count": "558"
+    },
+    {
+      "state": "NY",
+      "count": "443"
+    },
+    {
+      "state": "WA",
+      "count": "438"
+    },
+    {
+      "state": "TN",
+      "count": "392"
+    },
+    {
+      "state": "HI",
+      "count": "306"
+    },
+    {
+      "state": "IL",
+      "count": "303"
+    },
+    {
+      "state": "GA",
+      "count": "237"
+    },
+    {
+      "state": "PA",
+      "count": "233"
+    },
+    {
+      "state": "CO",
+      "count": "231"
+    },
+    {
+      "state": "NC",
+      "count": "213"
+    },
+    {
+      "state": "OH",
+      "count": "210"
+    },
+    {
+      "state": "DC",
+      "count": "198"
+    },
+    {
+      "state": "VA",
+      "count": "177"
+    },
+    {
+      "state": "MA",
+      "count": "174"
+    },
+    {
+      "state": "MI",
+      "count": "141"
+    },
+    {
+      "state": "LA",
+      "count": "139"
+    },
+    {
+      "state": "NJ",
+      "count": "135"
+    },
+    {
+      "state": "NV",
+      "count": "132"
+    },
+    {
+      "state": "OK",
+      "count": "116"
+    },
+    {
+      "state": "MN",
+      "count": "116"
+    },
+    {
+      "state": "MO",
+      "count": "112"
+    },
+    {
+      "state": "UT",
+      "count": "100"
+    },
+    {
+      "state": "WI",
+      "count": "96"
+    },
+    {
+      "state": "KY",
+      "count": "87"
+    },
+    {
+      "state": "PR",
+      "count": "80"
+    },
+    {
+      "state": "IN",
+      "count": "57"
+    },
+    {
+      "state": "KS",
+      "count": "57"
+    },
+    {
+      "state": "AL",
+      "count": "55"
+    },
+    {
+      "state": "NM",
+      "count": "51"
+    },
+    {
+      "state": "London",
+      "count": "45"
+    },
+    {
+      "state": "Cairo",
+      "count": "41"
+    },
+    {
+      "state": "Lima",
+      "count": "41"
+    },
+    {
+      "state": "SC",
+      "count": "39"
+    },
+    {
+      "state": "Ontario",
+      "count": "36"
+    },
+    {
+      "state": "CT",
+      "count": "35"
+    },
+    {
+      "state": "Panama",
+      "count": "33"
+    },
+    {
+      "state": "Buenos Aires",
+      "count": "32"
+    },
+    {
+      "state": "jalisco",
+      "count": "31"
+    },
+    {
+      "state": "Cundinamarca",
+      "count": "29"
+    },
+    {
+      "state": "RI",
+      "count": "28"
+    },
+    {
+      "state": "Antioquia",
+      "count": "28"
+    },
+    {
+      "state": "AR",
+      "count": "27"
+    },
+    {
+      "state": "florida",
+      "count": "24"
+    },
+    {
+      "state": "Amman",
+      "count": "23"
+    },
+    {
+      "state": "Santo Domingo",
+      "count": "22"
+    },
+    {
+      "state": "IA",
+      "count": "22"
+    },
+    {
+      "state": "Dubai",
+      "count": "22"
+    },
+    {
+      "state": "TEXAS",
+      "count": "21"
+    },
+    {
+      "state": "MADRID",
+      "count": "21"
+    },
+    {
+      "state": "MS",
+      "count": "20"
+    },
+    {
+      "state": "Moscow",
+      "count": "20"
+    },
+    {
+      "state": "Quebec",
+      "count": "20"
+    },
+    {
+      "state": "Shanghai",
+      "count": "20"
+    },
+    {
+      "state": "ON",
+      "count": "19"
+    },
+    {
+      "state": "SP",
+      "count": "18"
+    },
+    {
+      "state": "ID",
+      "count": "18"
+    },
+    {
+      "state": "NE",
+      "count": "18"
+    },
+    {
+      "state": "Nairobi",
+      "count": "17"
+    },
+    {
+      "state": "São Paulo",
+      "count": "17"
+    },
+    {
+      "state": "Barcelona",
+      "count": "16"
+    },
+    {
+      "state": "DE",
+      "count": "16"
+    },
+    {
+      "state": "Distrito Nacional",
+      "count": "15"
+    },
+    {
+      "state": "Guangdong",
+      "count": "15"
+    },
+    {
+      "state": "CALIFORNIA",
+      "count": "15"
+    },
+    {
+      "state": "Istanbul",
+      "count": "14"
+    },
+    {
+      "state": "Berlin",
+      "count": "14"
+    },
+    {
+      "state": "San jose",
+      "count": "14"
+    },
+    {
+      "state": "ILE DE FRANCE",
+      "count": "13"
+    },
+    {
+      "state": "Geneva",
+      "count": "13"
+    },
+    {
+      "state": "NA",
+      "count": "13"
+    },
+    {
+      "state": "Bangkok",
+      "count": "13"
+    },
+    {
+      "state": "RJ",
+      "count": "13"
+    },
+    {
+      "state": "Delhi",
+      "count": "13"
+    },
+    {
+      "state": "new york",
+      "count": "12"
+    },
+    {
+      "state": "DF",
+      "count": "12"
+    },
+    {
+      "state": "AK",
+      "count": "12"
+    },
+    {
+      "state": "Córdoba",
+      "count": "12"
+    },
+    {
+      "state": "Singapore",
+      "count": "11"
+    },
+    {
+      "state": "West Yorkshire",
+      "count": "11"
+    },
+    {
+      "state": "BC",
+      "count": "11"
+    },
+    {
+      "state": "Selangor",
+      "count": "11"
+    },
+    {
+      "state": "Rio de Janeiro",
+      "count": "11"
+    },
+    {
+      "state": "Giza",
+      "count": "11"
+    },
+    {
+      "state": "Beijing",
+      "count": "11"
+    },
+    {
+      "state": "punjab",
+      "count": "11"
+    },
+    {
+      "state": "England",
+      "count": "11"
+    },
+    {
+      "state": "Hessen",
+      "count": "11"
+    },
+    {
+      "state": "Santiago",
+      "count": "10"
+    },
+    {
+      "state": "abu dhabi",
+      "count": "10"
+    },
+    {
+      "state": "Tehran",
+      "count": "10"
+    },
+    {
+      "state": "PARIS",
+      "count": "10"
+    },
+    {
+      "state": "Nuevo León",
+      "count": "10"
+    },
+    {
+      "state": "Seoul",
+      "count": "10"
+    },
+    {
+      "state": "Turkey",
+      "count": "10"
+    },
+    {
+      "state": "Guatemala",
+      "count": "10"
+    }
+  ],
+  "messages": [],
+  "stdout": "state\tcount\nTX\t2972\nCA\t1476\nOR\t1394\nFL\t653\nAZ\t578\nMD\t558\nNY\t443\nWA\t438\nTN\t392\nHI\t306\nIL\t303\nGA\t237\nPA\t233\nCO\t231\nNC\t213\nOH\t210\nDC\t198\nVA\t177\nMA\t174\nMI\t141\nLA\t139\nNJ\t135\nNV\t132\nOK\t116\nMN\t116\nMO\t112\nUT\t100\nWI\t96\nKY\t87\nPR\t80\nIN\t57\nKS\t57\nAL\t55\nNM\t51\nLondon\t45\nCairo\t41\nLima\t41\nSC\t39\nOntario\t36\nCT\t35\nPanama\t33\nBuenos Aires\t32\njalisco\t31\nCundinamarca\t29\nRI\t28\nAntioquia\t28\nAR\t27\nflorida\t24\nAmman\t23\nSanto Domingo\t22\nIA\t22\nDubai\t22\nTEXAS\t21\nMADRID\t21\nMS\t20\nMoscow\t20\nQuebec\t20\nShanghai\t20\nON\t19\nSP\t18\nID\t18\nNE\t18\nNairobi\t17\nSão Paulo\t17\nBarcelona\t16\nDE\t16\nDistrito Nacional\t15\nGuangdong\t15\nCALIFORNIA\t15\nIstanbul\t14\nBerlin\t14\nSan jose\t14\nILE DE FRANCE\t13\nGeneva\t13\nNA\t13\nBangkok\t13\nRJ\t13\nDelhi\t13\nnew york\t12\nDF\t12\nAK\t12\nCórdoba\t12\nSingapore\t11\nWest Yorkshire\t11\nBC\t11\nSelangor\t11\nRio de Janeiro\t11\nGiza\t11\nBeijing\t11\npunjab\t11\nEngland\t11\nHessen\t11\nSantiago\t10\nabu dhabi\t10\nTehran\t10\nPARIS\t10\nNuevo León\t10\nSeoul\t10\nTurkey\t10\nGuatemala\t10\n",
+  "stderr": "",
+  "execution_time_ms": 69
+}

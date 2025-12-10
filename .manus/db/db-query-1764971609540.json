@@ -1,0 +1,90 @@
+{
+  "query": "SELECT country, COUNT(*) as count FROM interpreters WHERE country != 'USA' AND country IS NOT NULL GROUP BY country ORDER BY count DESC LIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute SELECT country, COUNT(*) as count FROM interpreters WHERE country != 'USA' AND country IS NOT NULL GROUP BY country ORDER BY count DESC LIMIT 20;",
+  "rows": [
+    {
+      "country": "LONDON",
+      "count": "45"
+    },
+    {
+      "country": "CAIRO",
+      "count": "41"
+    },
+    {
+      "country": "LIMA",
+      "count": "41"
+    },
+    {
+      "country": "Canada",
+      "count": "38"
+    },
+    {
+      "country": "ONTARIO",
+      "count": "36"
+    },
+    {
+      "country": "PANAMA",
+      "count": "33"
+    },
+    {
+      "country": "BUENOS AIRES",
+      "count": "32"
+    },
+    {
+      "country": "JALISCO",
+      "count": "31"
+    },
+    {
+      "country": "Brazil",
+      "count": "30"
+    },
+    {
+      "country": "CUNDINAMARCA",
+      "count": "29"
+    },
+    {
+      "country": "ANTIOQUIA",
+      "count": "28"
+    },
+    {
+      "country": "Italy",
+      "count": "25"
+    },
+    {
+      "country": "AMMAN",
+      "count": "23"
+    },
+    {
+      "country": "MÉXICO",
+      "count": "23"
+    },
+    {
+      "country": "SANTO DOMINGO",
+      "count": "22"
+    },
+    {
+      "country": "DUBAI",
+      "count": "22"
+    },
+    {
+      "country": "UK",
+      "count": "21"
+    },
+    {
+      "country": "MADRID",
+      "count": "21"
+    },
+    {
+      "country": "SHANGHAI",
+      "count": "20"
+    },
+    {
+      "country": "QUEBEC",
+      "count": "20"
+    }
+  ],
+  "messages": [],
+  "stdout": "country\tcount\nLONDON\t45\nCAIRO\t41\nLIMA\t41\nCanada\t38\nONTARIO\t36\nPANAMA\t33\nBUENOS AIRES\t32\nJALISCO\t31\nBrazil\t30\nCUNDINAMARCA\t29\nANTIOQUIA\t28\nItaly\t25\nAMMAN\t23\nMÉXICO\t23\nSANTO DOMINGO\t22\nDUBAI\t22\nUK\t21\nMADRID\t21\nSHANGHAI\t20\nQUEBEC\t20\n",
+  "stderr": "",
+  "execution_time_ms": 85
+}

@@ -1,0 +1,9 @@
+{
+  "query": "ALTER TABLE interpreters ADD COLUMN is_vetted BOOLEAN NOT NULL DEFAULT FALSE, ADD COLUMN vetted_notes TEXT;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute ALTER TABLE interpreters ADD COLUMN is_vetted BOOLEAN NOT NULL DEFAULT FALSE, ADD COLUMN vetted_notes TEXT;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 888
+}

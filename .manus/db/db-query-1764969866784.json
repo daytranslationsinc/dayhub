@@ -1,0 +1,175 @@
+{
+  "query": "SELECT DISTINCT city FROM interpreters WHERE city IS NOT NULL AND (LENGTH(city) < 2 OR city LIKE '%,%' OR city LIKE '%-%' OR city REGEXP '[0-9]') LIMIT 50;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute SELECT DISTINCT city FROM interpreters WHERE city IS NOT NULL AND (LENGTH(city) < 2 OR city LIKE '%,%' OR city LIKE '%-%' OR city REGEXP '[0-9]') LIMIT 50;",
+  "rows": [
+    {
+      "city": "_court Interpreter-mandarin & Japanese_"
+    },
+    {
+      "city": "rowland Heights"
+    },
+    {
+      "city": "_spanish Interpreter And Translator_"
+    },
+    {
+      "city": "learn4life Public Charter Schools"
+    },
+    {
+      "city": "lancaster"
+    },
+    {
+      "city": "_translator/interpreter_"
+    },
+    {
+      "city": "house Of Translation"
+    },
+    {
+      "city": "tujunga-los Angeles"
+    },
+    {
+      "city": "-"
+    },
+    {
+      "city": "01473"
+    },
+    {
+      "city": "01702"
+    },
+    {
+      "city": "01801"
+    },
+    {
+      "city": "01890"
+    },
+    {
+      "city": "02067"
+    },
+    {
+      "city": "02125"
+    },
+    {
+      "city": "02132"
+    },
+    {
+      "city": "02176"
+    },
+    {
+      "city": "02184"
+    },
+    {
+      "city": "02446"
+    },
+    {
+      "city": "02461"
+    },
+    {
+      "city": "02474"
+    },
+    {
+      "city": "02723"
+    },
+    {
+      "city": "02860"
+    },
+    {
+      "city": "02914"
+    },
+    {
+      "city": "04005"
+    },
+    {
+      "city": "04101"
+    },
+    {
+      "city": "06810"
+    },
+    {
+      "city": "07011"
+    },
+    {
+      "city": "07012"
+    },
+    {
+      "city": "07020"
+    },
+    {
+      "city": "07105"
+    },
+    {
+      "city": "07302"
+    },
+    {
+      "city": "07306"
+    },
+    {
+      "city": "07424"
+    },
+    {
+      "city": "07450"
+    },
+    {
+      "city": "07470"
+    },
+    {
+      "city": "07650"
+    },
+    {
+      "city": "08003"
+    },
+    {
+      "city": "08406"
+    },
+    {
+      "city": "08830"
+    },
+    {
+      "city": "08902"
+    },
+    {
+      "city": "10001"
+    },
+    {
+      "city": "10003"
+    },
+    {
+      "city": "10011"
+    },
+    {
+      "city": "10012"
+    },
+    {
+      "city": "10022"
+    },
+    {
+      "city": "10023"
+    },
+    {
+      "city": "10024"
+    },
+    {
+      "city": "10025"
+    },
+    {
+      "city": "10029"
+    },
+    {
+      "city": "10030"
+    },
+    {
+      "city": "10036"
+    },
+    {
+      "city": "10038"
+    },
+    {
+      "city": "10075"
+    },
+    {
+      "city": "10101"
+    }
+  ],
+  "messages": [],
+  "stdout": "city\n_court Interpreter-mandarin & Japanese_\n\nrowland Heights\n_spanish Interpreter And Translator_\n\nlearn4life Public Charter Schools\n\nlancaster\n_translator/interpreter_\n\nhouse Of Translation\n\ntujunga-los Angeles\n-\n01473\n01702\n01801\n01890\n02067\n02125\n02132\n02176\n02184\n02446\n02461\n02474\n02723\n02860\n02914\n04005\n04101\n06810\n07011\n07012\n07020\n07105\n07302\n07306\n07424\n07450\n07470\n07650\n08003\n08406\n08830\n08902\n10001\n10003\n10011\n10012\n10022\n10023\n10024\n10025\n10029\n10030\n10036\n10038\n10075\n10101\n",
+  "stderr": "",
+  "execution_time_ms": 82
+}

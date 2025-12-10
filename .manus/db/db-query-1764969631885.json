@@ -1,0 +1,130 @@
+{
+  "query": "SELECT sourceLanguage, COUNT(*) as count FROM interpreters GROUP BY sourceLanguage ORDER BY count DESC LIMIT 30;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute SELECT sourceLanguage, COUNT(*) as count FROM interpreters GROUP BY sourceLanguage ORDER BY count DESC LIMIT 30;",
+  "rows": [
+    {
+      "sourceLanguage": "English",
+      "count": "13725"
+    },
+    {
+      "sourceLanguage": "Spanish",
+      "count": "2283"
+    },
+    {
+      "sourceLanguage": "Arabic",
+      "count": "573"
+    },
+    {
+      "sourceLanguage": "Russian",
+      "count": "287"
+    },
+    {
+      "sourceLanguage": "French",
+      "count": "287"
+    },
+    {
+      "sourceLanguage": "Chinese",
+      "count": "228"
+    },
+    {
+      "sourceLanguage": "Japanese",
+      "count": "152"
+    },
+    {
+      "sourceLanguage": "Italian",
+      "count": "122"
+    },
+    {
+      "sourceLanguage": "German",
+      "count": "116"
+    },
+    {
+      "sourceLanguage": "Korean",
+      "count": "108"
+    },
+    {
+      "sourceLanguage": "Vietnamese",
+      "count": "99"
+    },
+    {
+      "sourceLanguage": "Farsi",
+      "count": "95"
+    },
+    {
+      "sourceLanguage": "Portuguese",
+      "count": "85"
+    },
+    {
+      "sourceLanguage": "Turkish",
+      "count": "81"
+    },
+    {
+      "sourceLanguage": "Mandarin",
+      "count": "62"
+    },
+    {
+      "sourceLanguage": "Urdu",
+      "count": "51"
+    },
+    {
+      "sourceLanguage": "Polish",
+      "count": "51"
+    },
+    {
+      "sourceLanguage": "Burmese",
+      "count": "47"
+    },
+    {
+      "sourceLanguage": "Nepali",
+      "count": "46"
+    },
+    {
+      "sourceLanguage": "Amharic",
+      "count": "46"
+    },
+    {
+      "sourceLanguage": "Hindi",
+      "count": "46"
+    },
+    {
+      "sourceLanguage": "Dari",
+      "count": "45"
+    },
+    {
+      "sourceLanguage": "Romanian",
+      "count": "39"
+    },
+    {
+      "sourceLanguage": "Thai",
+      "count": "38"
+    },
+    {
+      "sourceLanguage": "Bengali",
+      "count": "38"
+    },
+    {
+      "sourceLanguage": "Albanian",
+      "count": "36"
+    },
+    {
+      "sourceLanguage": "Greek",
+      "count": "36"
+    },
+    {
+      "sourceLanguage": "Hebrew",
+      "count": "35"
+    },
+    {
+      "sourceLanguage": "Swahili",
+      "count": "34"
+    },
+    {
+      "sourceLanguage": "Haitian Creole",
+      "count": "27"
+    }
+  ],
+  "messages": [],
+  "stdout": "sourceLanguage\tcount\nEnglish\t13725\nSpanish\t2283\nArabic\t573\nRussian\t287\nFrench\t287\nChinese\t228\nJapanese\t152\nItalian\t122\nGerman\t116\nKorean\t108\nVietnamese\t99\nFarsi\t95\nPortuguese\t85\nTurkish\t81\nMandarin\t62\nUrdu\t51\nPolish\t51\nBurmese\t47\nNepali\t46\nAmharic\t46\nHindi\t46\nDari\t45\nRomanian\t39\nThai\t38\nBengali\t38\nAlbanian\t36\nGreek\t36\nHebrew\t35\nSwahili\t34\nHaitian Creole\t27\n",
+  "stderr": "",
+  "execution_time_ms": 62
+}

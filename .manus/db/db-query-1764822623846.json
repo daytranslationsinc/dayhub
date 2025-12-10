@@ -1,0 +1,13 @@
+{
+  "query": "SELECT COUNT(*) as total FROM interpreters WHERE isActive = 1",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute SELECT COUNT(*) as total FROM interpreters WHERE isActive = 1",
+  "rows": [
+    {
+      "total": "27"
+    }
+  ],
+  "messages": [],
+  "stdout": "total\n27\n",
+  "stderr": "",
+  "execution_time_ms": 1665
+}

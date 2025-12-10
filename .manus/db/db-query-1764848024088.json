@@ -1,0 +1,9 @@
+{
+  "query": "ALTER TABLE interpreters \nADD COLUMN is_available BOOLEAN DEFAULT TRUE,\nADD COLUMN last_active DATETIME DEFAULT CURRENT_TIMESTAMP,\nADD COLUMN rating DECIMAL(3,2) DEFAULT 0.00,\nADD COLUMN years_of_experience INT DEFAULT 0;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute ALTER TABLE interpreters \nADD COLUMN is_available BOOLEAN DEFAULT TRUE,\nADD COLUMN last_active DATETIME DEFAULT CURRENT_TIMESTAMP,\nADD COLUMN rating DECIMAL(3,2) DEFAULT 0.00,\nADD COLUMN years_of_experience INT DEFAULT 0;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1174
+}

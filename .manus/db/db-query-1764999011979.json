@@ -1,0 +1,9 @@
+{
+  "query": "ALTER TABLE interpreters \nADD COLUMN login_token VARCHAR(64),\nADD COLUMN token_expires_at TIMESTAMP NULL,\nADD COLUMN last_login_at TIMESTAMP NULL,\nADD COLUMN resume_url TEXT,\nADD COLUMN voice_clip_url TEXT;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute ALTER TABLE interpreters \nADD COLUMN login_token VARCHAR(64),\nADD COLUMN token_expires_at TIMESTAMP NULL,\nADD COLUMN last_login_at TIMESTAMP NULL,\nADD COLUMN resume_url TEXT,\nADD COLUMN voice_clip_url TEXT;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1591
+}

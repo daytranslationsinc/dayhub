@@ -1,0 +1,9 @@
+{
+  "query": "ALTER TABLE interpreters \n  ADD COLUMN sourceLanguage VARCHAR(100) DEFAULT 'English',\n  ADD COLUMN targetLanguage VARCHAR(100),\n  ADD COLUMN zipCode VARCHAR(10)",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute ALTER TABLE interpreters \n  ADD COLUMN sourceLanguage VARCHAR(100) DEFAULT 'English',\n  ADD COLUMN targetLanguage VARCHAR(100),\n  ADD COLUMN zipCode VARCHAR(10)",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 901
+}

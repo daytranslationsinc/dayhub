@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE IF NOT EXISTS favorites (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  user_id INT NOT NULL,\n  interpreter_id INT NOT NULL,\n  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,\n  INDEX user_id_idx (user_id),\n  INDEX interpreter_id_idx (interpreter_id),\n  UNIQUE KEY unique_user_interpreter (user_id, interpreter_id)\n)",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute CREATE TABLE IF NOT EXISTS favorites (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  user_id INT NOT NULL,\n  interpreter_id INT NOT NULL,\n  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,\n  INDEX user_id_idx (user_id),\n  INDEX interpreter_id_idx (interpreter_id),\n  UNIQUE KEY unique_user_interpreter (user_id, interpreter_id)\n)",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 299
+}

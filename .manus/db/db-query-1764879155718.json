@@ -1,0 +1,90 @@
+{
+  "query": "SELECT id, firstName, lastName, city, state, zipCode FROM interpreters WHERE (lat IS NULL OR lng IS NULL) AND zipCode IS NOT NULL AND zipCode != '' LIMIT 10",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute SELECT id, firstName, lastName, city, state, zipCode FROM interpreters WHERE (lat IS NULL OR lng IS NULL) AND zipCode IS NOT NULL AND zipCode != '' LIMIT 10",
+  "rows": [
+    {
+      "id": "360747",
+      "firstName": "GIGI W. C.",
+      "lastName": "TANG",
+      "city": "English",
+      "state": "NULL",
+      "zipCode": "Hawaii"
+    },
+    {
+      "id": "362663",
+      "firstName": "",
+      "lastName": "Sokol Kongoli",
+      "city": "10038",
+      "state": "ALBANIAN",
+      "zipCode": "English"
+    },
+    {
+      "id": "362664",
+      "firstName": "",
+      "lastName": "Dinberu Melakehiwot",
+      "city": "20910",
+      "state": "AMHARIC",
+      "zipCode": "English"
+    },
+    {
+      "id": "362665",
+      "firstName": "",
+      "lastName": "Layle Saqran",
+      "city": "NULL",
+      "state": "ARABIC",
+      "zipCode": "English"
+    },
+    {
+      "id": "362666",
+      "firstName": "",
+      "lastName": "Ratib Habbal",
+      "city": "48187",
+      "state": "ARABIC",
+      "zipCode": "English"
+    },
+    {
+      "id": "362667",
+      "firstName": "",
+      "lastName": "Nouras Samo",
+      "city": "07011",
+      "state": "ARABIC",
+      "zipCode": "English"
+    },
+    {
+      "id": "362668",
+      "firstName": "",
+      "lastName": "Barbara Saad",
+      "city": "07424",
+      "state": "ARABIC",
+      "zipCode": "English"
+    },
+    {
+      "id": "362669",
+      "firstName": "",
+      "lastName": "Mabrouk Benyounes Boudaga",
+      "city": "75034",
+      "state": "ARABIC",
+      "zipCode": "English"
+    },
+    {
+      "id": "362670",
+      "firstName": "",
+      "lastName": "Basma Emam",
+      "city": "NULL",
+      "state": "ARABIC",
+      "zipCode": "English"
+    },
+    {
+      "id": "362671",
+      "firstName": "",
+      "lastName": "Zinah Al Shammaa",
+      "city": "91207",
+      "state": "ARABIC",
+      "zipCode": "English"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tfirstName\tlastName\tcity\tstate\tzipCode\n360747\tGIGI W. C.\tTANG\tEnglish\tNULL\tHawaii\n362663\t\tSokol Kongoli\t10038\tALBANIAN\tEnglish\n362664\t\tDinberu Melakehiwot\t20910\tAMHARIC\tEnglish\n362665\t\tLayle Saqran\tNULL\tARABIC\tEnglish\n362666\t\tRatib Habbal\t48187\tARABIC\tEnglish\n362667\t\tNouras Samo\t07011\tARABIC\tEnglish\n362668\t\tBarbara Saad\t07424\tARABIC\tEnglish\n362669\t\tMabrouk Benyounes Boudaga\t75034\tARABIC\tEnglish\n362670\t\tBasma Emam\tNULL\tARABIC\tEnglish\n362671\t\tZinah Al Shammaa\t91207\tARABIC\tEnglish\n",
+  "stderr": "",
+  "execution_time_ms": 65
+}

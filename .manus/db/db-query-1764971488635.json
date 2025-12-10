@@ -1,0 +1,130 @@
+{
+  "query": "SELECT DISTINCT state, COUNT(*) as count FROM interpreters WHERE state IS NOT NULL AND state NOT IN ('AL','AK','AZ','AR','CA','CO','CT','DE','FL','GA','HI','ID','IL','IN','IA','KS','KY','LA','ME','MD','MA','MI','MN','MS','MO','MT','NE','NV','NH','NJ','NM','NY','NC','ND','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VT','VA','WA','WV','WI','WY','DC','PR','GU','VI','AS','MP') GROUP BY state ORDER BY count DESC LIMIT 30;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute SELECT DISTINCT state, COUNT(*) as count FROM interpreters WHERE state IS NOT NULL AND state NOT IN ('AL','AK','AZ','AR','CA','CO','CT','DE','FL','GA','HI','ID','IL','IN','IA','KS','KY','LA','ME','MD','MA','MI','MN','MS','MO','MT','NE','NV','NH','NJ','NM','NY','NC','ND','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VT','VA','WA','WV','WI','WY','DC','PR','GU','VI','AS','MP') GROUP BY state ORDER BY count DESC LIMIT 30;",
+  "rows": [
+    {
+      "state": "London",
+      "count": "45"
+    },
+    {
+      "state": "Cairo",
+      "count": "41"
+    },
+    {
+      "state": "Lima",
+      "count": "41"
+    },
+    {
+      "state": "Ontario",
+      "count": "36"
+    },
+    {
+      "state": "Panama",
+      "count": "33"
+    },
+    {
+      "state": "Buenos Aires",
+      "count": "32"
+    },
+    {
+      "state": "jalisco",
+      "count": "31"
+    },
+    {
+      "state": "Cundinamarca",
+      "count": "29"
+    },
+    {
+      "state": "Antioquia",
+      "count": "28"
+    },
+    {
+      "state": "Amman",
+      "count": "23"
+    },
+    {
+      "state": "Dubai",
+      "count": "22"
+    },
+    {
+      "state": "Santo Domingo",
+      "count": "22"
+    },
+    {
+      "state": "MADRID",
+      "count": "21"
+    },
+    {
+      "state": "Shanghai",
+      "count": "20"
+    },
+    {
+      "state": "Moscow",
+      "count": "20"
+    },
+    {
+      "state": "Quebec",
+      "count": "20"
+    },
+    {
+      "state": "UK",
+      "count": "17"
+    },
+    {
+      "state": "Nairobi",
+      "count": "17"
+    },
+    {
+      "state": "São Paulo",
+      "count": "17"
+    },
+    {
+      "state": "Barcelona",
+      "count": "16"
+    },
+    {
+      "state": "Distrito Nacional",
+      "count": "15"
+    },
+    {
+      "state": "Guangdong",
+      "count": "15"
+    },
+    {
+      "state": "Istanbul",
+      "count": "14"
+    },
+    {
+      "state": "San jose",
+      "count": "14"
+    },
+    {
+      "state": "Berlin",
+      "count": "14"
+    },
+    {
+      "state": "Delhi",
+      "count": "13"
+    },
+    {
+      "state": "Geneva",
+      "count": "13"
+    },
+    {
+      "state": "ILE DE FRANCE",
+      "count": "13"
+    },
+    {
+      "state": "Bangkok",
+      "count": "13"
+    },
+    {
+      "state": "Córdoba",
+      "count": "12"
+    }
+  ],
+  "messages": [],
+  "stdout": "state\tcount\nLondon\t45\nCairo\t41\nLima\t41\nOntario\t36\nPanama\t33\nBuenos Aires\t32\njalisco\t31\nCundinamarca\t29\nAntioquia\t28\nAmman\t23\nDubai\t22\nSanto Domingo\t22\nMADRID\t21\nShanghai\t20\nMoscow\t20\nQuebec\t20\nUK\t17\nNairobi\t17\nSão Paulo\t17\nBarcelona\t16\nDistrito Nacional\t15\nGuangdong\t15\nIstanbul\t14\nSan jose\t14\nBerlin\t14\nDelhi\t13\nGeneva\t13\nILE DE FRANCE\t13\nBangkok\t13\nCórdoba\t12\n",
+  "stderr": "",
+  "execution_time_ms": 62
+}

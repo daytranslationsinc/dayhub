@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE IF NOT EXISTS saved_searches (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  user_id INT NOT NULL,\n  name VARCHAR(255) NOT NULL,\n  search_query TEXT,\n  language VARCHAR(100),\n  city VARCHAR(100),\n  state VARCHAR(2),\n  metro VARCHAR(255),\n  specialty VARCHAR(100),\n  certification VARCHAR(100),\n  is_preset BOOLEAN DEFAULT FALSE,\n  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n  INDEX user_id_idx (user_id)\n)",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute CREATE TABLE IF NOT EXISTS saved_searches (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  user_id INT NOT NULL,\n  name VARCHAR(255) NOT NULL,\n  search_query TEXT,\n  language VARCHAR(100),\n  city VARCHAR(100),\n  state VARCHAR(2),\n  metro VARCHAR(255),\n  specialty VARCHAR(100),\n  certification VARCHAR(100),\n  is_preset BOOLEAN DEFAULT FALSE,\n  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n  INDEX user_id_idx (user_id)\n)",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 212
+}

@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE IF NOT EXISTS bookings (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  interpreter_id INT NOT NULL,\n  user_id INT NOT NULL,\n  scheduled_date TIMESTAMP NOT NULL,\n  duration INT NOT NULL,\n  status VARCHAR(20) NOT NULL DEFAULT 'pending',\n  notes TEXT,\n  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,\n  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL,\n  INDEX interpreter_id_idx (interpreter_id),\n  INDEX user_id_idx (user_id),\n  INDEX status_idx (status),\n  INDEX scheduled_date_idx (scheduled_date)\n)",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute CREATE TABLE IF NOT EXISTS bookings (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  interpreter_id INT NOT NULL,\n  user_id INT NOT NULL,\n  scheduled_date TIMESTAMP NOT NULL,\n  duration INT NOT NULL,\n  status VARCHAR(20) NOT NULL DEFAULT 'pending',\n  notes TEXT,\n  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,\n  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL,\n  INDEX interpreter_id_idx (interpreter_id),\n  INDEX user_id_idx (user_id),\n  INDEX status_idx (status),\n  INDEX scheduled_date_idx (scheduled_date)\n)",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 87
+}

@@ -1,0 +1,34 @@
+{
+  "query": "SELECT id, firstName, lastName, email, phone, sourceLanguage, targetLanguage, specialties, city, state FROM interpreters WHERE sourceLanguage LIKE '%sign%' OR targetLanguage LIKE '%sign%' OR sourceLanguage LIKE '%asl%' OR targetLanguage LIKE '%asl%' OR specialties LIKE '%sign%' OR specialties LIKE '%asl%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute SELECT id, firstName, lastName, email, phone, sourceLanguage, targetLanguage, specialties, city, state FROM interpreters WHERE sourceLanguage LIKE '%sign%' OR targetLanguage LIKE '%sign%' OR sourceLanguage LIKE '%asl%' OR targetLanguage LIKE '%asl%' OR specialties LIKE '%sign%' OR specialties LIKE '%asl%';",
+  "rows": [
+    {
+      "id": "420310",
+      "firstName": "momen",
+      "lastName": "alsulaiman",
+      "email": "momen.awni@gmail.com",
+      "phone": "+962796978284",
+      "sourceLanguage": "Arabic",
+      "targetLanguage": "English",
+      "specialties": "Other Construction, Architecture, Design, Technical",
+      "city": "Irbid",
+      "state": "NULL"
+    },
+    {
+      "id": "424879",
+      "firstName": "Carroll",
+      "lastName": "La Fleche",
+      "email": "puni_LC@libero.it",
+      "phone": "514 5296998",
+      "sourceLanguage": "English",
+      "targetLanguage": "French",
+      "specialties": "Other Design, Architecture",
+      "city": "Montreal",
+      "state": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tfirstName\tlastName\temail\tphone\tsourceLanguage\ttargetLanguage\tspecialties\tcity\tstate\n420310\tmomen\talsulaiman\tmomen.awni@gmail.com\t+962796978284\tArabic\tEnglish\tOther Construction, Architecture, Design, Technical\tIrbid\tNULL\n424879\tCarroll\tLa Fleche\tpuni_LC@libero.it\t514 5296998\tEnglish\tFrench\tOther Design, Architecture\tMontreal\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 87
+}

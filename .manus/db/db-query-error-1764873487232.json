@@ -1,0 +1,8 @@
+{
+  "query": "SELECT COUNT(*) as count FROM interpreters WHERE isActive = 1 AND yearsOfExperience >= 0 AND yearsOfExperience <= 30 AND hourlyRate >= 0 AND hourlyRate <= 200 LIMIT 12",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute SELECT COUNT(*) as count FROM interpreters WHERE isActive = 1 AND yearsOfExperience >= 0 AND yearsOfExperience <= 30 AND hourlyRate >= 0 AND hourlyRate <= 200 LIMIT 12",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'yearsofexperience' in 'where clause'"
+  ]
+}

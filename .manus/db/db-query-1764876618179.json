@@ -1,0 +1,349 @@
+{
+  "query": "SELECT DISTINCT targetLanguage FROM interpreters WHERE targetLanguage IS NOT NULL ORDER BY targetLanguage",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute SELECT DISTINCT targetLanguage FROM interpreters WHERE targetLanguage IS NOT NULL ORDER BY targetLanguage",
+  "rows": [
+    {
+      "targetLanguage": "AK"
+    },
+    {
+      "targetLanguage": "Akan"
+    },
+    {
+      "targetLanguage": "Albanian"
+    },
+    {
+      "targetLanguage": "American Sign Language"
+    },
+    {
+      "targetLanguage": "Amharic"
+    },
+    {
+      "targetLanguage": "Arabic"
+    },
+    {
+      "targetLanguage": "Armenian"
+    },
+    {
+      "targetLanguage": "AZ"
+    },
+    {
+      "targetLanguage": "Belarusian"
+    },
+    {
+      "targetLanguage": "Bengali"
+    },
+    {
+      "targetLanguage": "Bosnian"
+    },
+    {
+      "targetLanguage": "Bulgarian"
+    },
+    {
+      "targetLanguage": "Burmese"
+    },
+    {
+      "targetLanguage": "CA"
+    },
+    {
+      "targetLanguage": "Catalan"
+    },
+    {
+      "targetLanguage": "Cebuano"
+    },
+    {
+      "targetLanguage": "Chinese"
+    },
+    {
+      "targetLanguage": "Chinese (Cantonese)"
+    },
+    {
+      "targetLanguage": "Chuukese"
+    },
+    {
+      "targetLanguage": "CO"
+    },
+    {
+      "targetLanguage": "Creole"
+    },
+    {
+      "targetLanguage": "Croatian"
+    },
+    {
+      "targetLanguage": "CT"
+    },
+    {
+      "targetLanguage": "Czech"
+    },
+    {
+      "targetLanguage": "Danish"
+    },
+    {
+      "targetLanguage": "Dari"
+    },
+    {
+      "targetLanguage": "DC"
+    },
+    {
+      "targetLanguage": "Dutch"
+    },
+    {
+      "targetLanguage": "English"
+    },
+    {
+      "targetLanguage": "Ewe"
+    },
+    {
+      "targetLanguage": "Fante"
+    },
+    {
+      "targetLanguage": "Filipino"
+    },
+    {
+      "targetLanguage": "Finnish"
+    },
+    {
+      "targetLanguage": "FL"
+    },
+    {
+      "targetLanguage": "French"
+    },
+    {
+      "targetLanguage": "GA"
+    },
+    {
+      "targetLanguage": "Galician"
+    },
+    {
+      "targetLanguage": "Georgian"
+    },
+    {
+      "targetLanguage": "German"
+    },
+    {
+      "targetLanguage": "Greek"
+    },
+    {
+      "targetLanguage": "Guarani"
+    },
+    {
+      "targetLanguage": "Gujarati"
+    },
+    {
+      "targetLanguage": "Haitian Creole"
+    },
+    {
+      "targetLanguage": "Hausa"
+    },
+    {
+      "targetLanguage": "Hebrew"
+    },
+    {
+      "targetLanguage": "Hindi"
+    },
+    {
+      "targetLanguage": "Hmong"
+    },
+    {
+      "targetLanguage": "Hungarian"
+    },
+    {
+      "targetLanguage": "IL"
+    },
+    {
+      "targetLanguage": "IN"
+    },
+    {
+      "targetLanguage": "Indonesian"
+    },
+    {
+      "targetLanguage": "Italian"
+    },
+    {
+      "targetLanguage": "Japanese"
+    },
+    {
+      "targetLanguage": "Kazakh"
+    },
+    {
+      "targetLanguage": "Khmer"
+    },
+    {
+      "targetLanguage": "Kinyarwanda"
+    },
+    {
+      "targetLanguage": "Kirundi"
+    },
+    {
+      "targetLanguage": "Korean"
+    },
+    {
+      "targetLanguage": "Krio"
+    },
+    {
+      "targetLanguage": "Kurdish"
+    },
+    {
+      "targetLanguage": "Kurmanji"
+    },
+    {
+      "targetLanguage": "KY"
+    },
+    {
+      "targetLanguage": "Lao"
+    },
+    {
+      "targetLanguage": "Latvian"
+    },
+    {
+      "targetLanguage": "Lithuanian"
+    },
+    {
+      "targetLanguage": "MA"
+    },
+    {
+      "targetLanguage": "Marshallese"
+    },
+    {
+      "targetLanguage": "MD"
+    },
+    {
+      "targetLanguage": "MI"
+    },
+    {
+      "targetLanguage": "MN"
+    },
+    {
+      "targetLanguage": "MO"
+    },
+    {
+      "targetLanguage": "Moldovan"
+    },
+    {
+      "targetLanguage": "Mongolian"
+    },
+    {
+      "targetLanguage": "NC"
+    },
+    {
+      "targetLanguage": "NE"
+    },
+    {
+      "targetLanguage": "Nepali"
+    },
+    {
+      "targetLanguage": "NJ"
+    },
+    {
+      "targetLanguage": "NM"
+    },
+    {
+      "targetLanguage": "Norwegian"
+    },
+    {
+      "targetLanguage": "NV"
+    },
+    {
+      "targetLanguage": "NY"
+    },
+    {
+      "targetLanguage": "OH"
+    },
+    {
+      "targetLanguage": "OK"
+    },
+    {
+      "targetLanguage": "OR"
+    },
+    {
+      "targetLanguage": "PA"
+    },
+    {
+      "targetLanguage": "Pashto"
+    },
+    {
+      "targetLanguage": "Persian"
+    },
+    {
+      "targetLanguage": "Polish"
+    },
+    {
+      "targetLanguage": "Portuguese"
+    },
+    {
+      "targetLanguage": "Punjabi"
+    },
+    {
+      "targetLanguage": "RI"
+    },
+    {
+      "targetLanguage": "Romanian"
+    },
+    {
+      "targetLanguage": "Russian"
+    },
+    {
+      "targetLanguage": "Samoan"
+    },
+    {
+      "targetLanguage": "Sanskrit"
+    },
+    {
+      "targetLanguage": "Serbian"
+    },
+    {
+      "targetLanguage": "Sgaw Karen"
+    },
+    {
+      "targetLanguage": "Slovak"
+    },
+    {
+      "targetLanguage": "Somali"
+    },
+    {
+      "targetLanguage": "Spanish"
+    },
+    {
+      "targetLanguage": "Swahili"
+    },
+    {
+      "targetLanguage": "Tagalog"
+    },
+    {
+      "targetLanguage": "Telugu"
+    },
+    {
+      "targetLanguage": "Thai"
+    },
+    {
+      "targetLanguage": "Tigrinya"
+    },
+    {
+      "targetLanguage": "Turkish"
+    },
+    {
+      "targetLanguage": "TX"
+    },
+    {
+      "targetLanguage": "Ukrainian"
+    },
+    {
+      "targetLanguage": "Urdu"
+    },
+    {
+      "targetLanguage": "Vietnamese"
+    },
+    {
+      "targetLanguage": "WA"
+    },
+    {
+      "targetLanguage": "WI"
+    },
+    {
+      "targetLanguage": "Yoruba"
+    }
+  ],
+  "messages": [],
+  "stdout": "targetLanguage\nAK\nAkan\nAlbanian\nAmerican Sign Language\nAmharic\nArabic\nArmenian\nAZ\nBelarusian\nBengali\nBosnian\nBulgarian\nBurmese\nCA\nCatalan\nCebuano\nChinese\nChinese (Cantonese)\nChuukese\nCO\nCreole\nCroatian\nCT\nCzech\nDanish\nDari\nDC\nDutch\nEnglish\nEwe\nFante\nFilipino\nFinnish\nFL\nFrench\nGA\nGalician\nGeorgian\nGerman\nGreek\nGuarani\nGujarati\nHaitian Creole\nHausa\nHebrew\nHindi\nHmong\nHungarian\nIL\nIN\nIndonesian\nItalian\nJapanese\nKazakh\nKhmer\nKinyarwanda\nKirundi\nKorean\nKrio\nKurdish\nKurmanji\nKY\nLao\nLatvian\nLithuanian\nMA\nMarshallese\nMD\nMI\nMN\nMO\nMoldovan\nMongolian\nNC\nNE\nNepali\nNJ\nNM\nNorwegian\nNV\nNY\nOH\nOK\nOR\nPA\nPashto\nPersian\nPolish\nPortuguese\nPunjabi\nRI\nRomanian\nRussian\nSamoan\nSanskrit\nSerbian\nSgaw Karen\nSlovak\nSomali\nSpanish\nSwahili\nTagalog\nTelugu\nThai\nTigrinya\nTurkish\nTX\nUkrainian\nUrdu\nVietnamese\nWA\nWI\nYoruba\n",
+  "stderr": "",
+  "execution_time_ms": 709
+}

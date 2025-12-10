@@ -1,0 +1,8 @@
+{
+  "query": "SELECT name, COUNT(*) as count FROM languages GROUP BY LOWER(TRIM(name)) HAVING count > 1 ORDER BY count DESC LIMIT 20",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute SELECT name, COUNT(*) as count FROM languages GROUP BY LOWER(TRIM(name)) HAVING count > 1 ORDER BY count DESC LIMIT 20",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1146 (42S02) at line 1: Table 'lwxqwn2gwfpccvwwv8uzux.languages' doesn't exist"
+  ]
+}

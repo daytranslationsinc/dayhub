@@ -1,0 +1,22 @@
+{
+  "query": "SELECT zipCode, COUNT(*) as count FROM interpreters WHERE lat IS NULL OR lng IS NULL GROUP BY zipCode ORDER BY count DESC LIMIT 20",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute SELECT zipCode, COUNT(*) as count FROM interpreters WHERE lat IS NULL OR lng IS NULL GROUP BY zipCode ORDER BY count DESC LIMIT 20",
+  "rows": [
+    {
+      "zipCode": "NULL",
+      "count": "8572"
+    },
+    {
+      "zipCode": "English",
+      "count": "188"
+    },
+    {
+      "zipCode": "Hawaii",
+      "count": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "zipCode\tcount\nNULL\t8572\nEnglish\t188\nHawaii\t1\n",
+  "stderr": "",
+  "execution_time_ms": 102
+}

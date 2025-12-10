@@ -1,0 +1,5034 @@
+{
+  "query": "SELECT state, COUNT(*) as count FROM interpreters WHERE state IS NOT NULL AND LENGTH(state) > 2 GROUP BY state ORDER BY count DESC;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute SELECT state, COUNT(*) as count FROM interpreters WHERE state IS NOT NULL AND LENGTH(state) > 2 GROUP BY state ORDER BY count DESC;",
+  "rows": [
+    {
+      "state": "London",
+      "count": "45"
+    },
+    {
+      "state": "Lima",
+      "count": "41"
+    },
+    {
+      "state": "Cairo",
+      "count": "41"
+    },
+    {
+      "state": "Ontario",
+      "count": "36"
+    },
+    {
+      "state": "Panama",
+      "count": "33"
+    },
+    {
+      "state": "Buenos Aires",
+      "count": "32"
+    },
+    {
+      "state": "jalisco",
+      "count": "31"
+    },
+    {
+      "state": "Cundinamarca",
+      "count": "29"
+    },
+    {
+      "state": "Antioquia",
+      "count": "28"
+    },
+    {
+      "state": "florida",
+      "count": "24"
+    },
+    {
+      "state": "Amman",
+      "count": "23"
+    },
+    {
+      "state": "Dubai",
+      "count": "22"
+    },
+    {
+      "state": "Santo Domingo",
+      "count": "22"
+    },
+    {
+      "state": "TEXAS",
+      "count": "21"
+    },
+    {
+      "state": "MADRID",
+      "count": "21"
+    },
+    {
+      "state": "Moscow",
+      "count": "20"
+    },
+    {
+      "state": "Shanghai",
+      "count": "20"
+    },
+    {
+      "state": "Quebec",
+      "count": "20"
+    },
+    {
+      "state": "São Paulo",
+      "count": "17"
+    },
+    {
+      "state": "Nairobi",
+      "count": "17"
+    },
+    {
+      "state": "Barcelona",
+      "count": "16"
+    },
+    {
+      "state": "CALIFORNIA",
+      "count": "15"
+    },
+    {
+      "state": "Guangdong",
+      "count": "15"
+    },
+    {
+      "state": "Distrito Nacional",
+      "count": "15"
+    },
+    {
+      "state": "Istanbul",
+      "count": "14"
+    },
+    {
+      "state": "Berlin",
+      "count": "14"
+    },
+    {
+      "state": "San jose",
+      "count": "14"
+    },
+    {
+      "state": "Delhi",
+      "count": "13"
+    },
+    {
+      "state": "Geneva",
+      "count": "13"
+    },
+    {
+      "state": "Bangkok",
+      "count": "13"
+    },
+    {
+      "state": "ILE DE FRANCE",
+      "count": "13"
+    },
+    {
+      "state": "new york",
+      "count": "12"
+    },
+    {
+      "state": "Córdoba",
+      "count": "12"
+    },
+    {
+      "state": "Singapore",
+      "count": "11"
+    },
+    {
+      "state": "Giza",
+      "count": "11"
+    },
+    {
+      "state": "Rio de Janeiro",
+      "count": "11"
+    },
+    {
+      "state": "punjab",
+      "count": "11"
+    },
+    {
+      "state": "Beijing",
+      "count": "11"
+    },
+    {
+      "state": "Hessen",
+      "count": "11"
+    },
+    {
+      "state": "West Yorkshire",
+      "count": "11"
+    },
+    {
+      "state": "Selangor",
+      "count": "11"
+    },
+    {
+      "state": "England",
+      "count": "11"
+    },
+    {
+      "state": "Santiago",
+      "count": "10"
+    },
+    {
+      "state": "Ankara",
+      "count": "10"
+    },
+    {
+      "state": "Guatemala",
+      "count": "10"
+    },
+    {
+      "state": "abu dhabi",
+      "count": "10"
+    },
+    {
+      "state": "ohio",
+      "count": "10"
+    },
+    {
+      "state": "Nuevo León",
+      "count": "10"
+    },
+    {
+      "state": "Seoul",
+      "count": "10"
+    },
+    {
+      "state": "PARIS",
+      "count": "10"
+    },
+    {
+      "state": "Turkey",
+      "count": "10"
+    },
+    {
+      "state": "Tehran",
+      "count": "10"
+    },
+    {
+      "state": "NRW",
+      "count": "9"
+    },
+    {
+      "state": "Greater London",
+      "count": "9"
+    },
+    {
+      "state": "N/A",
+      "count": "9"
+    },
+    {
+      "state": "Karnataka",
+      "count": "9"
+    },
+    {
+      "state": "DKI Jakarta",
+      "count": "8"
+    },
+    {
+      "state": "Santo Domingo Este",
+      "count": "8"
+    },
+    {
+      "state": "Distrito Federal",
+      "count": "8"
+    },
+    {
+      "state": "Kabul",
+      "count": "8"
+    },
+    {
+      "state": "Italy",
+      "count": "8"
+    },
+    {
+      "state": "Mexico City",
+      "count": "8"
+    },
+    {
+      "state": "West Bengal",
+      "count": "8"
+    },
+    {
+      "state": "Riyadh",
+      "count": "8"
+    },
+    {
+      "state": "British Columbia",
+      "count": "8"
+    },
+    {
+      "state": "Chihuahua",
+      "count": "7"
+    },
+    {
+      "state": "Guanajuato",
+      "count": "7"
+    },
+    {
+      "state": "Alexandria",
+      "count": "7"
+    },
+    {
+      "state": "México",
+      "count": "7"
+    },
+    {
+      "state": "France",
+      "count": "7"
+    },
+    {
+      "state": "Egypt",
+      "count": "7"
+    },
+    {
+      "state": "Minas Gerais",
+      "count": "7"
+    },
+    {
+      "state": "LAZIO",
+      "count": "7"
+    },
+    {
+      "state": "Baja California",
+      "count": "7"
+    },
+    {
+      "state": "Heredia",
+      "count": "7"
+    },
+    {
+      "state": "Estado de Mexico",
+      "count": "7"
+    },
+    {
+      "state": "Santa Fe",
+      "count": "7"
+    },
+    {
+      "state": "Center",
+      "count": "7"
+    },
+    {
+      "state": "Banten",
+      "count": "6"
+    },
+    {
+      "state": "Israel",
+      "count": "6"
+    },
+    {
+      "state": "Quintana Roo",
+      "count": "6"
+    },
+    {
+      "state": "montevideo",
+      "count": "6"
+    },
+    {
+      "state": "illinois",
+      "count": "6"
+    },
+    {
+      "state": "Surrey",
+      "count": "6"
+    },
+    {
+      "state": "Czech Republic",
+      "count": "6"
+    },
+    {
+      "state": "Vienna",
+      "count": "6"
+    },
+    {
+      "state": "Doha",
+      "count": "6"
+    },
+    {
+      "state": "Brussels",
+      "count": "6"
+    },
+    {
+      "state": "Ho Chi Minh",
+      "count": "6"
+    },
+    {
+      "state": "queretaro",
+      "count": "6"
+    },
+    {
+      "state": "Rabat",
+      "count": "6"
+    },
+    {
+      "state": "Addis Ababa",
+      "count": "6"
+    },
+    {
+      "state": "Puerto RIco",
+      "count": "6"
+    },
+    {
+      "state": "East Java",
+      "count": "5"
+    },
+    {
+      "state": "Tamil Nadu",
+      "count": "5"
+    },
+    {
+      "state": "Sharjah",
+      "count": "5"
+    },
+    {
+      "state": "Region Metropolitana",
+      "count": "5"
+    },
+    {
+      "state": "TAMILNADU",
+      "count": "5"
+    },
+    {
+      "state": "Hanoi",
+      "count": "5"
+    },
+    {
+      "state": "Kent",
+      "count": "5"
+    },
+    {
+      "state": "KERALA",
+      "count": "5"
+    },
+    {
+      "state": "Bogotá",
+      "count": "5"
+    },
+    {
+      "state": "Maharashtra",
+      "count": "5"
+    },
+    {
+      "state": "metro manila",
+      "count": "5"
+    },
+    {
+      "state": "Attiki",
+      "count": "5"
+    },
+    {
+      "state": "Taiwan",
+      "count": "5"
+    },
+    {
+      "state": "Izmir",
+      "count": "5"
+    },
+    {
+      "state": "CABA",
+      "count": "5"
+    },
+    {
+      "state": "Lisbon",
+      "count": "5"
+    },
+    {
+      "state": "Bagmati",
+      "count": "5"
+    },
+    {
+      "state": "Tangier",
+      "count": "5"
+    },
+    {
+      "state": "Tokyo",
+      "count": "5"
+    },
+    {
+      "state": "andhra pradesh",
+      "count": "5"
+    },
+    {
+      "state": "Oaxaca",
+      "count": "5"
+    },
+    {
+      "state": "Morelos",
+      "count": "5"
+    },
+    {
+      "state": "Rhône-Alpes",
+      "count": "5"
+    },
+    {
+      "state": "West Java",
+      "count": "5"
+    },
+    {
+      "state": "Ile-de-France",
+      "count": "5"
+    },
+    {
+      "state": "Uttar Pradesh",
+      "count": "5"
+    },
+    {
+      "state": "NEW JERSEY",
+      "count": "5"
+    },
+    {
+      "state": "Romania",
+      "count": "5"
+    },
+    {
+      "state": "Managua",
+      "count": "5"
+    },
+    {
+      "state": "Bolívar",
+      "count": "5"
+    },
+    {
+      "state": "Pichincha",
+      "count": "5"
+    },
+    {
+      "state": "Damascus",
+      "count": "5"
+    },
+    {
+      "state": "VIRGINIA",
+      "count": "5"
+    },
+    {
+      "state": "ALBANIA",
+      "count": "5"
+    },
+    {
+      "state": "Alajuela",
+      "count": "5"
+    },
+    {
+      "state": "Sindh",
+      "count": "5"
+    },
+    {
+      "state": "Cartago",
+      "count": "5"
+    },
+    {
+      "state": "None",
+      "count": "5"
+    },
+    {
+      "state": "Cheshire",
+      "count": "5"
+    },
+    {
+      "state": "Kuwait",
+      "count": "4"
+    },
+    {
+      "state": "durango",
+      "count": "4"
+    },
+    {
+      "state": "Berkshire",
+      "count": "4"
+    },
+    {
+      "state": "St. Petersburg",
+      "count": "4"
+    },
+    {
+      "state": "Rome",
+      "count": "4"
+    },
+    {
+      "state": "Hong Kong",
+      "count": "4"
+    },
+    {
+      "state": "Antrim",
+      "count": "4"
+    },
+    {
+      "state": "Bayern",
+      "count": "4"
+    },
+    {
+      "state": "Middlesex",
+      "count": "4"
+    },
+    {
+      "state": "Lisboa",
+      "count": "4"
+    },
+    {
+      "state": "LAGOS",
+      "count": "4"
+    },
+    {
+      "state": "Bavaria",
+      "count": "4"
+    },
+    {
+      "state": "Veneto",
+      "count": "4"
+    },
+    {
+      "state": "Veracruz",
+      "count": "4"
+    },
+    {
+      "state": "Kosovo",
+      "count": "4"
+    },
+    {
+      "state": "Bern",
+      "count": "4"
+    },
+    {
+      "state": "west midlands",
+      "count": "4"
+    },
+    {
+      "state": "valle",
+      "count": "4"
+    },
+    {
+      "state": "Minsk",
+      "count": "4"
+    },
+    {
+      "state": "Attica",
+      "count": "4"
+    },
+    {
+      "state": "Jakarta",
+      "count": "4"
+    },
+    {
+      "state": "alberta",
+      "count": "4"
+    },
+    {
+      "state": "New Delhi",
+      "count": "4"
+    },
+    {
+      "state": "Campania",
+      "count": "4"
+    },
+    {
+      "state": "Manila",
+      "count": "4"
+    },
+    {
+      "state": "Jawa Barat",
+      "count": "4"
+    },
+    {
+      "state": "mazowieckie",
+      "count": "4"
+    },
+    {
+      "state": "Shandong",
+      "count": "4"
+    },
+    {
+      "state": "Jiangsu",
+      "count": "4"
+    },
+    {
+      "state": "Baja California Sur",
+      "count": "4"
+    },
+    {
+      "state": "Bahia",
+      "count": "4"
+    },
+    {
+      "state": "Athens",
+      "count": "4"
+    },
+    {
+      "state": "Malaga",
+      "count": "4"
+    },
+    {
+      "state": "Paraná",
+      "count": "4"
+    },
+    {
+      "state": "NSW",
+      "count": "4"
+    },
+    {
+      "state": "Distrito Capital",
+      "count": "3"
+    },
+    {
+      "state": "VICTORIA",
+      "count": "3"
+    },
+    {
+      "state": "Jawa Timur",
+      "count": "3"
+    },
+    {
+      "state": "Baghdad",
+      "count": "3"
+    },
+    {
+      "state": "East Sussex",
+      "count": "3"
+    },
+    {
+      "state": "Hainan",
+      "count": "3"
+    },
+    {
+      "state": "Prague",
+      "count": "3"
+    },
+    {
+      "state": "Almaty",
+      "count": "3"
+    },
+    {
+      "state": "Hesse",
+      "count": "3"
+    },
+    {
+      "state": "Select a state",
+      "count": "3"
+    },
+    {
+      "state": "Valencia",
+      "count": "3"
+    },
+    {
+      "state": "Granada",
+      "count": "3"
+    },
+    {
+      "state": "UAE",
+      "count": "3"
+    },
+    {
+      "state": "zulia",
+      "count": "3"
+    },
+    {
+      "state": "Moscow region",
+      "count": "3"
+    },
+    {
+      "state": "metropolitana",
+      "count": "3"
+    },
+    {
+      "state": "south carolina",
+      "count": "3"
+    },
+    {
+      "state": "Yerevan",
+      "count": "3"
+    },
+    {
+      "state": "Copenhagen",
+      "count": "3"
+    },
+    {
+      "state": "Lombardia",
+      "count": "3"
+    },
+    {
+      "state": "Jiangxi",
+      "count": "3"
+    },
+    {
+      "state": "La Paz",
+      "count": "3"
+    },
+    {
+      "state": "hainaut",
+      "count": "3"
+    },
+    {
+      "state": "Tamaulipas",
+      "count": "3"
+    },
+    {
+      "state": "OTHER",
+      "count": "3"
+    },
+    {
+      "state": "Michoacán",
+      "count": "3"
+    },
+    {
+      "state": "Hampshire",
+      "count": "3"
+    },
+    {
+      "state": "milan",
+      "count": "3"
+    },
+    {
+      "state": "budapest",
+      "count": "3"
+    },
+    {
+      "state": "Greater Manchester",
+      "count": "3"
+    },
+    {
+      "state": "Scotland",
+      "count": "3"
+    },
+    {
+      "state": "Kuala Lumpur",
+      "count": "3"
+    },
+    {
+      "state": "Tunis",
+      "count": "3"
+    },
+    {
+      "state": "Capital",
+      "count": "3"
+    },
+    {
+      "state": "Alicante",
+      "count": "3"
+    },
+    {
+      "state": "Fars",
+      "count": "3"
+    },
+    {
+      "state": "Morocco",
+      "count": "3"
+    },
+    {
+      "state": "Ukraine",
+      "count": "3"
+    },
+    {
+      "state": "NABEUL",
+      "count": "3"
+    },
+    {
+      "state": "BATANGAS",
+      "count": "3"
+    },
+    {
+      "state": "TASHKENT",
+      "count": "3"
+    },
+    {
+      "state": "utah",
+      "count": "3"
+    },
+    {
+      "state": "Las Palmas",
+      "count": "3"
+    },
+    {
+      "state": "Puebla",
+      "count": "3"
+    },
+    {
+      "state": "Rizal",
+      "count": "3"
+    },
+    {
+      "state": "San Salvador",
+      "count": "3"
+    },
+    {
+      "state": "Beirut",
+      "count": "3"
+    },
+    {
+      "state": "Non-US/Non-Canadian",
+      "count": "3"
+    },
+    {
+      "state": "Manama",
+      "count": "3"
+    },
+    {
+      "state": "TX - Texas",
+      "count": "3"
+    },
+    {
+      "state": "Asturias",
+      "count": "3"
+    },
+    {
+      "state": "Ogun",
+      "count": "3"
+    },
+    {
+      "state": "Vaud",
+      "count": "3"
+    },
+    {
+      "state": "Hamburg",
+      "count": "3"
+    },
+    {
+      "state": "CA.",
+      "count": "3"
+    },
+    {
+      "state": "South Holland",
+      "count": "3"
+    },
+    {
+      "state": "D.F.",
+      "count": "3"
+    },
+    {
+      "state": "Novara",
+      "count": "3"
+    },
+    {
+      "state": "Coahuila",
+      "count": "3"
+    },
+    {
+      "state": "KpK",
+      "count": "3"
+    },
+    {
+      "state": "Dhaka",
+      "count": "3"
+    },
+    {
+      "state": "montenegro",
+      "count": "2"
+    },
+    {
+      "state": "Avellino",
+      "count": "2"
+    },
+    {
+      "state": "IL - Illinois",
+      "count": "2"
+    },
+    {
+      "state": "Esfahan",
+      "count": "2"
+    },
+    {
+      "state": "Perak",
+      "count": "2"
+    },
+    {
+      "state": "North Yorkshire",
+      "count": "2"
+    },
+    {
+      "state": "Makkah",
+      "count": "2"
+    },
+    {
+      "state": "Colima",
+      "count": "2"
+    },
+    {
+      "state": "Ariana",
+      "count": "2"
+    },
+    {
+      "state": "HCM",
+      "count": "2"
+    },
+    {
+      "state": "Limburg",
+      "count": "2"
+    },
+    {
+      "state": "Cochabamba",
+      "count": "2"
+    },
+    {
+      "state": "N.Y.",
+      "count": "2"
+    },
+    {
+      "state": "Bari",
+      "count": "2"
+    },
+    {
+      "state": "zuid holland",
+      "count": "2"
+    },
+    {
+      "state": "colorado",
+      "count": "2"
+    },
+    {
+      "state": "Ciudad de Buenos Aires",
+      "count": "2"
+    },
+    {
+      "state": "Cortes",
+      "count": "2"
+    },
+    {
+      "state": "Manitoba",
+      "count": "2"
+    },
+    {
+      "state": "sonora",
+      "count": "2"
+    },
+    {
+      "state": "NCR",
+      "count": "2"
+    },
+    {
+      "state": "West Sussex",
+      "count": "2"
+    },
+    {
+      "state": "Macedonia",
+      "count": "2"
+    },
+    {
+      "state": "Midi-Pyrenees",
+      "count": "2"
+    },
+    {
+      "state": "Spain",
+      "count": "2"
+    },
+    {
+      "state": "oise",
+      "count": "2"
+    },
+    {
+      "state": "Mexico State",
+      "count": "2"
+    },
+    {
+      "state": "Morazan",
+      "count": "2"
+    },
+    {
+      "state": "P.R.",
+      "count": "2"
+    },
+    {
+      "state": "çankaya",
+      "count": "2"
+    },
+    {
+      "state": "Rio Negro",
+      "count": "2"
+    },
+    {
+      "state": "Staffordshire",
+      "count": "2"
+    },
+    {
+      "state": "Sverdlovsk region",
+      "count": "2"
+    },
+    {
+      "state": "setubal",
+      "count": "2"
+    },
+    {
+      "state": "VA - Virginia",
+      "count": "2"
+    },
+    {
+      "state": "kenya",
+      "count": "2"
+    },
+    {
+      "state": "West bank",
+      "count": "2"
+    },
+    {
+      "state": "Gaza Strip",
+      "count": "2"
+    },
+    {
+      "state": "Uppsala",
+      "count": "2"
+    },
+    {
+      "state": "Navarra",
+      "count": "2"
+    },
+    {
+      "state": "Verona",
+      "count": "2"
+    },
+    {
+      "state": "Crete",
+      "count": "2"
+    },
+    {
+      "state": "minnesota",
+      "count": "2"
+    },
+    {
+      "state": "Baden-Württemberg",
+      "count": "2"
+    },
+    {
+      "state": "Zealand",
+      "count": "2"
+    },
+    {
+      "state": "Chuy",
+      "count": "2"
+    },
+    {
+      "state": "Negros Occidental",
+      "count": "2"
+    },
+    {
+      "state": "louisiana",
+      "count": "2"
+    },
+    {
+      "state": "Select One",
+      "count": "2"
+    },
+    {
+      "state": "FL - Florida",
+      "count": "2"
+    },
+    {
+      "state": "San Bernardo",
+      "count": "2"
+    },
+    {
+      "state": "La Coruña",
+      "count": "2"
+    },
+    {
+      "state": "Midlothian",
+      "count": "2"
+    },
+    {
+      "state": "state",
+      "count": "2"
+    },
+    {
+      "state": "Oost-Vlaanderen",
+      "count": "2"
+    },
+    {
+      "state": "Leiria",
+      "count": "2"
+    },
+    {
+      "state": "boyaca",
+      "count": "2"
+    },
+    {
+      "state": "Dorset",
+      "count": "2"
+    },
+    {
+      "state": "auckland",
+      "count": "2"
+    },
+    {
+      "state": "Khulna",
+      "count": "2"
+    },
+    {
+      "state": "Bogota D.C.",
+      "count": "2"
+    },
+    {
+      "state": "Yangon",
+      "count": "2"
+    },
+    {
+      "state": "Guangdong Province",
+      "count": "2"
+    },
+    {
+      "state": "Capital Federal",
+      "count": "2"
+    },
+    {
+      "state": "Lombardy",
+      "count": "2"
+    },
+    {
+      "state": "Bioko norte",
+      "count": "2"
+    },
+    {
+      "state": "Timis",
+      "count": "2"
+    },
+    {
+      "state": "Hyogo",
+      "count": "2"
+    },
+    {
+      "state": "Manchester",
+      "count": "2"
+    },
+    {
+      "state": "Kesrwan",
+      "count": "2"
+    },
+    {
+      "state": "Brandenburg",
+      "count": "2"
+    },
+    {
+      "state": "minofia",
+      "count": "2"
+    },
+    {
+      "state": "Outside US",
+      "count": "2"
+    },
+    {
+      "state": "Hidalgo",
+      "count": "2"
+    },
+    {
+      "state": "Essex",
+      "count": "2"
+    },
+    {
+      "state": "Casablanca",
+      "count": "2"
+    },
+    {
+      "state": "Massachussetts",
+      "count": "2"
+    },
+    {
+      "state": "North Sumatera",
+      "count": "2"
+    },
+    {
+      "state": "CT Connecticut",
+      "count": "2"
+    },
+    {
+      "state": "Caldas",
+      "count": "2"
+    },
+    {
+      "state": "Roma",
+      "count": "2"
+    },
+    {
+      "state": "Seleccionar Provincia",
+      "count": "2"
+    },
+    {
+      "state": "El Metn",
+      "count": "2"
+    },
+    {
+      "state": "Vilnius",
+      "count": "2"
+    },
+    {
+      "state": "Ba Ria-Vung Tau",
+      "count": "2"
+    },
+    {
+      "state": "Glasgow",
+      "count": "2"
+    },
+    {
+      "state": "Russia",
+      "count": "2"
+    },
+    {
+      "state": "Jerusalem",
+      "count": "2"
+    },
+    {
+      "state": "Samutprakarn",
+      "count": "2"
+    },
+    {
+      "state": "Alba",
+      "count": "2"
+    },
+    {
+      "state": "GUJARAT",
+      "count": "2"
+    },
+    {
+      "state": "Chiba",
+      "count": "2"
+    },
+    {
+      "state": "Oromia",
+      "count": "2"
+    },
+    {
+      "state": "Napoli",
+      "count": "2"
+    },
+    {
+      "state": "Goiás",
+      "count": "2"
+    },
+    {
+      "state": "Yucatan",
+      "count": "2"
+    },
+    {
+      "state": "Brabant Wallon",
+      "count": "2"
+    },
+    {
+      "state": "Dolj",
+      "count": "2"
+    },
+    {
+      "state": "Sisli",
+      "count": "2"
+    },
+    {
+      "state": "Jordan",
+      "count": "2"
+    },
+    {
+      "state": "Groningen",
+      "count": "2"
+    },
+    {
+      "state": "Quetzaltenango",
+      "count": "2"
+    },
+    {
+      "state": "Marrakech",
+      "count": "2"
+    },
+    {
+      "state": "ar riyad",
+      "count": "2"
+    },
+    {
+      "state": "Algiers",
+      "count": "2"
+    },
+    {
+      "state": "Karaganda",
+      "count": "2"
+    },
+    {
+      "state": "Kyiv oblast",
+      "count": "2"
+    },
+    {
+      "state": "MD - Maryland",
+      "count": "2"
+    },
+    {
+      "state": "Pisa",
+      "count": "2"
+    },
+    {
+      "state": "Francisco Morazan",
+      "count": "2"
+    },
+    {
+      "state": "South Yorkshire",
+      "count": "2"
+    },
+    {
+      "state": "Wales",
+      "count": "2"
+    },
+    {
+      "state": "Lorraine",
+      "count": "2"
+    },
+    {
+      "state": "Suffolk",
+      "count": "2"
+    },
+    {
+      "state": "SAR",
+      "count": "2"
+    },
+    {
+      "state": "Rimini",
+      "count": "2"
+    },
+    {
+      "state": "Non US/Canada",
+      "count": "2"
+    },
+    {
+      "state": "iowa",
+      "count": "2"
+    },
+    {
+      "state": "Benguet",
+      "count": "2"
+    },
+    {
+      "state": "Kharkov",
+      "count": "2"
+    },
+    {
+      "state": "Liaoning",
+      "count": "2"
+    },
+    {
+      "state": "Antalya",
+      "count": "2"
+    },
+    {
+      "state": "ARAGUA",
+      "count": "2"
+    },
+    {
+      "state": "Deutschland",
+      "count": "2"
+    },
+    {
+      "state": "Davao del Sur",
+      "count": "2"
+    },
+    {
+      "state": "Cavite",
+      "count": "2"
+    },
+    {
+      "state": "Turin",
+      "count": "2"
+    },
+    {
+      "state": "Metn",
+      "count": "2"
+    },
+    {
+      "state": "Norfolk",
+      "count": "2"
+    },
+    {
+      "state": "Beds",
+      "count": "2"
+    },
+    {
+      "state": "Geneve",
+      "count": "2"
+    },
+    {
+      "state": "NYC",
+      "count": "2"
+    },
+    {
+      "state": "Bergamo",
+      "count": "2"
+    },
+    {
+      "state": "Khartoum",
+      "count": "2"
+    },
+    {
+      "state": "United Kingdom",
+      "count": "2"
+    },
+    {
+      "state": "maryland",
+      "count": "2"
+    },
+    {
+      "state": "NY - New York",
+      "count": "2"
+    },
+    {
+      "state": "MALABO",
+      "count": "2"
+    },
+    {
+      "state": "Krasnodar",
+      "count": "2"
+    },
+    {
+      "state": "Oporto",
+      "count": "2"
+    },
+    {
+      "state": "test",
+      "count": "2"
+    },
+    {
+      "state": "LEICESTERSHIRE",
+      "count": "2"
+    },
+    {
+      "state": "Trieste",
+      "count": "2"
+    },
+    {
+      "state": "Lancashire",
+      "count": "2"
+    },
+    {
+      "state": "La Libertad",
+      "count": "2"
+    },
+    {
+      "state": "Queensland",
+      "count": "2"
+    },
+    {
+      "state": "Maharastra",
+      "count": "2"
+    },
+    {
+      "state": "Tripoli",
+      "count": "2"
+    },
+    {
+      "state": "Hubei",
+      "count": "2"
+    },
+    {
+      "state": "Apulia",
+      "count": "2"
+    },
+    {
+      "state": "Merseyside",
+      "count": "2"
+    },
+    {
+      "state": "GREECE",
+      "count": "2"
+    },
+    {
+      "state": "Karnatka",
+      "count": "2"
+    },
+    {
+      "state": "Western Australia",
+      "count": "2"
+    },
+    {
+      "state": "Haryana",
+      "count": "2"
+    },
+    {
+      "state": "SOMERSET",
+      "count": "2"
+    },
+    {
+      "state": "NOTTINGHAMSHIRE",
+      "count": "2"
+    },
+    {
+      "state": "Aleppo",
+      "count": "2"
+    },
+    {
+      "state": "Rostov",
+      "count": "2"
+    },
+    {
+      "state": "Jijel",
+      "count": "2"
+    },
+    {
+      "state": "Telangana",
+      "count": "2"
+    },
+    {
+      "state": "Plovdiv",
+      "count": "2"
+    },
+    {
+      "state": "PENANG",
+      "count": "2"
+    },
+    {
+      "state": "Guanacaste",
+      "count": "2"
+    },
+    {
+      "state": "Schaerbeek",
+      "count": "2"
+    },
+    {
+      "state": "Centre",
+      "count": "2"
+    },
+    {
+      "state": "Chiriqui",
+      "count": "2"
+    },
+    {
+      "state": "Central",
+      "count": "2"
+    },
+    {
+      "state": "ITALIA",
+      "count": "2"
+    },
+    {
+      "state": "Isfahan",
+      "count": "2"
+    },
+    {
+      "state": "Zuid-Holland",
+      "count": "2"
+    },
+    {
+      "state": "Maadi",
+      "count": "2"
+    },
+    {
+      "state": "Varna",
+      "count": "2"
+    },
+    {
+      "state": "Guilan",
+      "count": "2"
+    },
+    {
+      "state": "western cape",
+      "count": "2"
+    },
+    {
+      "state": "Kanagawa",
+      "count": "2"
+    },
+    {
+      "state": "Miranda",
+      "count": "2"
+    },
+    {
+      "state": "VIII Región",
+      "count": "2"
+    },
+    {
+      "state": "Hauts de seine",
+      "count": "2"
+    },
+    {
+      "state": "Sibiu",
+      "count": "2"
+    },
+    {
+      "state": "Bulgaria",
+      "count": "2"
+    },
+    {
+      "state": "Torino",
+      "count": "2"
+    },
+    {
+      "state": "Kiev",
+      "count": "2"
+    },
+    {
+      "state": "Ramat Gan",
+      "count": "2"
+    },
+    {
+      "state": "Select State",
+      "count": "2"
+    },
+    {
+      "state": "Rīga",
+      "count": "2"
+    },
+    {
+      "state": "Santander",
+      "count": "2"
+    },
+    {
+      "state": "Rabat-Sale-Zemmour-Zaer",
+      "count": "1"
+    },
+    {
+      "state": "VA`",
+      "count": "1"
+    },
+    {
+      "state": "Amazonas",
+      "count": "1"
+    },
+    {
+      "state": "Denmark",
+      "count": "1"
+    },
+    {
+      "state": "Rome/Lazio",
+      "count": "1"
+    },
+    {
+      "state": "Benito Juárez",
+      "count": "1"
+    },
+    {
+      "state": "Tirol",
+      "count": "1"
+    },
+    {
+      "state": "papua",
+      "count": "1"
+    },
+    {
+      "state": "Mazovian",
+      "count": "1"
+    },
+    {
+      "state": "Oost Vlaanderen",
+      "count": "1"
+    },
+    {
+      "state": "Barnet",
+      "count": "1"
+    },
+    {
+      "state": "Senhora da Hora",
+      "count": "1"
+    },
+    {
+      "state": "Ligury",
+      "count": "1"
+    },
+    {
+      "state": "Bihera",
+      "count": "1"
+    },
+    {
+      "state": "Middx",
+      "count": "1"
+    },
+    {
+      "state": "Branderburg",
+      "count": "1"
+    },
+    {
+      "state": "Qalyubiya",
+      "count": "1"
+    },
+    {
+      "state": "SETIF",
+      "count": "1"
+    },
+    {
+      "state": "Iowaa",
+      "count": "1"
+    },
+    {
+      "state": "Massachussets",
+      "count": "1"
+    },
+    {
+      "state": "Nikolaev region",
+      "count": "1"
+    },
+    {
+      "state": "Fujian",
+      "count": "1"
+    },
+    {
+      "state": "Utter pradesh",
+      "count": "1"
+    },
+    {
+      "state": "Kazakhstan",
+      "count": "1"
+    },
+    {
+      "state": "Masterton",
+      "count": "1"
+    },
+    {
+      "state": "Keralam",
+      "count": "1"
+    },
+    {
+      "state": "bcs",
+      "count": "1"
+    },
+    {
+      "state": "Santo Doming",
+      "count": "1"
+    },
+    {
+      "state": "Not applicable",
+      "count": "1"
+    },
+    {
+      "state": "Cochin",
+      "count": "1"
+    },
+    {
+      "state": "Huehuetenango",
+      "count": "1"
+    },
+    {
+      "state": "basükiskun",
+      "count": "1"
+    },
+    {
+      "state": "Jamaica",
+      "count": "1"
+    },
+    {
+      "state": "Odessa",
+      "count": "1"
+    },
+    {
+      "state": "Kharkivska oblast'",
+      "count": "1"
+    },
+    {
+      "state": "SJO",
+      "count": "1"
+    },
+    {
+      "state": "Centro America",
+      "count": "1"
+    },
+    {
+      "state": "Prague-Brezineves",
+      "count": "1"
+    },
+    {
+      "state": "Blida",
+      "count": "1"
+    },
+    {
+      "state": "fes-boulmane",
+      "count": "1"
+    },
+    {
+      "state": "Sjaelland",
+      "count": "1"
+    },
+    {
+      "state": "poitou-charente",
+      "count": "1"
+    },
+    {
+      "state": "Murcia",
+      "count": "1"
+    },
+    {
+      "state": "Kharkiv",
+      "count": "1"
+    },
+    {
+      "state": "Grand Britain",
+      "count": "1"
+    },
+    {
+      "state": "Elazig",
+      "count": "1"
+    },
+    {
+      "state": "SOUTH SULAWESI",
+      "count": "1"
+    },
+    {
+      "state": "Hassan",
+      "count": "1"
+    },
+    {
+      "state": "Minsk region",
+      "count": "1"
+    },
+    {
+      "state": "Estado Miranda",
+      "count": "1"
+    },
+    {
+      "state": "tissemsilt",
+      "count": "1"
+    },
+    {
+      "state": "New Baghdad",
+      "count": "1"
+    },
+    {
+      "state": "Federal District",
+      "count": "1"
+    },
+    {
+      "state": "Gran Canaria",
+      "count": "1"
+    },
+    {
+      "state": "Penza",
+      "count": "1"
+    },
+    {
+      "state": "Yorkshire",
+      "count": "1"
+    },
+    {
+      "state": "vicenza",
+      "count": "1"
+    },
+    {
+      "state": "St George",
+      "count": "1"
+    },
+    {
+      "state": "Fes",
+      "count": "1"
+    },
+    {
+      "state": "Stockholm",
+      "count": "1"
+    },
+    {
+      "state": "(Gr.)",
+      "count": "1"
+    },
+    {
+      "state": "Bangladesh",
+      "count": "1"
+    },
+    {
+      "state": "TCI",
+      "count": "1"
+    },
+    {
+      "state": "FERMO",
+      "count": "1"
+    },
+    {
+      "state": "Central Java",
+      "count": "1"
+    },
+    {
+      "state": "Lilongwe",
+      "count": "1"
+    },
+    {
+      "state": "Bohemia",
+      "count": "1"
+    },
+    {
+      "state": "SuratThani",
+      "count": "1"
+    },
+    {
+      "state": "None (outside USA)",
+      "count": "1"
+    },
+    {
+      "state": "Veraguas",
+      "count": "1"
+    },
+    {
+      "state": "Chui",
+      "count": "1"
+    },
+    {
+      "state": "Bourgogne",
+      "count": "1"
+    },
+    {
+      "state": "Piestany",
+      "count": "1"
+    },
+    {
+      "state": "Invimosa",
+      "count": "1"
+    },
+    {
+      "state": "yozgat",
+      "count": "1"
+    },
+    {
+      "state": "Inverness-shire",
+      "count": "1"
+    },
+    {
+      "state": "Edo",
+      "count": "1"
+    },
+    {
+      "state": "Neuchâtel",
+      "count": "1"
+    },
+    {
+      "state": "Marmara State",
+      "count": "1"
+    },
+    {
+      "state": "India",
+      "count": "1"
+    },
+    {
+      "state": "Odesska",
+      "count": "1"
+    },
+    {
+      "state": "Macao SAR",
+      "count": "1"
+    },
+    {
+      "state": "Magdalena",
+      "count": "1"
+    },
+    {
+      "state": "southyorkshire",
+      "count": "1"
+    },
+    {
+      "state": "Kyiv",
+      "count": "1"
+    },
+    {
+      "state": "Kabul, Punjab",
+      "count": "1"
+    },
+    {
+      "state": "Agios Tychon",
+      "count": "1"
+    },
+    {
+      "state": "ménara",
+      "count": "1"
+    },
+    {
+      "state": "El Marg",
+      "count": "1"
+    },
+    {
+      "state": "Murrilo",
+      "count": "1"
+    },
+    {
+      "state": "Krasnoyarsk territory",
+      "count": "1"
+    },
+    {
+      "state": "Zacatecas",
+      "count": "1"
+    },
+    {
+      "state": "KILIFI",
+      "count": "1"
+    },
+    {
+      "state": "JM - Jerusalem",
+      "count": "1"
+    },
+    {
+      "state": "Bihor",
+      "count": "1"
+    },
+    {
+      "state": "Coauhila",
+      "count": "1"
+    },
+    {
+      "state": "Germany",
+      "count": "1"
+    },
+    {
+      "state": "Uruguay",
+      "count": "1"
+    },
+    {
+      "state": "Tyne and Wear",
+      "count": "1"
+    },
+    {
+      "state": "Shaanxi",
+      "count": "1"
+    },
+    {
+      "state": "Miaoli County",
+      "count": "1"
+    },
+    {
+      "state": "Quiintana Roo",
+      "count": "1"
+    },
+    {
+      "state": "uganda central",
+      "count": "1"
+    },
+    {
+      "state": "Este",
+      "count": "1"
+    },
+    {
+      "state": "Surat thani",
+      "count": "1"
+    },
+    {
+      "state": "kwazulu natal",
+      "count": "1"
+    },
+    {
+      "state": "CaliforniaА",
+      "count": "1"
+    },
+    {
+      "state": "Wilrijk",
+      "count": "1"
+    },
+    {
+      "state": "Kralingen",
+      "count": "1"
+    },
+    {
+      "state": "Hajdu-Bihar",
+      "count": "1"
+    },
+    {
+      "state": "Sur América",
+      "count": "1"
+    },
+    {
+      "state": "Strathclyde Region",
+      "count": "1"
+    },
+    {
+      "state": "Bulgariq",
+      "count": "1"
+    },
+    {
+      "state": "ASTI",
+      "count": "1"
+    },
+    {
+      "state": "BENSLIMANE",
+      "count": "1"
+    },
+    {
+      "state": "Saitama",
+      "count": "1"
+    },
+    {
+      "state": "Kyeonggi-do,",
+      "count": "1"
+    },
+    {
+      "state": "khenifra",
+      "count": "1"
+    },
+    {
+      "state": "COLON",
+      "count": "1"
+    },
+    {
+      "state": "chungnam",
+      "count": "1"
+    },
+    {
+      "state": "Ourense",
+      "count": "1"
+    },
+    {
+      "state": "Istanbu",
+      "count": "1"
+    },
+    {
+      "state": "IRELAND",
+      "count": "1"
+    },
+    {
+      "state": "dakar",
+      "count": "1"
+    },
+    {
+      "state": "Texasx",
+      "count": "1"
+    },
+    {
+      "state": "Co Antrm",
+      "count": "1"
+    },
+    {
+      "state": "Aberdeenshire",
+      "count": "1"
+    },
+    {
+      "state": "Sousse",
+      "count": "1"
+    },
+    {
+      "state": "JAL",
+      "count": "1"
+    },
+    {
+      "state": "Selecciona el estado",
+      "count": "1"
+    },
+    {
+      "state": "ÁL",
+      "count": "1"
+    },
+    {
+      "state": "basel",
+      "count": "1"
+    },
+    {
+      "state": "basaksehir",
+      "count": "1"
+    },
+    {
+      "state": "algeria",
+      "count": "1"
+    },
+    {
+      "state": "cesar",
+      "count": "1"
+    },
+    {
+      "state": "AlQassim",
+      "count": "1"
+    },
+    {
+      "state": "Wilayah Persekutuan",
+      "count": "1"
+    },
+    {
+      "state": "West Nusa Tenggara",
+      "count": "1"
+    },
+    {
+      "state": "Mex",
+      "count": "1"
+    },
+    {
+      "state": "Chios",
+      "count": "1"
+    },
+    {
+      "state": "Doar Na Hefer",
+      "count": "1"
+    },
+    {
+      "state": "Al-Jobayhah",
+      "count": "1"
+    },
+    {
+      "state": "North",
+      "count": "1"
+    },
+    {
+      "state": "Nariño",
+      "count": "1"
+    },
+    {
+      "state": "NORTH CAROLINA",
+      "count": "1"
+    },
+    {
+      "state": "Tondela",
+      "count": "1"
+    },
+    {
+      "state": "Copperbelt",
+      "count": "1"
+    },
+    {
+      "state": "hawaly",
+      "count": "1"
+    },
+    {
+      "state": "Madhya Pradesh",
+      "count": "1"
+    },
+    {
+      "state": "Jawa tengah",
+      "count": "1"
+    },
+    {
+      "state": "Bhutan",
+      "count": "1"
+    },
+    {
+      "state": "TX-Texas",
+      "count": "1"
+    },
+    {
+      "state": "Canary Islands",
+      "count": "1"
+    },
+    {
+      "state": "North West",
+      "count": "1"
+    },
+    {
+      "state": "France, Metropolitan",
+      "count": "1"
+    },
+    {
+      "state": "Cadiz",
+      "count": "1"
+    },
+    {
+      "state": "Shoa",
+      "count": "1"
+    },
+    {
+      "state": "District 11",
+      "count": "1"
+    },
+    {
+      "state": "Tangier-Tetouan",
+      "count": "1"
+    },
+    {
+      "state": "Albergaria-a-velha",
+      "count": "1"
+    },
+    {
+      "state": "Moscou",
+      "count": "1"
+    },
+    {
+      "state": "SLP",
+      "count": "1"
+    },
+    {
+      "state": "Isère",
+      "count": "1"
+    },
+    {
+      "state": "Abuja",
+      "count": "1"
+    },
+    {
+      "state": "Osaka",
+      "count": "1"
+    },
+    {
+      "state": "Zona Sul",
+      "count": "1"
+    },
+    {
+      "state": "A.P",
+      "count": "1"
+    },
+    {
+      "state": "Zhennam",
+      "count": "1"
+    },
+    {
+      "state": "Northern Ireland",
+      "count": "1"
+    },
+    {
+      "state": "Fukushima",
+      "count": "1"
+    },
+    {
+      "state": "Marylard",
+      "count": "1"
+    },
+    {
+      "state": "Gyeonggi do",
+      "count": "1"
+    },
+    {
+      "state": "National Capital Region",
+      "count": "1"
+    },
+    {
+      "state": "Capital Territory",
+      "count": "1"
+    },
+    {
+      "state": "Tuscany",
+      "count": "1"
+    },
+    {
+      "state": "Manica",
+      "count": "1"
+    },
+    {
+      "state": "Toyama",
+      "count": "1"
+    },
+    {
+      "state": "Puerto Rico [PR]",
+      "count": "1"
+    },
+    {
+      "state": "Kiev Region",
+      "count": "1"
+    },
+    {
+      "state": "Cleveland",
+      "count": "1"
+    },
+    {
+      "state": "Sofia",
+      "count": "1"
+    },
+    {
+      "state": "Bay of Plenty",
+      "count": "1"
+    },
+    {
+      "state": "Down Town",
+      "count": "1"
+    },
+    {
+      "state": "Okinawa ken",
+      "count": "1"
+    },
+    {
+      "state": "Sevilla",
+      "count": "1"
+    },
+    {
+      "state": "Danmark",
+      "count": "1"
+    },
+    {
+      "state": "Erbil",
+      "count": "1"
+    },
+    {
+      "state": "Galicia",
+      "count": "1"
+    },
+    {
+      "state": "Old Balara",
+      "count": "1"
+    },
+    {
+      "state": "Luhansk",
+      "count": "1"
+    },
+    {
+      "state": "Outside the USA",
+      "count": "1"
+    },
+    {
+      "state": "Western Province",
+      "count": "1"
+    },
+    {
+      "state": "Viana do Castelo",
+      "count": "1"
+    },
+    {
+      "state": "Kurdistan",
+      "count": "1"
+    },
+    {
+      "state": "Ahal",
+      "count": "1"
+    },
+    {
+      "state": "Warwickshire",
+      "count": "1"
+    },
+    {
+      "state": "Midtjylland",
+      "count": "1"
+    },
+    {
+      "state": "al manasser",
+      "count": "1"
+    },
+    {
+      "state": "Como",
+      "count": "1"
+    },
+    {
+      "state": "Kotayk",
+      "count": "1"
+    },
+    {
+      "state": "Eastern",
+      "count": "1"
+    },
+    {
+      "state": "Sayeda Zainab",
+      "count": "1"
+    },
+    {
+      "state": "Cairo/Nasr City",
+      "count": "1"
+    },
+    {
+      "state": "Catalunya",
+      "count": "1"
+    },
+    {
+      "state": "Tirana",
+      "count": "1"
+    },
+    {
+      "state": "Lara",
+      "count": "1"
+    },
+    {
+      "state": "Hydra",
+      "count": "1"
+    },
+    {
+      "state": "Not in USA",
+      "count": "1"
+    },
+    {
+      "state": "Latakia",
+      "count": "1"
+    },
+    {
+      "state": "Gunagxi",
+      "count": "1"
+    },
+    {
+      "state": "Chita's region",
+      "count": "1"
+    },
+    {
+      "state": "Iasi",
+      "count": "1"
+    },
+    {
+      "state": "Bogotá D.C",
+      "count": "1"
+    },
+    {
+      "state": "Cambs",
+      "count": "1"
+    },
+    {
+      "state": "Northern",
+      "count": "1"
+    },
+    {
+      "state": "EKITI STATE",
+      "count": "1"
+    },
+    {
+      "state": "Fribourg",
+      "count": "1"
+    },
+    {
+      "state": "Aljizah",
+      "count": "1"
+    },
+    {
+      "state": "San Pedro de Macoris",
+      "count": "1"
+    },
+    {
+      "state": "Okinawa prefecture",
+      "count": "1"
+    },
+    {
+      "state": "WI - Wisconsin",
+      "count": "1"
+    },
+    {
+      "state": "6th october",
+      "count": "1"
+    },
+    {
+      "state": "Ylivieska",
+      "count": "1"
+    },
+    {
+      "state": "Aquitaine",
+      "count": "1"
+    },
+    {
+      "state": "TANSIFT ELHAOUZ",
+      "count": "1"
+    },
+    {
+      "state": "lothian",
+      "count": "1"
+    },
+    {
+      "state": "Mures",
+      "count": "1"
+    },
+    {
+      "state": "Zhejiang",
+      "count": "1"
+    },
+    {
+      "state": "El-Behaira Governorate",
+      "count": "1"
+    },
+    {
+      "state": "Ouarzazate",
+      "count": "1"
+    },
+    {
+      "state": "Liège",
+      "count": "1"
+    },
+    {
+      "state": "Irbid",
+      "count": "1"
+    },
+    {
+      "state": "A.Z.",
+      "count": "1"
+    },
+    {
+      "state": "Latin America",
+      "count": "1"
+    },
+    {
+      "state": "Tenerife",
+      "count": "1"
+    },
+    {
+      "state": "Yunnan",
+      "count": "1"
+    },
+    {
+      "state": "WISCONSIN",
+      "count": "1"
+    },
+    {
+      "state": "BZE",
+      "count": "1"
+    },
+    {
+      "state": "S-H",
+      "count": "1"
+    },
+    {
+      "state": "Bantan",
+      "count": "1"
+    },
+    {
+      "state": "Texas (TX)",
+      "count": "1"
+    },
+    {
+      "state": "Sichuan",
+      "count": "1"
+    },
+    {
+      "state": "Firenze",
+      "count": "1"
+    },
+    {
+      "state": "Skopje",
+      "count": "1"
+    },
+    {
+      "state": "Washington (WA)",
+      "count": "1"
+    },
+    {
+      "state": "Vosges",
+      "count": "1"
+    },
+    {
+      "state": "Bay Islands",
+      "count": "1"
+    },
+    {
+      "state": "Russky Island",
+      "count": "1"
+    },
+    {
+      "state": "Hertfordshire",
+      "count": "1"
+    },
+    {
+      "state": "Vojvodina",
+      "count": "1"
+    },
+    {
+      "state": "Milano",
+      "count": "1"
+    },
+    {
+      "state": "Khorasan",
+      "count": "1"
+    },
+    {
+      "state": "Baden Wurttemberg",
+      "count": "1"
+    },
+    {
+      "state": "Nederland",
+      "count": "1"
+    },
+    {
+      "state": "Ancona",
+      "count": "1"
+    },
+    {
+      "state": "gent-belgium",
+      "count": "1"
+    },
+    {
+      "state": "Atlantico",
+      "count": "1"
+    },
+    {
+      "state": "Sjælland",
+      "count": "1"
+    },
+    {
+      "state": "Zapote",
+      "count": "1"
+    },
+    {
+      "state": "Maharashtra State.",
+      "count": "1"
+    },
+    {
+      "state": "Antwerpen",
+      "count": "1"
+    },
+    {
+      "state": "Kenitra",
+      "count": "1"
+    },
+    {
+      "state": "KZN",
+      "count": "1"
+    },
+    {
+      "state": "Los Santos",
+      "count": "1"
+    },
+    {
+      "state": "Ha Noi",
+      "count": "1"
+    },
+    {
+      "state": "Wadi il Joz",
+      "count": "1"
+    },
+    {
+      "state": "INDIANA",
+      "count": "1"
+    },
+    {
+      "state": "Pomerania Province",
+      "count": "1"
+    },
+    {
+      "state": "Borno",
+      "count": "1"
+    },
+    {
+      "state": "Abu Zaby",
+      "count": "1"
+    },
+    {
+      "state": "Perthshire",
+      "count": "1"
+    },
+    {
+      "state": "Estoril",
+      "count": "1"
+    },
+    {
+      "state": "Pousen Chey",
+      "count": "1"
+    },
+    {
+      "state": "brent",
+      "count": "1"
+    },
+    {
+      "state": "Киевская",
+      "count": "1"
+    },
+    {
+      "state": "salamanca",
+      "count": "1"
+    },
+    {
+      "state": "Nizhny Novgorod",
+      "count": "1"
+    },
+    {
+      "state": "Loiret",
+      "count": "1"
+    },
+    {
+      "state": "Algarve",
+      "count": "1"
+    },
+    {
+      "state": "Turks and Caicos",
+      "count": "1"
+    },
+    {
+      "state": "Cebu",
+      "count": "1"
+    },
+    {
+      "state": "MTS",
+      "count": "1"
+    },
+    {
+      "state": "negros oriental",
+      "count": "1"
+    },
+    {
+      "state": "Khyber Pakhtunkhwa",
+      "count": "1"
+    },
+    {
+      "state": "Smidstrup",
+      "count": "1"
+    },
+    {
+      "state": "Qaliubiya",
+      "count": "1"
+    },
+    {
+      "state": "Palestine",
+      "count": "1"
+    },
+    {
+      "state": "N.A.",
+      "count": "1"
+    },
+    {
+      "state": "Oxon",
+      "count": "1"
+    },
+    {
+      "state": "Khozastan",
+      "count": "1"
+    },
+    {
+      "state": "Brasov",
+      "count": "1"
+    },
+    {
+      "state": "suceava",
+      "count": "1"
+    },
+    {
+      "state": "Gironde",
+      "count": "1"
+    },
+    {
+      "state": "genoa",
+      "count": "1"
+    },
+    {
+      "state": "Normandie",
+      "count": "1"
+    },
+    {
+      "state": "Villa Clara",
+      "count": "1"
+    },
+    {
+      "state": "Malopolskie",
+      "count": "1"
+    },
+    {
+      "state": "Provincia",
+      "count": "1"
+    },
+    {
+      "state": "Imo",
+      "count": "1"
+    },
+    {
+      "state": "---",
+      "count": "1"
+    },
+    {
+      "state": "Dushanbe",
+      "count": "1"
+    },
+    {
+      "state": "arizona",
+      "count": "1"
+    },
+    {
+      "state": "Md.",
+      "count": "1"
+    },
+    {
+      "state": "N-East",
+      "count": "1"
+    },
+    {
+      "state": "siberia",
+      "count": "1"
+    },
+    {
+      "state": "New South Wales",
+      "count": "1"
+    },
+    {
+      "state": "Dhofar",
+      "count": "1"
+    },
+    {
+      "state": "Ain",
+      "count": "1"
+    },
+    {
+      "state": "NARA",
+      "count": "1"
+    },
+    {
+      "state": "Menoufiya",
+      "count": "1"
+    },
+    {
+      "state": "Halland",
+      "count": "1"
+    },
+    {
+      "state": "Ouazzane",
+      "count": "1"
+    },
+    {
+      "state": "bouches-du-rhone",
+      "count": "1"
+    },
+    {
+      "state": "Curridabat",
+      "count": "1"
+    },
+    {
+      "state": "Herault",
+      "count": "1"
+    },
+    {
+      "state": "Outside USA",
+      "count": "1"
+    },
+    {
+      "state": "val de marne",
+      "count": "1"
+    },
+    {
+      "state": "Bucharest",
+      "count": "1"
+    },
+    {
+      "state": "Maranhão - MA.",
+      "count": "1"
+    },
+    {
+      "state": "Islamabad",
+      "count": "1"
+    },
+    {
+      "state": "MetroManila",
+      "count": "1"
+    },
+    {
+      "state": "osh",
+      "count": "1"
+    },
+    {
+      "state": "Caifornia",
+      "count": "1"
+    },
+    {
+      "state": "Chiang Mai",
+      "count": "1"
+    },
+    {
+      "state": "Caro",
+      "count": "1"
+    },
+    {
+      "state": "SLIVEN",
+      "count": "1"
+    },
+    {
+      "state": "**Not Applicable**",
+      "count": "1"
+    },
+    {
+      "state": "Tel Aviv",
+      "count": "1"
+    },
+    {
+      "state": "Jesssoreeee",
+      "count": "1"
+    },
+    {
+      "state": "Antwerp",
+      "count": "1"
+    },
+    {
+      "state": "Baden-Würtemberg",
+      "count": "1"
+    },
+    {
+      "state": "Herat",
+      "count": "1"
+    },
+    {
+      "state": "Monseñor Nouel",
+      "count": "1"
+    },
+    {
+      "state": "Paysandu",
+      "count": "1"
+    },
+    {
+      "state": "Santa Catarina",
+      "count": "1"
+    },
+    {
+      "state": "Morogoro",
+      "count": "1"
+    },
+    {
+      "state": "MBZ",
+      "count": "1"
+    },
+    {
+      "state": "Region",
+      "count": "1"
+    },
+    {
+      "state": "Ljubljana",
+      "count": "1"
+    },
+    {
+      "state": "Nitra",
+      "count": "1"
+    },
+    {
+      "state": "Utrecht",
+      "count": "1"
+    },
+    {
+      "state": "Rhein-Pfaltz",
+      "count": "1"
+    },
+    {
+      "state": "Slovenia",
+      "count": "1"
+    },
+    {
+      "state": "Senegal",
+      "count": "1"
+    },
+    {
+      "state": "Benedita",
+      "count": "1"
+    },
+    {
+      "state": "Chelyabinsk",
+      "count": "1"
+    },
+    {
+      "state": "al gharbia",
+      "count": "1"
+    },
+    {
+      "state": "Colombia",
+      "count": "1"
+    },
+    {
+      "state": "Friesland",
+      "count": "1"
+    },
+    {
+      "state": "Kyiv region",
+      "count": "1"
+    },
+    {
+      "state": "Rhon alpes",
+      "count": "1"
+    },
+    {
+      "state": "Rigas pilseta",
+      "count": "1"
+    },
+    {
+      "state": "Port said",
+      "count": "1"
+    },
+    {
+      "state": "Marrakesh",
+      "count": "1"
+    },
+    {
+      "state": "L'Aquila",
+      "count": "1"
+    },
+    {
+      "state": "KSA",
+      "count": "1"
+    },
+    {
+      "state": "Puerto Plata,",
+      "count": "1"
+    },
+    {
+      "state": "FBiH",
+      "count": "1"
+    },
+    {
+      "state": "Cundiamarca",
+      "count": "1"
+    },
+    {
+      "state": "Douro",
+      "count": "1"
+    },
+    {
+      "state": "GDO",
+      "count": "1"
+    },
+    {
+      "state": "Cornwall",
+      "count": "1"
+    },
+    {
+      "state": "san luis potosi",
+      "count": "1"
+    },
+    {
+      "state": "Aisne",
+      "count": "1"
+    },
+    {
+      "state": "Avon",
+      "count": "1"
+    },
+    {
+      "state": "GYONGSANGBUK-DO",
+      "count": "1"
+    },
+    {
+      "state": "D.N.",
+      "count": "1"
+    },
+    {
+      "state": "Cundnamarca",
+      "count": "1"
+    },
+    {
+      "state": "Orebro",
+      "count": "1"
+    },
+    {
+      "state": "IN-HR",
+      "count": "1"
+    },
+    {
+      "state": "Đồng Nai",
+      "count": "1"
+    },
+    {
+      "state": "Cote d'ivoire",
+      "count": "1"
+    },
+    {
+      "state": "Corrientes",
+      "count": "1"
+    },
+    {
+      "state": "fes-boulemane",
+      "count": "1"
+    },
+    {
+      "state": "Guipuzcoa",
+      "count": "1"
+    },
+    {
+      "state": "Tegucigalpa",
+      "count": "1"
+    },
+    {
+      "state": "TREVISO",
+      "count": "1"
+    },
+    {
+      "state": "Limon",
+      "count": "1"
+    },
+    {
+      "state": "Waziria",
+      "count": "1"
+    },
+    {
+      "state": "Mahasarakham",
+      "count": "1"
+    },
+    {
+      "state": "ny ny",
+      "count": "1"
+    },
+    {
+      "state": "Kerman",
+      "count": "1"
+    },
+    {
+      "state": "D.N",
+      "count": "1"
+    },
+    {
+      "state": "Lower Austria",
+      "count": "1"
+    },
+    {
+      "state": "Helsingør",
+      "count": "1"
+    },
+    {
+      "state": "Fl33643",
+      "count": "1"
+    },
+    {
+      "state": "surigao",
+      "count": "1"
+    },
+    {
+      "state": "Eure",
+      "count": "1"
+    },
+    {
+      "state": "dakahlia",
+      "count": "1"
+    },
+    {
+      "state": "Languedoc-Roussillon",
+      "count": "1"
+    },
+    {
+      "state": "Quang Nam",
+      "count": "1"
+    },
+    {
+      "state": "Gharb Chrarda",
+      "count": "1"
+    },
+    {
+      "state": "Norte de Santander",
+      "count": "1"
+    },
+    {
+      "state": "Takhar",
+      "count": "1"
+    },
+    {
+      "state": "Ont",
+      "count": "1"
+    },
+    {
+      "state": "Halandri",
+      "count": "1"
+    },
+    {
+      "state": "BAS-RHIN",
+      "count": "1"
+    },
+    {
+      "state": "Jakarta Greater Area",
+      "count": "1"
+    },
+    {
+      "state": "sumatera utara",
+      "count": "1"
+    },
+    {
+      "state": "NJ - New Jersey",
+      "count": "1"
+    },
+    {
+      "state": "telengana",
+      "count": "1"
+    },
+    {
+      "state": "Lower Juba",
+      "count": "1"
+    },
+    {
+      "state": "Larnaka",
+      "count": "1"
+    },
+    {
+      "state": "Hochiminh",
+      "count": "1"
+    },
+    {
+      "state": "Phnom Penh",
+      "count": "1"
+    },
+    {
+      "state": "Moravskoslezsky",
+      "count": "1"
+    },
+    {
+      "state": "Omsk Region",
+      "count": "1"
+    },
+    {
+      "state": "Herrera",
+      "count": "1"
+    },
+    {
+      "state": "Meknes",
+      "count": "1"
+    },
+    {
+      "state": "Malaysia",
+      "count": "1"
+    },
+    {
+      "state": "RIYAD",
+      "count": "1"
+    },
+    {
+      "state": "Esenyurt",
+      "count": "1"
+    },
+    {
+      "state": "teramo",
+      "count": "1"
+    },
+    {
+      "state": "East Flanders",
+      "count": "1"
+    },
+    {
+      "state": "Azores",
+      "count": "1"
+    },
+    {
+      "state": "sdafsda",
+      "count": "1"
+    },
+    {
+      "state": "Haute-Garonne",
+      "count": "1"
+    },
+    {
+      "state": "dolnoslaskie",
+      "count": "1"
+    },
+    {
+      "state": "Kampong Som",
+      "count": "1"
+    },
+    {
+      "state": "Haifa",
+      "count": "1"
+    },
+    {
+      "state": "Belgium",
+      "count": "1"
+    },
+    {
+      "state": "Hatay",
+      "count": "1"
+    },
+    {
+      "state": "Alava",
+      "count": "1"
+    },
+    {
+      "state": "Sörmland",
+      "count": "1"
+    },
+    {
+      "state": "Gipuzkoa",
+      "count": "1"
+    },
+    {
+      "state": "Sicilia",
+      "count": "1"
+    },
+    {
+      "state": "Dobrichovice",
+      "count": "1"
+    },
+    {
+      "state": "nevada",
+      "count": "1"
+    },
+    {
+      "state": "Pueblo Libre",
+      "count": "1"
+    },
+    {
+      "state": "D.C",
+      "count": "1"
+    },
+    {
+      "state": "wiltshire",
+      "count": "1"
+    },
+    {
+      "state": "D.R",
+      "count": "1"
+    },
+    {
+      "state": "Kaernten",
+      "count": "1"
+    },
+    {
+      "state": "Northern Cape",
+      "count": "1"
+    },
+    {
+      "state": "Sachsen-Anhalt",
+      "count": "1"
+    },
+    {
+      "state": "Hcmc",
+      "count": "1"
+    },
+    {
+      "state": "Zhambul",
+      "count": "1"
+    },
+    {
+      "state": "Brittany",
+      "count": "1"
+    },
+    {
+      "state": "manila, philippines",
+      "count": "1"
+    },
+    {
+      "state": "Hong Kong SAR",
+      "count": "1"
+    },
+    {
+      "state": "AIN CHOK",
+      "count": "1"
+    },
+    {
+      "state": "Akmola",
+      "count": "1"
+    },
+    {
+      "state": "Sana'a",
+      "count": "1"
+    },
+    {
+      "state": "MN Minnesota",
+      "count": "1"
+    },
+    {
+      "state": "Touraine",
+      "count": "1"
+    },
+    {
+      "state": "Saint-Gilles",
+      "count": "1"
+    },
+    {
+      "state": "Meta",
+      "count": "1"
+    },
+    {
+      "state": "Greated London",
+      "count": "1"
+    },
+    {
+      "state": "89106",
+      "count": "1"
+    },
+    {
+      "state": "La Serena",
+      "count": "1"
+    },
+    {
+      "state": "Cox's Bazar",
+      "count": "1"
+    },
+    {
+      "state": "USA",
+      "count": "1"
+    },
+    {
+      "state": "missouri",
+      "count": "1"
+    },
+    {
+      "state": "Nizhegorodskaya oblast",
+      "count": "1"
+    },
+    {
+      "state": "Addis Abeba",
+      "count": "1"
+    },
+    {
+      "state": "Concepción",
+      "count": "1"
+    },
+    {
+      "state": "Cantabria",
+      "count": "1"
+    },
+    {
+      "state": "Gyeongsangnam-do",
+      "count": "1"
+    },
+    {
+      "state": "Sulamanya",
+      "count": "1"
+    },
+    {
+      "state": "DJIBOUTI",
+      "count": "1"
+    },
+    {
+      "state": "Val d'Oise",
+      "count": "1"
+    },
+    {
+      "state": "Southern Province",
+      "count": "1"
+    },
+    {
+      "state": "Etlik",
+      "count": "1"
+    },
+    {
+      "state": "Macedonia, The Former Yug",
+      "count": "1"
+    },
+    {
+      "state": "Pavia",
+      "count": "1"
+    },
+    {
+      "state": "Luxembourg",
+      "count": "1"
+    },
+    {
+      "state": "Región de Antofagasta",
+      "count": "1"
+    },
+    {
+      "state": "Kucukcekmece",
+      "count": "1"
+    },
+    {
+      "state": "Bali",
+      "count": "1"
+    },
+    {
+      "state": "GAUTENG",
+      "count": "1"
+    },
+    {
+      "state": "Nokdim",
+      "count": "1"
+    },
+    {
+      "state": "W.PERSEKUTUAN(KL)",
+      "count": "1"
+    },
+    {
+      "state": "Grand Casablanca",
+      "count": "1"
+    },
+    {
+      "state": "Metro",
+      "count": "1"
+    },
+    {
+      "state": "not applacable",
+      "count": "1"
+    },
+    {
+      "state": "Lima (departamento)",
+      "count": "1"
+    },
+    {
+      "state": "T.S",
+      "count": "1"
+    },
+    {
+      "state": "Slesia",
+      "count": "1"
+    },
+    {
+      "state": "Southern Leyte",
+      "count": "1"
+    },
+    {
+      "state": "Khorasan Razavi",
+      "count": "1"
+    },
+    {
+      "state": "Miguel Hidalgo",
+      "count": "1"
+    },
+    {
+      "state": "Buea",
+      "count": "1"
+    },
+    {
+      "state": "yambolska",
+      "count": "1"
+    },
+    {
+      "state": "B66025680",
+      "count": "1"
+    },
+    {
+      "state": "Drama",
+      "count": "1"
+    },
+    {
+      "state": "Rovigo",
+      "count": "1"
+    },
+    {
+      "state": "loire atlantique",
+      "count": "1"
+    },
+    {
+      "state": "unite kingdom",
+      "count": "1"
+    },
+    {
+      "state": "Aargau",
+      "count": "1"
+    },
+    {
+      "state": "LENINGRAD OBLAST'",
+      "count": "1"
+    },
+    {
+      "state": "Alagoas",
+      "count": "1"
+    },
+    {
+      "state": "Southern Finland",
+      "count": "1"
+    },
+    {
+      "state": "shau kei wan",
+      "count": "1"
+    },
+    {
+      "state": "PHILADELPHIA -PENSILVANIA",
+      "count": "1"
+    },
+    {
+      "state": "federal",
+      "count": "1"
+    },
+    {
+      "state": "kansas",
+      "count": "1"
+    },
+    {
+      "state": "Ismailia",
+      "count": "1"
+    },
+    {
+      "state": "North Rhine-Westphalia",
+      "count": "1"
+    },
+    {
+      "state": "Madeira",
+      "count": "1"
+    },
+    {
+      "state": "cascais",
+      "count": "1"
+    },
+    {
+      "state": "Rajasthan",
+      "count": "1"
+    },
+    {
+      "state": "Dyfed",
+      "count": "1"
+    },
+    {
+      "state": "Zona Oriental",
+      "count": "1"
+    },
+    {
+      "state": "Devon",
+      "count": "1"
+    },
+    {
+      "state": "Autonomous City",
+      "count": "1"
+    },
+    {
+      "state": "FCT",
+      "count": "1"
+    },
+    {
+      "state": "-------",
+      "count": "1"
+    },
+    {
+      "state": "Hunan",
+      "count": "1"
+    },
+    {
+      "state": "bruxelles",
+      "count": "1"
+    },
+    {
+      "state": "Kaft Tohormos Road",
+      "count": "1"
+    },
+    {
+      "state": "Atasehir",
+      "count": "1"
+    },
+    {
+      "state": "yamanashi",
+      "count": "1"
+    },
+    {
+      "state": "Bristol",
+      "count": "1"
+    },
+    {
+      "state": "Gaza",
+      "count": "1"
+    },
+    {
+      "state": "Saarland",
+      "count": "1"
+    },
+    {
+      "state": "dakahleia",
+      "count": "1"
+    },
+    {
+      "state": "Bocas del Toro",
+      "count": "1"
+    },
+    {
+      "state": "Cambridgeshire",
+      "count": "1"
+    },
+    {
+      "state": "Gyeonggi-do",
+      "count": "1"
+    },
+    {
+      "state": "Not Required",
+      "count": "1"
+    },
+    {
+      "state": "perm",
+      "count": "1"
+    },
+    {
+      "state": "Milton Keynes",
+      "count": "1"
+    },
+    {
+      "state": "Charente",
+      "count": "1"
+    },
+    {
+      "state": "Guerrero",
+      "count": "1"
+    },
+    {
+      "state": "Zaporizhia",
+      "count": "1"
+    },
+    {
+      "state": "CENTRAL REGION",
+      "count": "1"
+    },
+    {
+      "state": "Dnipropetrovsk",
+      "count": "1"
+    },
+    {
+      "state": "NorthRhine Westphalia",
+      "count": "1"
+    },
+    {
+      "state": "Vastra Gotalands",
+      "count": "1"
+    },
+    {
+      "state": "ISPART",
+      "count": "1"
+    },
+    {
+      "state": "WSP",
+      "count": "1"
+    },
+    {
+      "state": "al shargyah",
+      "count": "1"
+    },
+    {
+      "state": "Plaines Wilhems",
+      "count": "1"
+    },
+    {
+      "state": "Neg. Or.",
+      "count": "1"
+    },
+    {
+      "state": "Sainte Genevieve des Bois",
+      "count": "1"
+    },
+    {
+      "state": "Dublin",
+      "count": "1"
+    },
+    {
+      "state": "Coimbra",
+      "count": "1"
+    },
+    {
+      "state": "Akmolinsk",
+      "count": "1"
+    },
+    {
+      "state": "Kayseri",
+      "count": "1"
+    },
+    {
+      "state": "Bulacan",
+      "count": "1"
+    },
+    {
+      "state": "Virgina",
+      "count": "1"
+    },
+    {
+      "state": "Fromager",
+      "count": "1"
+    },
+    {
+      "state": "Rhineland-Palatinate",
+      "count": "1"
+    },
+    {
+      "state": "Marmara",
+      "count": "1"
+    },
+    {
+      "state": "용인",
+      "count": "1"
+    },
+    {
+      "state": "Santo Domingo Oeste",
+      "count": "1"
+    },
+    {
+      "state": "Trujillo",
+      "count": "1"
+    },
+    {
+      "state": "Chiangmai",
+      "count": "1"
+    },
+    {
+      "state": "Ahuachapan",
+      "count": "1"
+    },
+    {
+      "state": "Soul-t'ukpyolsi",
+      "count": "1"
+    },
+    {
+      "state": "Istabul",
+      "count": "1"
+    },
+    {
+      "state": "AZ Arizona",
+      "count": "1"
+    },
+    {
+      "state": "Davao City",
+      "count": "1"
+    },
+    {
+      "state": "Sind",
+      "count": "1"
+    },
+    {
+      "state": "Pomorskie",
+      "count": "1"
+    },
+    {
+      "state": "Arequipa",
+      "count": "1"
+    },
+    {
+      "state": "Berwickshire",
+      "count": "1"
+    },
+    {
+      "state": "stavropol region",
+      "count": "1"
+    },
+    {
+      "state": "El Beheira Governorate",
+      "count": "1"
+    },
+    {
+      "state": "Montpellier",
+      "count": "1"
+    },
+    {
+      "state": "Capital City",
+      "count": "1"
+    },
+    {
+      "state": "Stockholms län",
+      "count": "1"
+    },
+    {
+      "state": "West Sumatra",
+      "count": "1"
+    },
+    {
+      "state": "Red Sea",
+      "count": "1"
+    },
+    {
+      "state": "North Sumatra",
+      "count": "1"
+    },
+    {
+      "state": "Nevada (NV)",
+      "count": "1"
+    },
+    {
+      "state": "nyon",
+      "count": "1"
+    },
+    {
+      "state": "Nizhegorodskaya",
+      "count": "1"
+    },
+    {
+      "state": "gyeongsang",
+      "count": "1"
+    },
+    {
+      "state": "Merida",
+      "count": "1"
+    },
+    {
+      "state": "zachodniopomorskie",
+      "count": "1"
+    },
+    {
+      "state": "Bedfordshire",
+      "count": "1"
+    },
+    {
+      "state": "Varese",
+      "count": "1"
+    },
+    {
+      "state": "Oxfordshire",
+      "count": "1"
+    },
+    {
+      "state": "Hemberg",
+      "count": "1"
+    },
+    {
+      "state": "Sto Dgo Este",
+      "count": "1"
+    },
+    {
+      "state": "Provence",
+      "count": "1"
+    },
+    {
+      "state": "PRESOV",
+      "count": "1"
+    },
+    {
+      "state": "TaiZhong",
+      "count": "1"
+    },
+    {
+      "state": "Bago",
+      "count": "1"
+    },
+    {
+      "state": "Catalonia",
+      "count": "1"
+    },
+    {
+      "state": "Tokyo-to",
+      "count": "1"
+    },
+    {
+      "state": "Ain Shams",
+      "count": "1"
+    },
+    {
+      "state": "Buckinghamshire",
+      "count": "1"
+    },
+    {
+      "state": "Dong Thap",
+      "count": "1"
+    },
+    {
+      "state": "Nantou",
+      "count": "1"
+    },
+    {
+      "state": "Noord Brabant",
+      "count": "1"
+    },
+    {
+      "state": "Qom",
+      "count": "1"
+    },
+    {
+      "state": "Callao",
+      "count": "1"
+    },
+    {
+      "state": "no state or province",
+      "count": "1"
+    },
+    {
+      "state": "idf",
+      "count": "1"
+    },
+    {
+      "state": "aut Savoie",
+      "count": "1"
+    },
+    {
+      "state": "N.Y",
+      "count": "1"
+    },
+    {
+      "state": "Sachsen Anhalt",
+      "count": "1"
+    },
+    {
+      "state": "Duabi",
+      "count": "1"
+    },
+    {
+      "state": "District Of Columbia",
+      "count": "1"
+    },
+    {
+      "state": "Agrigento",
+      "count": "1"
+    },
+    {
+      "state": "Jilin",
+      "count": "1"
+    },
+    {
+      "state": "Upper Galilee",
+      "count": "1"
+    },
+    {
+      "state": "CONNECTICUT",
+      "count": "1"
+    },
+    {
+      "state": "Military City",
+      "count": "1"
+    },
+    {
+      "state": "Puntarenas",
+      "count": "1"
+    },
+    {
+      "state": "booshehr",
+      "count": "1"
+    },
+    {
+      "state": "Osunstate",
+      "count": "1"
+    },
+    {
+      "state": "Jura",
+      "count": "1"
+    },
+    {
+      "state": "Brabant Flamand",
+      "count": "1"
+    },
+    {
+      "state": "Praha",
+      "count": "1"
+    },
+    {
+      "state": "Pomerania",
+      "count": "1"
+    },
+    {
+      "state": "Ashkhabat",
+      "count": "1"
+    },
+    {
+      "state": "west midland",
+      "count": "1"
+    },
+    {
+      "state": "Da Nang",
+      "count": "1"
+    },
+    {
+      "state": "Geyonggido",
+      "count": "1"
+    },
+    {
+      "state": "Vundinamarca",
+      "count": "1"
+    },
+    {
+      "state": "caucas",
+      "count": "1"
+    },
+    {
+      "state": "Para",
+      "count": "1"
+    },
+    {
+      "state": "oregon",
+      "count": "1"
+    },
+    {
+      "state": "Canton",
+      "count": "1"
+    },
+    {
+      "state": "Pensylvania",
+      "count": "1"
+    },
+    {
+      "state": "Sharkia",
+      "count": "1"
+    },
+    {
+      "state": "Zamboanga de sur",
+      "count": "1"
+    },
+    {
+      "state": "MENIA",
+      "count": "1"
+    },
+    {
+      "state": "nangarhar",
+      "count": "1"
+    },
+    {
+      "state": "paca",
+      "count": "1"
+    },
+    {
+      "state": "Central Israel",
+      "count": "1"
+    },
+    {
+      "state": "Revuca",
+      "count": "1"
+    },
+    {
+      "state": "CEARÁ",
+      "count": "1"
+    },
+    {
+      "state": "Vlaams Brabant",
+      "count": "1"
+    },
+    {
+      "state": "Marrakech-Tansift-lhaouz",
+      "count": "1"
+    },
+    {
+      "state": "Donetsk region",
+      "count": "1"
+    },
+    {
+      "state": "MICHAOCAN",
+      "count": "1"
+    },
+    {
+      "state": "Marrakech Tansift Lhaouz",
+      "count": "1"
+    },
+    {
+      "state": "Dubai marina",
+      "count": "1"
+    },
+    {
+      "state": "Burgundy",
+      "count": "1"
+    },
+    {
+      "state": "Małopolska",
+      "count": "1"
+    },
+    {
+      "state": "tianjin",
+      "count": "1"
+    },
+    {
+      "state": "Khorezm",
+      "count": "1"
+    },
+    {
+      "state": "Andalucía",
+      "count": "1"
+    },
+    {
+      "state": "Amsterdam",
+      "count": "1"
+    },
+    {
+      "state": "Outside US and Canada",
+      "count": "1"
+    },
+    {
+      "state": "Bizerta",
+      "count": "1"
+    },
+    {
+      "state": "VIENNE",
+      "count": "1"
+    },
+    {
+      "state": "Porto",
+      "count": "1"
+    },
+    {
+      "state": "St. Petersburg, FL",
+      "count": "1"
+    },
+    {
+      "state": "Hawalli",
+      "count": "1"
+    },
+    {
+      "state": "Mila",
+      "count": "1"
+    },
+    {
+      "state": "Hai’l",
+      "count": "1"
+    },
+    {
+      "state": "Baku",
+      "count": "1"
+    },
+    {
+      "state": "Yogyakarta",
+      "count": "1"
+    },
+    {
+      "state": "Arusha",
+      "count": "1"
+    },
+    {
+      "state": "Bihar",
+      "count": "1"
+    },
+    {
+      "state": "93350",
+      "count": "1"
+    },
+    {
+      "state": "Kiivska",
+      "count": "1"
+    },
+    {
+      "state": "Aqaba",
+      "count": "1"
+    },
+    {
+      "state": "Gazipur",
+      "count": "1"
+    },
+    {
+      "state": "St. James",
+      "count": "1"
+    },
+    {
+      "state": "Jämtland",
+      "count": "1"
+    },
+    {
+      "state": "Distrito",
+      "count": "1"
+    },
+    {
+      "state": "İZ",
+      "count": "1"
+    },
+    {
+      "state": "Adana",
+      "count": "1"
+    },
+    {
+      "state": "Anambra",
+      "count": "1"
+    },
+    {
+      "state": "Carabobo",
+      "count": "1"
+    },
+    {
+      "state": "Poland",
+      "count": "1"
+    },
+    {
+      "state": "Pahang",
+      "count": "1"
+    },
+    {
+      "state": "มุ",
+      "count": "1"
+    },
+    {
+      "state": "Minsk Oblast",
+      "count": "1"
+    },
+    {
+      "state": "Zala",
+      "count": "1"
+    },
+    {
+      "state": "Drôme",
+      "count": "1"
+    },
+    {
+      "state": "Beijing Municipality",
+      "count": "1"
+    },
+    {
+      "state": "Rivers State",
+      "count": "1"
+    },
+    {
+      "state": "Noordbrabant",
+      "count": "1"
+    },
+    {
+      "state": "Yongin",
+      "count": "1"
+    },
+    {
+      "state": "Tabasco",
+      "count": "1"
+    },
+    {
+      "state": "Republic of Macedonia",
+      "count": "1"
+    },
+    {
+      "state": "east-kazakhstan",
+      "count": "1"
+    },
+    {
+      "state": "Salzburg",
+      "count": "1"
+    },
+    {
+      "state": "Villa Nueva",
+      "count": "1"
+    },
+    {
+      "state": "Abidjan",
+      "count": "1"
+    },
+    {
+      "state": "Cercado",
+      "count": "1"
+    },
+    {
+      "state": "Greater Accra",
+      "count": "1"
+    },
+    {
+      "state": "Argentina",
+      "count": "1"
+    },
+    {
+      "state": "Yvelines",
+      "count": "1"
+    },
+    {
+      "state": "Sololá",
+      "count": "1"
+    },
+    {
+      "state": "Other (outside US & Canad",
+      "count": "1"
+    },
+    {
+      "state": "Syunik",
+      "count": "1"
+    },
+    {
+      "state": "Laguna",
+      "count": "1"
+    },
+    {
+      "state": "Pue.",
+      "count": "1"
+    },
+    {
+      "state": "PAU",
+      "count": "1"
+    },
+    {
+      "state": "north-west",
+      "count": "1"
+    },
+    {
+      "state": "Fez",
+      "count": "1"
+    },
+    {
+      "state": "Brabant-Wallon",
+      "count": "1"
+    },
+    {
+      "state": "Michigan (MI)",
+      "count": "1"
+    },
+    {
+      "state": "Cali",
+      "count": "1"
+    },
+    {
+      "state": "St. Andrew",
+      "count": "1"
+    },
+    {
+      "state": "Oyo State",
+      "count": "1"
+    },
+    {
+      "state": "Kanton Sarajevo",
+      "count": "1"
+    },
+    {
+      "state": "Elsharqiyah",
+      "count": "1"
+    },
+    {
+      "state": "Guang Dong",
+      "count": "1"
+    },
+    {
+      "state": "Kralovehradecky kraj",
+      "count": "1"
+    },
+    {
+      "state": "Nordrhein-Westfalen",
+      "count": "1"
+    },
+    {
+      "state": "A Coruña",
+      "count": "1"
+    },
+    {
+      "state": "Mairie",
+      "count": "1"
+    },
+    {
+      "state": "State (US Residents)*",
+      "count": "1"
+    },
+    {
+      "state": "Baden",
+      "count": "1"
+    },
+    {
+      "state": "IDAHO",
+      "count": "1"
+    },
+    {
+      "state": "Gibraltar",
+      "count": "1"
+    },
+    {
+      "state": "Benghazi",
+      "count": "1"
+    },
+    {
+      "state": "districto nacional",
+      "count": "1"
+    },
+    {
+      "state": "Nepal",
+      "count": "1"
+    },
+    {
+      "state": "MVK",
+      "count": "1"
+    },
+    {
+      "state": "Alrahma Street, Almansour",
+      "count": "1"
+    },
+    {
+      "state": "Turkey/Istanbul/Tuzla",
+      "count": "1"
+    },
+    {
+      "state": "aranjuez",
+      "count": "1"
+    },
+    {
+      "state": "lancs",
+      "count": "1"
+    },
+    {
+      "state": "33100",
+      "count": "1"
+    },
+    {
+      "state": "MARYLAND (MD)",
+      "count": "1"
+    },
+    {
+      "state": "blumengasse",
+      "count": "1"
+    },
+    {
+      "state": "seine et marne",
+      "count": "1"
+    },
+    {
+      "state": "Distrito Capital de Bogot",
+      "count": "1"
+    },
+    {
+      "state": "Jeollabuk-Do",
+      "count": "1"
+    },
+    {
+      "state": "Lower Saxony",
+      "count": "1"
+    },
+    {
+      "state": "coruna",
+      "count": "1"
+    },
+    {
+      "state": "County Londonderry",
+      "count": "1"
+    },
+    {
+      "state": "Uttrakhand",
+      "count": "1"
+    },
+    {
+      "state": "Hunan Province",
+      "count": "1"
+    },
+    {
+      "state": "catania",
+      "count": "1"
+    },
+    {
+      "state": "B.C",
+      "count": "1"
+    },
+    {
+      "state": "St. Elizabeth",
+      "count": "1"
+    },
+    {
+      "state": "NY New York",
+      "count": "1"
+    },
+    {
+      "state": "kepri",
+      "count": "1"
+    },
+    {
+      "state": "Kunar",
+      "count": "1"
+    },
+    {
+      "state": "PuertoRico",
+      "count": "1"
+    },
+    {
+      "state": "Please Select",
+      "count": "1"
+    },
+    {
+      "state": "PENNSYLVANIA",
+      "count": "1"
+    },
+    {
+      "state": "Suez",
+      "count": "1"
+    },
+    {
+      "state": "san juan",
+      "count": "1"
+    },
+    {
+      "state": "Pest",
+      "count": "1"
+    },
+    {
+      "state": "Pescara",
+      "count": "1"
+    },
+    {
+      "state": "León",
+      "count": "1"
+    },
+    {
+      "state": "Marche",
+      "count": "1"
+    },
+    {
+      "state": "Souss",
+      "count": "1"
+    },
+    {
+      "state": "Vientiane Capital",
+      "count": "1"
+    },
+    {
+      "state": "Grater London",
+      "count": "1"
+    },
+    {
+      "state": "Annaba",
+      "count": "1"
+    },
+    {
+      "state": "Smolyan",
+      "count": "1"
+    },
+    {
+      "state": "Crimea",
+      "count": "1"
+    },
+    {
+      "state": "6ª Región",
+      "count": "1"
+    },
+    {
+      "state": "Nouvelle-Aquitaine",
+      "count": "1"
+    },
+    {
+      "state": "Jurmala",
+      "count": "1"
+    },
+    {
+      "state": "Haute-Savoie",
+      "count": "1"
+    },
+    {
+      "state": "DPO, AE",
+      "count": "1"
+    },
+    {
+      "state": "Intibuca",
+      "count": "1"
+    },
+    {
+      "state": "Altai",
+      "count": "1"
+    },
+    {
+      "state": "Rieti",
+      "count": "1"
+    },
+    {
+      "state": "Jeddah",
+      "count": "1"
+    },
+    {
+      "state": "Balocistan",
+      "count": "1"
+    },
+    {
+      "state": "Niksic",
+      "count": "1"
+    },
+    {
+      "state": "VIC",
+      "count": "1"
+    },
+    {
+      "state": "Santo Domingo de Guz",
+      "count": "1"
+    },
+    {
+      "state": "Alpes Maritime",
+      "count": "1"
+    },
+    {
+      "state": "-- Please Select --",
+      "count": "1"
+    },
+    {
+      "state": "Macau",
+      "count": "1"
+    },
+    {
+      "state": "Rio Grande do Sul",
+      "count": "1"
+    },
+    {
+      "state": "Eastern provinence",
+      "count": "1"
+    },
+    {
+      "state": "BIOKO SUR",
+      "count": "1"
+    },
+    {
+      "state": "Sale",
+      "count": "1"
+    },
+    {
+      "state": "Tigre",
+      "count": "1"
+    },
+    {
+      "state": "Al Iskandarīyah",
+      "count": "1"
+    },
+    {
+      "state": "Pefki",
+      "count": "1"
+    },
+    {
+      "state": "Minnessota",
+      "count": "1"
+    },
+    {
+      "state": "Tashkent region",
+      "count": "1"
+    },
+    {
+      "state": "Grodnenskaja Voblasts",
+      "count": "1"
+    },
+    {
+      "state": "Lattakia",
+      "count": "1"
+    },
+    {
+      "state": "Kandahar",
+      "count": "1"
+    },
+    {
+      "state": "ALX",
+      "count": "1"
+    },
+    {
+      "state": "Quito",
+      "count": "1"
+    },
+    {
+      "state": "Tochigi ken",
+      "count": "1"
+    },
+    {
+      "state": "Erzurum",
+      "count": "1"
+    },
+    {
+      "state": "QLD",
+      "count": "1"
+    },
+    {
+      "state": "N Y",
+      "count": "1"
+    },
+    {
+      "state": "Alpes de haute provence",
+      "count": "1"
+    },
+    {
+      "state": "Tartous",
+      "count": "1"
+    },
+    {
+      "state": "Silesia",
+      "count": "1"
+    },
+    {
+      "state": "Nicosia",
+      "count": "1"
+    },
+    {
+      "state": "Akaki/Kaliti",
+      "count": "1"
+    },
+    {
+      "state": "26110",
+      "count": "1"
+    },
+    {
+      "state": "Calabria",
+      "count": "1"
+    },
+    {
+      "state": "Le Kef",
+      "count": "1"
+    },
+    {
+      "state": "Merkaz",
+      "count": "1"
+    },
+    {
+      "state": "Qena",
+      "count": "1"
+    },
+    {
+      "state": "Estuaire",
+      "count": "1"
+    },
+    {
+      "state": "7ay asahl",
+      "count": "1"
+    },
+    {
+      "state": "invivienda",
+      "count": "1"
+    },
+    {
+      "state": "washington",
+      "count": "1"
+    },
+    {
+      "state": "Körfez",
+      "count": "1"
+    },
+    {
+      "state": "Camarines Sur",
+      "count": "1"
+    },
+    {
+      "state": "Federal Territory",
+      "count": "1"
+    },
+    {
+      "state": "Leytonstone",
+      "count": "1"
+    },
+    {
+      "state": "dublin 18",
+      "count": "1"
+    },
+    {
+      "state": "Nicaragua",
+      "count": "1"
+    },
+    {
+      "state": "Type a choice below ...",
+      "count": "1"
+    },
+    {
+      "state": "Ciudad de México",
+      "count": "1"
+    },
+    {
+      "state": "Greater Cairo",
+      "count": "1"
+    },
+    {
+      "state": "Al Jîzah",
+      "count": "1"
+    },
+    {
+      "state": "Makka",
+      "count": "1"
+    },
+    {
+      "state": "Al-Gharbia",
+      "count": "1"
+    },
+    {
+      "state": "South Cotabato",
+      "count": "1"
+    },
+    {
+      "state": "Temara",
+      "count": "1"
+    },
+    {
+      "state": "inner mongolia",
+      "count": "1"
+    },
+    {
+      "state": "Sicily",
+      "count": "1"
+    },
+    {
+      "state": "Rabat -Salé",
+      "count": "1"
+    },
+    {
+      "state": "An Najaf",
+      "count": "1"
+    },
+    {
+      "state": "Northland",
+      "count": "1"
+    },
+    {
+      "state": "Mexico DF",
+      "count": "1"
+    },
+    {
+      "state": "NPDS",
+      "count": "1"
+    },
+    {
+      "state": "GA - Georgia",
+      "count": "1"
+    },
+    {
+      "state": "Beshiktash",
+      "count": "1"
+    },
+    {
+      "state": "gharb",
+      "count": "1"
+    },
+    {
+      "state": "Schweiz (CH)",
+      "count": "1"
+    },
+    {
+      "state": "FL.",
+      "count": "1"
+    },
+    {
+      "state": "Perm Krai",
+      "count": "1"
+    },
+    {
+      "state": "Serbia",
+      "count": "1"
+    },
+    {
+      "state": "New Taipei",
+      "count": "1"
+    },
+    {
+      "state": "Achaia",
+      "count": "1"
+    },
+    {
+      "state": "Grenoble",
+      "count": "1"
+    },
+    {
+      "state": "Florence",
+      "count": "1"
+    },
+    {
+      "state": "South yorshire",
+      "count": "1"
+    },
+    {
+      "state": "PR - Puerto Rico",
+      "count": "1"
+    },
+    {
+      "state": "Val-de-Marne",
+      "count": "1"
+    },
+    {
+      "state": "Risu",
+      "count": "1"
+    },
+    {
+      "state": "N.L.",
+      "count": "1"
+    },
+    {
+      "state": "mandaluyong",
+      "count": "1"
+    },
+    {
+      "state": "Odes'ka Oblast'",
+      "count": "1"
+    },
+    {
+      "state": "Edomex",
+      "count": "1"
+    },
+    {
+      "state": "southeast sulawesi",
+      "count": "1"
+    },
+    {
+      "state": "Balqa",
+      "count": "1"
+    },
+    {
+      "state": "Erenköy",
+      "count": "1"
+    },
+    {
+      "state": "Lleida",
+      "count": "1"
+    },
+    {
+      "state": "Wimbledon",
+      "count": "1"
+    },
+    {
+      "state": "N.C.",
+      "count": "1"
+    },
+    {
+      "state": "Baden-Wuerttemberg",
+      "count": "1"
+    },
+    {
+      "state": "pronteverta",
+      "count": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "state\tcount\nLondon\t45\nLima\t41\nCairo\t41\nOntario\t36\nPanama\t33\nBuenos Aires\t32\njalisco\t31\nCundinamarca\t29\nAntioquia\t28\nflorida\t24\nAmman\t23\nDubai\t22\nSanto Domingo\t22\nTEXAS\t21\nMADRID\t21\nMoscow\t20\nShanghai\t20\nQuebec\t20\nSão Paulo\t17\nNairobi\t17\nBarcelona\t16\nCALIFORNIA\t15\nGuangdong\t15\nDistrito Nacional\t15\nIstanbul\t14\nBerlin\t14\nSan jose\t14\nDelhi\t13\nGeneva\t13\nBangkok\t13\nILE DE FRANCE\t13\nnew york\t12\nCórdoba\t12\nSingapore\t11\nGiza\t11\nRio de Janeiro\t11\npunjab\t11\nBeijing\t11\nHessen\t11\nWest Yorkshire\t11\nSelangor\t11\nEngland\t11\nSantiago\t10\nAnkara\t10\nGuatemala\t10\nabu dhabi\t10\nohio\t10\nNuevo León\t10\nSeoul\t10\nPARIS\t10\nTurkey\t10\nTehran\t10\nNRW\t9\nGreater London\t9\nN/A\t9\nKarnataka\t9\nDKI Jakarta\t8\nSanto Domingo Este\t8\nDistrito Federal\t8\nKabul\t8\nItaly\t8\nMexico City\t8\nWest Bengal\t8\nRiyadh\t8\nBritish Columbia\t8\nChihuahua\t7\nGuanajuato\t7\nAlexandria\t7\nMéxico\t7\nFrance\t7\nEgypt\t7\nMinas Gerais\t7\nLAZIO\t7\nBaja California\t7\nHeredia\t7\nEstado de Mexico\t7\nSanta Fe\t7\nCenter\t7\nBanten\t6\nIsrael\t6\nQuintana Roo\t6\nmontevideo\t6\nillinois\t6\nSurrey\t6\nCzech Republic\t6\nVienna\t6\nDoha\t6\nBrussels\t6\nHo Chi Minh\t6\nqueretaro\t6\nRabat\t6\nAddis Ababa\t6\nPuerto RIco\t6\nEast Java\t5\nTamil Nadu\t5\nSharjah\t5\nRegion Metropolitana\t5\nTAMILNADU\t5\nHanoi\t5\nKent\t5\nKERALA\t5\nBogotá\t5\nMaharashtra\t5\nmetro manila\t5\nAttiki\t5\nTaiwan\t5\nIzmir\t5\nCABA\t5\nLisbon\t5\nBagmati\t5\nTangier\t5\nTokyo\t5\nandhra pradesh\t5\nOaxaca\t5\nMorelos\t5\nRhône-Alpes\t5\nWest Java\t5\nIle-de-France\t5\nUttar Pradesh\t5\nNEW JERSEY\t5\nRomania\t5\nManagua\t5\nBolívar\t5\nPichincha\t5\nDamascus\t5\nVIRGINIA\t5\nALBANIA\t5\nAlajuela\t5\nSindh\t5\nCartago\t5\nNone\t5\nCheshire\t5\nKuwait\t4\ndurango\t4\nBerkshire\t4\nSt. Petersburg\t4\nRome\t4\nHong Kong\t4\nAntrim\t4\nBayern\t4\nMiddlesex\t4\nLisboa\t4\nLAGOS\t4\nBavaria\t4\nVeneto\t4\nVeracruz\t4\nKosovo\t4\nBern\t4\nwest midlands\t4\nvalle\t4\nMinsk\t4\nAttica\t4\nJakarta\t4\nalberta\t4\nNew Delhi\t4\nCampania\t4\nManila\t4\nJawa Barat\t4\nmazowieckie\t4\nShandong\t4\nJiangsu\t4\nBaja California Sur\t4\nBahia\t4\nAthens\t4\nMalaga\t4\nParaná\t4\nNSW\t4\nDistrito Capital\t3\nVICTORIA\t3\nJawa Timur\t3\nBaghdad\t3\nEast Sussex\t3\nHainan\t3\nPrague\t3\nAlmaty\t3\nHesse\t3\nSelect a state\t3\nValencia\t3\nGranada\t3\nUAE\t3\nzulia\t3\nMoscow region\t3\nmetropolitana\t3\nsouth carolina\t3\nYerevan\t3\nCopenhagen\t3\nLombardia\t3\nJiangxi\t3\nLa Paz\t3\nhainaut\t3\nTamaulipas\t3\nOTHER\t3\nMichoacán\t3\nHampshire\t3\nmilan\t3\nbudapest\t3\nGreater Manchester\t3\nScotland\t3\nKuala Lumpur\t3\nTunis\t3\nCapital\t3\nAlicante\t3\nFars\t3\nMorocco\t3\nUkraine\t3\nNABEUL\t3\nBATANGAS\t3\nTASHKENT\t3\nutah\t3\nLas Palmas\t3\nPuebla\t3\nRizal\t3\nSan Salvador\t3\nBeirut\t3\nNon-US/Non-Canadian\t3\nManama\t3\nTX - Texas\t3\nAsturias\t3\nOgun\t3\nVaud\t3\nHamburg\t3\nCA.\t3\nSouth Holland\t3\nD.F.\t3\nNovara\t3\nCoahuila\t3\nKpK\t3\nDhaka\t3\nmontenegro\t2\nAvellino\t2\nIL - Illinois\t2\nEsfahan\t2\nPerak\t2\nNorth Yorkshire\t2\nMakkah\t2\nColima\t2\nAriana\t2\nHCM\t2\nLimburg\t2\nCochabamba\t2\nN.Y.\t2\nBari\t2\nzuid holland\t2\ncolorado\t2\nCiudad de Buenos Aires\t2\nCortes\t2\nManitoba\t2\nsonora\t2\nNCR\t2\nWest Sussex\t2\nMacedonia\t2\nMidi-Pyrenees\t2\nSpain\t2\noise\t2\nMexico State\t2\nMorazan\t2\nP.R.\t2\nçankaya\t2\nRio Negro\t2\nStaffordshire\t2\nSverdlovsk region\t2\nsetubal\t2\nVA - Virginia\t2\nkenya\t2\nWest bank\t2\nGaza Strip\t2\nUppsala\t2\nNavarra\t2\nVerona\t2\nCrete\t2\nminnesota\t2\nBaden-Württemberg\t2\nZealand\t2\nChuy\t2\nNegros Occidental\t2\nlouisiana\t2\nSelect One\t2\nFL - Florida\t2\nSan Bernardo\t2\nLa Coruña\t2\nMidlothian\t2\nstate\t2\nOost-Vlaanderen\t2\nLeiria\t2\nboyaca\t2\nDorset\t2\nauckland\t2\nKhulna\t2\nBogota D.C.\t2\nYangon\t2\nGuangdong Province\t2\nCapital Federal\t2\nLombardy\t2\nBioko norte\t2\nTimis\t2\nHyogo\t2\nManchester\t2\nKesrwan\t2\nBrandenburg\t2\nminofia\t2\nOutside US\t2\nHidalgo\t2\nEssex\t2\nCasablanca\t2\nMassachussetts\t2\nNorth Sumatera\t2\nCT Connecticut\t2\nCaldas\t2\nRoma\t2\nSeleccionar Provincia\t2\nEl Metn\t2\nVilnius\t2\nBa Ria-Vung Tau\t2\nGlasgow\t2\nRussia\t2\nJerusalem\t2\nSamutprakarn\t2\nAlba\t2\nGUJARAT\t2\nChiba\t2\nOromia\t2\nNapoli\t2\nGoiás\t2\nYucatan\t2\nBrabant Wallon\t2\nDolj\t2\nSisli\t2\nJordan\t2\nGroningen\t2\nQuetzaltenango\t2\nMarrakech\t2\nar riyad\t2\nAlgiers\t2\nKaraganda\t2\nKyiv oblast\t2\nMD - Maryland\t2\nPisa\t2\nFrancisco Morazan\t2\nSouth Yorkshire\t2\nWales\t2\nLorraine\t2\nSuffolk\t2\nSAR\t2\nRimini\t2\nNon US/Canada\t2\niowa\t2\nBenguet\t2\nKharkov\t2\nLiaoning\t2\nAntalya\t2\nARAGUA\t2\nDeutschland\t2\nDavao del Sur\t2\nCavite\t2\nTurin\t2\nMetn\t2\nNorfolk\t2\nBeds\t2\nGeneve\t2\nNYC\t2\nBergamo\t2\nKhartoum\t2\nUnited Kingdom\t2\nmaryland\t2\nNY - New York\t2\nMALABO\t2\nKrasnodar\t2\nOporto\t2\ntest\t2\nLEICESTERSHIRE\t2\nTrieste\t2\nLancashire\t2\nLa Libertad\t2\nQueensland\t2\nMaharastra\t2\nTripoli\t2\nHubei\t2\nApulia\t2\nMerseyside\t2\nGREECE\t2\nKarnatka\t2\nWestern Australia\t2\nHaryana\t2\nSOMERSET\t2\nNOTTINGHAMSHIRE\t2\nAleppo\t2\nRostov\t2\nJijel\t2\nTelangana\t2\nPlovdiv\t2\nPENANG\t2\nGuanacaste\t2\nSchaerbeek\t2\nCentre\t2\nChiriqui\t2\nCentral\t2\nITALIA\t2\nIsfahan\t2\nZuid-Holland\t2\nMaadi\t2\nVarna\t2\nGuilan\t2\nwestern cape\t2\nKanagawa\t2\nMiranda\t2\nVIII Región\t2\nHauts de seine\t2\nSibiu\t2\nBulgaria\t2\nTorino\t2\nKiev\t2\nRamat Gan\t2\nSelect State\t2\nRīga\t2\nSantander\t2\nRabat-Sale-Zemmour-Zaer\t1\nVA`\t1\nAmazonas\t1\nDenmark\t1\nRome/Lazio\t1\nBenito Juárez\t1\nTirol\t1\npapua\t1\nMazovian\t1\nOost Vlaanderen\t1\nBarnet\t1\nSenhora da Hora\t1\nLigury\t1\nBihera\t1\nMiddx\t1\nBranderburg\t1\nQalyubiya\t1\nSETIF\t1\nIowaa\t1\nMassachussets\t1\nNikolaev region\t1\nFujian\t1\nUtter pradesh\t1\nKazakhstan\t1\nMasterton\t1\nKeralam\t1\nbcs\t1\nSanto Doming\t1\nNot applicable\t1\nCochin\t1\nHuehuetenango\t1\nbasükiskun\t1\nJamaica\t1\nOdessa\t1\nKharkivska oblast'\t1\nSJO\t1\nCentro America\t1\nPrague-Brezineves\t1\nBlida\t1\nfes-boulmane\t1\nSjaelland\t1\npoitou-charente\t1\nMurcia\t1\nKharkiv\t1\nGrand Britain\t1\nElazig\t1\nSOUTH SULAWESI\t1\nHassan\t1\nMinsk region\t1\nEstado Miranda\t1\ntissemsilt\t1\nNew Baghdad\t1\nFederal District\t1\nGran Canaria\t1\nPenza\t1\nYorkshire\t1\nvicenza\t1\nSt George\t1\nFes\t1\nStockholm\t1\n(Gr.)\t1\nBangladesh\t1\nTCI\t1\nFERMO\t1\nCentral Java\t1\nLilongwe\t1\nBohemia\t1\nSuratThani\t1\nNone (outside USA)\t1\nVeraguas\t1\nChui\t1\nBourgogne\t1\nPiestany\t1\nInvimosa\t1\nyozgat\t1\nInverness-shire\t1\nEdo\t1\nNeuchâtel\t1\nMarmara State\t1\nIndia\t1\nOdesska\t1\nMacao SAR\t1\nMagdalena\t1\nsouthyorkshire\t1\nKyiv\t1\nKabul, Punjab\t1\nAgios Tychon\t1\nménara\t1\nEl Marg\t1\nMurrilo\t1\nKrasnoyarsk territory\t1\nZacatecas\t1\nKILIFI\t1\nJM - Jerusalem\t1\nBihor\t1\nCoauhila\t1\nGermany\t1\nUruguay\t1\nTyne and Wear\t1\nShaanxi\t1\nMiaoli County\t1\nQuiintana Roo\t1\nuganda central\t1\nEste\t1\nSurat thani\t1\nkwazulu natal\t1\nCaliforniaА\t1\nWilrijk\t1\nKralingen\t1\nHajdu-Bihar\t1\nSur América\t1\nStrathclyde Region\t1\nBulgariq\t1\nASTI\t1\nBENSLIMANE\t1\nSaitama\t1\nKyeonggi-do,\t1\nkhenifra\t1\nCOLON\t1\nchungnam\t1\nOurense\t1\nIstanbu\t1\nIRELAND\t1\ndakar\t1\nTexasx\t1\nCo Antrm\t1\nAberdeenshire\t1\nSousse\t1\nJAL\t1\nSelecciona el estado\t1\nÁL\t1\nbasel\t1\nbasaksehir\t1\nalgeria\t1\ncesar\t1\nAlQassim\t1\nWilayah Persekutuan\t1\nWest Nusa Tenggara\t1\nMex\t1\nChios\t1\nDoar Na Hefer\t1\nAl-Jobayhah\t1\nNorth\t1\nNariño\t1\nNORTH CAROLINA\t1\nTondela\t1\nCopperbelt\t1\nhawaly\t1\nMadhya Pradesh\t1\nJawa tengah\t1\nBhutan\t1\nTX-Texas\t1\nCanary Islands\t1\nNorth West\t1\nFrance, Metropolitan\t1\nCadiz\t1\nShoa\t1\nDistrict 11\t1\nTangier-Tetouan\t1\nAlbergaria-a-velha\t1\nMoscou\t1\nSLP\t1\nIsère\t1\nAbuja\t1\nOsaka\t1\nZona Sul\t1\nA.P\t1\nZhennam\t1\nNorthern Ireland\t1\nFukushima\t1\nMarylard\t1\nGyeonggi do\t1\nNational Capital Region\t1\nCapital Territory\t1\nTuscany\t1\nManica\t1\nToyama\t1\nPuerto Rico [PR]\t1\nKiev Region\t1\nCleveland\t1\nSofia\t1\nBay of Plenty\t1\nDown Town\t1\nOkinawa ken\t1\nSevilla\t1\nDanmark\t1\nErbil\t1\nGalicia\t1\nOld Balara\t1\nLuhansk\t1\nOutside the USA\t1\nWestern Province\t1\nViana do Castelo\t1\nKurdistan\t1\nAhal\t1\nWarwickshire\t1\nMidtjylland\t1\nal manasser\t1\nComo\t1\nKotayk\t1\nEastern\t1\nSayeda Zainab\t1\nCairo/Nasr City\t1\nCatalunya\t1\nTirana\t1\nLara\t1\nHydra\t1\nNot in USA\t1\nLatakia\t1\nGunagxi\t1\nChita's region\t1\nIasi\t1\nBogotá D.C\t1\nCambs\t1\nNorthern\t1\nEKITI STATE\t1\nFribourg\t1\nAljizah\t1\nSan Pedro de Macoris\t1\nOkinawa prefecture\t1\nWI - Wisconsin\t1\n6th october\t1\nYlivieska\t1\nAquitaine\t1\nTANSIFT ELHAOUZ\t1\nlothian\t1\nMures\t1\nZhejiang\t1\nEl-Behaira Governorate\t1\nOuarzazate\t1\nLiège\t1\nIrbid\t1\nA.Z.\t1\nLatin America\t1\nTenerife\t1\nYunnan\t1\nWISCONSIN\t1\nBZE\t1\nS-H\t1\nBantan\t1\nTexas (TX)\t1\nSichuan\t1\nFirenze\t1\nSkopje\t1\nWashington (WA)\t1\nVosges\t1\nBay Islands\t1\nRussky Island\t1\nHertfordshire\t1\nVojvodina\t1\nMilano\t1\nKhorasan\t1\nBaden Wurttemberg\t1\nNederland\t1\nAncona\t1\ngent-belgium\t1\nAtlantico\t1\nSjælland\t1\nZapote\t1\nMaharashtra State.\t1\nAntwerpen\t1\nKenitra\t1\nKZN\t1\nLos Santos\t1\nHa Noi\t1\nWadi il Joz\t1\nINDIANA\t1\nPomerania Province\t1\nBorno\t1\nAbu Zaby\t1\nPerthshire\t1\nEstoril\t1\nPousen Chey\t1\nbrent\t1\nКиевская\t1\nsalamanca\t1\nNizhny Novgorod\t1\nLoiret\t1\nAlgarve\t1\nTurks and Caicos\t1\nCebu\t1\nMTS\t1\nnegros oriental\t1\nKhyber Pakhtunkhwa\t1\nSmidstrup\t1\nQaliubiya\t1\nPalestine\t1\nN.A.\t1\nOxon\t1\nKhozastan\t1\nBrasov\t1\nsuceava\t1\nGironde\t1\ngenoa\t1\nNormandie\t1\nVilla Clara\t1\nMalopolskie\t1\nProvincia\t1\nImo\t1\n---\t1\nDushanbe\t1\narizona\t1\nMd.\t1\nN-East\t1\nsiberia\t1\nNew South Wales\t1\nDhofar\t1\nAin\t1\nNARA\t1\nMenoufiya\t1\nHalland\t1\nOuazzane\t1\nbouches-du-rhone\t1\nCurridabat\t1\nHerault\t1\nOutside USA\t1\nval de marne\t1\nBucharest\t1\nMaranhão - MA.\t1\nIslamabad\t1\nMetroManila\t1\nosh\t1\nCaifornia\t1\nChiang Mai\t1\nCaro\t1\nSLIVEN\t1\n**Not Applicable**\t1\nTel Aviv\t1\nJesssoreeee\t1\nAntwerp\t1\nBaden-Würtemberg\t1\nHerat\t1\nMonseñor Nouel\t1\nPaysandu\t1\nSanta Catarina\t1\nMorogoro\t1\nMBZ\t1\nRegion\t1\nLjubljana\t1\nNitra\t1\nUtrecht\t1\nRhein-Pfaltz\t1\nSlovenia\t1\nSenegal\t1\nBenedita\t1\nChelyabinsk\t1\nal gharbia\t1\nColombia\t1\nFriesland\t1\nKyiv region\t1\nRhon alpes\t1\nRigas pilseta\t1\nPort said\t1\nMarrakesh\t1\nL'Aquila\t1\nKSA\t1\nPuerto Plata,\t1\nFBiH\t1\nCundiamarca\t1\nDouro\t1\nGDO\t1\nCornwall\t1\nsan luis potosi\t1\nAisne\t1\nAvon\t1\nGYONGSANGBUK-DO\t1\nD.N.\t1\nCundnamarca\t1\nOrebro\t1\nIN-HR\t1\nĐồng Nai\t1\nCote d'ivoire\t1\nCorrientes\t1\nfes-boulemane\t1\nGuipuzcoa\t1\nTegucigalpa\t1\nTREVISO\t1\nLimon\t1\nWaziria\t1\nMahasarakham\t1\nny ny\t1\nKerman\t1\nD.N\t1\nLower Austria\t1\nHelsingør\t1\nFl33643\t1\nsurigao\t1\nEure\t1\ndakahlia\t1\nLanguedoc-Roussillon\t1\nQuang Nam\t1\nGharb Chrarda\t1\nNorte de Santander\t1\nTakhar\t1\nOnt\t1\nHalandri\t1\nBAS-RHIN\t1\nJakarta Greater Area\t1\nsumatera utara\t1\nNJ - New Jersey\t1\ntelengana\t1\nLower Juba\t1\nLarnaka\t1\nHochiminh\t1\nPhnom Penh\t1\nMoravskoslezsky\t1\nOmsk Region\t1\nHerrera\t1\nMeknes\t1\nMalaysia\t1\nRIYAD\t1\nEsenyurt\t1\nteramo\t1\nEast Flanders\t1\nAzores\t1\nsdafsda\t1\nHaute-Garonne\t1\ndolnoslaskie\t1\nKampong Som\t1\nHaifa\t1\nBelgium\t1\nHatay\t1\nAlava\t1\nSörmland\t1\nGipuzkoa\t1\nSicilia\t1\nDobrichovice\t1\nnevada\t1\nPueblo Libre\t1\nD.C\t1\nwiltshire\t1\nD.R\t1\nKaernten\t1\nNorthern Cape\t1\nSachsen-Anhalt\t1\nHcmc\t1\nZhambul\t1\nBrittany\t1\nmanila, philippines\t1\nHong Kong SAR\t1\nAIN CHOK\t1\nAkmola\t1\nSana'a\t1\nMN Minnesota\t1\nTouraine\t1\nSaint-Gilles\t1\nMeta\t1\nGreated London\t1\n89106\t1\nLa Serena\t1\nCox's Bazar\t1\nUSA\t1\nmissouri\t1\nNizhegorodskaya oblast\t1\nAddis Abeba\t1\nConcepción\t1\nCantabria\t1\nGyeongsangnam-do\t1\nSulamanya\t1\nDJIBOUTI\t1\nVal d'Oise\t1\nSouthern Province\t1\nEtlik\t1\nMacedonia, The Former Yug\t1\nPavia\t1\nLuxembourg\t1\nRegión de Antofagasta\t1\nKucukcekmece\t1\nBali\t1\nGAUTENG\t1\nNokdim\t1\nW.PERSEKUTUAN(KL)\t1\nGrand Casablanca\t1\nMetro\t1\nnot applacable\t1\nLima (departamento)\t1\nT.S\t1\nSlesia\t1\nSouthern Leyte\t1\nKhorasan Razavi\t1\nMiguel Hidalgo\t1\nBuea\t1\nyambolska\t1\nB66025680\t1\nDrama\t1\nRovigo\t1\nloire atlantique\t1\nunite kingdom\t1\nAargau\t1\nLENINGRAD OBLAST'\t1\nAlagoas\t1\nSouthern Finland\t1\nshau kei wan\t1\nPHILADELPHIA -PENSILVANIA\t1\nfederal\t1\nkansas\t1\nIsmailia\t1\nNorth Rhine-Westphalia\t1\nMadeira\t1\ncascais\t1\nRajasthan\t1\nDyfed\t1\nZona Oriental\t1\nDevon\t1\nAutonomous City\t1\nFCT\t1\n-------\t1\nHunan\t1\nbruxelles\t1\nKaft Tohormos Road\t1\nAtasehir\t1\nyamanashi\t1\nBristol\t1\nGaza\t1\nSaarland\t1\ndakahleia\t1\nBocas del Toro\t1\nCambridgeshire\t1\nGyeonggi-do\t1\nNot Required\t1\nperm\t1\nMilton Keynes\t1\nCharente\t1\nGuerrero\t1\nZaporizhia\t1\nCENTRAL REGION\t1\nDnipropetrovsk\t1\nNorthRhine Westphalia\t1\nVastra Gotalands\t1\nISPART\t1\nWSP\t1\nal shargyah\t1\nPlaines Wilhems\t1\nNeg. Or.\t1\nSainte Genevieve des Bois\t1\nDublin\t1\nCoimbra\t1\nAkmolinsk\t1\nKayseri\t1\nBulacan\t1\nVirgina\t1\nFromager\t1\nRhineland-Palatinate\t1\nMarmara\t1\n용인\t1\nSanto Domingo Oeste\t1\nTrujillo\t1\nChiangmai\t1\nAhuachapan\t1\nSoul-t'ukpyolsi\t1\nIstabul\t1\nAZ Arizona\t1\nDavao City\t1\nSind\t1\nPomorskie\t1\nArequipa\t1\nBerwickshire\t1\nstavropol region\t1\nEl Beheira Governorate\t1\nMontpellier\t1\nCapital City\t1\nStockholms län\t1\nWest Sumatra\t1\nRed Sea\t1\nNorth Sumatra\t1\nNevada (NV)\t1\nnyon\t1\nNizhegorodskaya\t1\ngyeongsang\t1\nMerida\t1\nzachodniopomorskie\t1\nBedfordshire\t1\nVarese\t1\nOxfordshire\t1\nHemberg\t1\nSto Dgo Este\t1\nProvence\t1\nPRESOV\t1\nTaiZhong\t1\nBago\t1\nCatalonia\t1\nTokyo-to\t1\nAin Shams\t1\nBuckinghamshire\t1\nDong Thap\t1\nNantou\t1\nNoord Brabant\t1\nQom\t1\nCallao\t1\nno state or province\t1\nidf\t1\naut Savoie\t1\nN.Y\t1\nSachsen Anhalt\t1\nDuabi\t1\nDistrict Of Columbia\t1\nAgrigento\t1\nJilin\t1\nUpper Galilee\t1\nCONNECTICUT\t1\nMilitary City\t1\nPuntarenas\t1\nbooshehr\t1\nOsunstate\t1\nJura\t1\nBrabant Flamand\t1\nPraha\t1\nPomerania\t1\nAshkhabat\t1\nwest midland\t1\nDa Nang\t1\nGeyonggido\t1\nVundinamarca\t1\ncaucas\t1\nPara\t1\noregon\t1\nCanton\t1\nPensylvania\t1\nSharkia\t1\nZamboanga de sur\t1\nMENIA\t1\nnangarhar\t1\npaca\t1\nCentral Israel\t1\nRevuca\t1\nCEARÁ\t1\nVlaams Brabant\t1\nMarrakech-Tansift-lhaouz\t1\nDonetsk region\t1\nMICHAOCAN\t1\nMarrakech Tansift Lhaouz\t1\nDubai marina\t1\nBurgundy\t1\nMałopolska\t1\ntianjin\t1\nKhorezm\t1\nAndalucía\t1\nAmsterdam\t1\nOutside US and Canada\t1\nBizerta\t1\nVIENNE\t1\nPorto\t1\nSt. Petersburg, FL\t1\nHawalli\t1\nMila\t1\nHai’l\t1\nBaku\t1\nYogyakarta\t1\nArusha\t1\nBihar\t1\n93350\t1\nKiivska\t1\nAqaba\t1\nGazipur\t1\nSt. James\t1\nJämtland\t1\nDistrito\t1\nİZ\t1\nAdana\t1\nAnambra\t1\nCarabobo\t1\nPoland\t1\nPahang\t1\nมุ\t1\nMinsk Oblast\t1\nZala\t1\nDrôme\t1\nBeijing Municipality\t1\nRivers State\t1\nNoordbrabant\t1\nYongin\t1\nTabasco\t1\nRepublic of Macedonia\t1\neast-kazakhstan\t1\nSalzburg\t1\nVilla Nueva\t1\nAbidjan\t1\nCercado\t1\nGreater Accra\t1\nArgentina\t1\nYvelines\t1\nSololá\t1\nOther (outside US & Canad\t1\nSyunik\t1\nLaguna\t1\nPue.\t1\nPAU\t1\nnorth-west\t1\nFez\t1\nBrabant-Wallon\t1\nMichigan (MI)\t1\nCali\t1\nSt. Andrew\t1\nOyo State\t1\nKanton Sarajevo\t1\nElsharqiyah\t1\nGuang Dong\t1\nKralovehradecky kraj\t1\nNordrhein-Westfalen\t1\nA Coruña\t1\nMairie\t1\nState (US Residents)*\t1\nBaden\t1\nIDAHO\t1\nGibraltar\t1\nBenghazi\t1\ndistricto nacional\t1\nNepal\t1\nMVK\t1\nAlrahma Street, Almansour\t1\nTurkey/Istanbul/Tuzla\t1\naranjuez\t1\nlancs\t1\n33100\t1\nMARYLAND (MD)\t1\nblumengasse\t1\nseine et marne\t1\nDistrito Capital de Bogot\t1\nJeollabuk-Do\t1\nLower Saxony\t1\ncoruna\t1\nCounty Londonderry\t1\nUttrakhand\t1\nHunan Province\t1\ncatania\t1\nB.C\t1\nSt. Elizabeth\t1\nNY New York\t1\nkepri\t1\nKunar\t1\nPuertoRico\t1\nPlease Select\t1\nPENNSYLVANIA\t1\nSuez\t1\nsan juan\t1\nPest\t1\nPescara\t1\nLeón\t1\nMarche\t1\nSouss\t1\nVientiane Capital\t1\nGrater London\t1\nAnnaba\t1\nSmolyan\t1\nCrimea\t1\n6ª Región\t1\nNouvelle-Aquitaine\t1\nJurmala\t1\nHaute-Savoie\t1\nDPO, AE\t1\nIntibuca\t1\nAltai\t1\nRieti\t1\nJeddah\t1\nBalocistan\t1\nNiksic\t1\nVIC\t1\nSanto Domingo de Guz\t1\nAlpes Maritime\t1\n-- Please Select --\t1\nMacau\t1\nRio Grande do Sul\t1\nEastern provinence\t1\nBIOKO SUR\t1\nSale\t1\nTigre\t1\nAl Iskandarīyah\t1\nPefki\t1\nMinnessota\t1\nTashkent region\t1\nGrodnenskaja Voblasts\t1\nLattakia\t1\nKandahar\t1\nALX\t1\nQuito\t1\nTochigi ken\t1\nErzurum\t1\nQLD\t1\nN Y\t1\nAlpes de haute provence\t1\nTartous\t1\nSilesia\t1\nNicosia\t1\nAkaki/Kaliti\t1\n26110\t1\nCalabria\t1\nLe Kef\t1\nMerkaz\t1\nQena\t1\nEstuaire\t1\n7ay asahl\t1\ninvivienda\t1\nwashington\t1\nKörfez\t1\nCamarines Sur\t1\nFederal Territory\t1\nLeytonstone\t1\ndublin 18\t1\nNicaragua\t1\nType a choice below ...\t1\nCiudad de México\t1\nGreater Cairo\t1\nAl Jîzah\t1\nMakka\t1\nAl-Gharbia\t1\nSouth Cotabato\t1\nTemara\t1\ninner mongolia\t1\nSicily\t1\nRabat -Salé\t1\nAn Najaf\t1\nNorthland\t1\nMexico DF\t1\nNPDS\t1\nGA - Georgia\t1\nBeshiktash\t1\ngharb\t1\nSchweiz (CH)\t1\nFL.\t1\nPerm Krai\t1\nSerbia\t1\nNew Taipei\t1\nAchaia\t1\nGrenoble\t1\nFlorence\t1\nSouth yorshire\t1\nPR - Puerto Rico\t1\nVal-de-Marne\t1\nRisu\t1\nN.L.\t1\nmandaluyong\t1\nOdes'ka Oblast'\t1\nEdomex\t1\nsoutheast sulawesi\t1\nBalqa\t1\nErenköy\t1\nLleida\t1\nWimbledon\t1\nN.C.\t1\nBaden-Wuerttemberg\t1\npronteverta\t1\n",
+  "stderr": "",
+  "execution_time_ms": 64
+}

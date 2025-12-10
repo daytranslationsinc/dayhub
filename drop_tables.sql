@@ -1,0 +1,4 @@
+DROP TABLE IF EXISTS callLogs;
+DROP TABLE IF EXISTS call_logs;
+DROP TABLE IF EXISTS interpreters;
+DROP TABLE IF EXISTS users;

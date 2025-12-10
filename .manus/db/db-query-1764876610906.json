@@ -1,0 +1,90 @@
+{
+  "query": "SELECT targetLanguage, COUNT(*) as count FROM interpreters WHERE targetLanguage IS NOT NULL GROUP BY targetLanguage HAVING COUNT(*) > 1 ORDER BY count DESC LIMIT 20",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute SELECT targetLanguage, COUNT(*) as count FROM interpreters WHERE targetLanguage IS NOT NULL GROUP BY targetLanguage HAVING COUNT(*) > 1 ORDER BY count DESC LIMIT 20",
+  "rows": [
+    {
+      "targetLanguage": "English",
+      "count": "3604"
+    },
+    {
+      "targetLanguage": "American Sign Language",
+      "count": "1434"
+    },
+    {
+      "targetLanguage": "Spanish",
+      "count": "1354"
+    },
+    {
+      "targetLanguage": "Chinese",
+      "count": "220"
+    },
+    {
+      "targetLanguage": "Arabic",
+      "count": "184"
+    },
+    {
+      "targetLanguage": "Russian",
+      "count": "167"
+    },
+    {
+      "targetLanguage": "French",
+      "count": "132"
+    },
+    {
+      "targetLanguage": "Korean",
+      "count": "114"
+    },
+    {
+      "targetLanguage": "Portuguese",
+      "count": "111"
+    },
+    {
+      "targetLanguage": "Japanese",
+      "count": "100"
+    },
+    {
+      "targetLanguage": "Vietnamese",
+      "count": "74"
+    },
+    {
+      "targetLanguage": "Armenian",
+      "count": "72"
+    },
+    {
+      "targetLanguage": "German",
+      "count": "55"
+    },
+    {
+      "targetLanguage": "CA",
+      "count": "47"
+    },
+    {
+      "targetLanguage": "Persian",
+      "count": "35"
+    },
+    {
+      "targetLanguage": "Italian",
+      "count": "32"
+    },
+    {
+      "targetLanguage": "Hindi",
+      "count": "29"
+    },
+    {
+      "targetLanguage": "NY",
+      "count": "27"
+    },
+    {
+      "targetLanguage": "Tagalog",
+      "count": "25"
+    },
+    {
+      "targetLanguage": "Haitian Creole",
+      "count": "25"
+    }
+  ],
+  "messages": [],
+  "stdout": "targetLanguage\tcount\nEnglish\t3604\nAmerican Sign Language\t1434\nSpanish\t1354\nChinese\t220\nArabic\t184\nRussian\t167\nFrench\t132\nKorean\t114\nPortuguese\t111\nJapanese\t100\nVietnamese\t74\nArmenian\t72\nGerman\t55\nCA\t47\nPersian\t35\nItalian\t32\nHindi\t29\nNY\t27\nTagalog\t25\nHaitian Creole\t25\n",
+  "stderr": "",
+  "execution_time_ms": 180
+}

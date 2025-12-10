@@ -1,0 +1,9 @@
+{
+  "query": "INSERT INTO saved_searches (user_id, name, language, metro, is_preset, created_at) VALUES\n(1, 'Spanish - New York', 'Spanish', 'New York', TRUE, NOW()),\n(1, 'Mandarin - San Francisco', 'Mandarin Chinese', 'San Francisco', TRUE, NOW()),\n(1, 'Arabic - Los Angeles', 'Arabic', 'Los Angeles', TRUE, NOW()),\n(1, 'French - Miami', 'French', 'Miami', TRUE, NOW()),\n(1, 'Vietnamese - Houston', 'Vietnamese', 'Houston', TRUE, NOW())",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute INSERT INTO saved_searches (user_id, name, language, metro, is_preset, created_at) VALUES\n(1, 'Spanish - New York', 'Spanish', 'New York', TRUE, NOW()),\n(1, 'Mandarin - San Francisco', 'Mandarin Chinese', 'San Francisco', TRUE, NOW()),\n(1, 'Arabic - Los Angeles', 'Arabic', 'Los Angeles', TRUE, NOW()),\n(1, 'French - Miami', 'French', 'Miami', TRUE, NOW()),\n(1, 'Vietnamese - Houston', 'Vietnamese', 'Houston', TRUE, NOW())",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 74
+}

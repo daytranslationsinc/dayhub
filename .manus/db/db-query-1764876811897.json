@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE IF NOT EXISTS zipcode_cache (zipcode VARCHAR(10) PRIMARY KEY, lat DECIMAL(10, 7) NOT NULL, lng DECIMAL(11, 7) NOT NULL, city VARCHAR(255), state VARCHAR(2), created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute CREATE TABLE IF NOT EXISTS zipcode_cache (zipcode VARCHAR(10) PRIMARY KEY, lat DECIMAL(10, 7) NOT NULL, lng DECIMAL(11, 7) NOT NULL, city VARCHAR(255), state VARCHAR(2), created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 364
+}

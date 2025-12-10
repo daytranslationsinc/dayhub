@@ -1,0 +1,90 @@
+{
+  "query": "SELECT country, COUNT(*) as count FROM interpreters WHERE country IS NOT NULL GROUP BY country ORDER BY count DESC LIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute SELECT country, COUNT(*) as count FROM interpreters WHERE country IS NOT NULL GROUP BY country ORDER BY count DESC LIMIT 20;",
+  "rows": [
+    {
+      "country": "USA",
+      "count": "16369"
+    },
+    {
+      "country": "mexico",
+      "count": "181"
+    },
+    {
+      "country": "UK",
+      "count": "148"
+    },
+    {
+      "country": "Canada",
+      "count": "106"
+    },
+    {
+      "country": "Egypt",
+      "count": "105"
+    },
+    {
+      "country": "France",
+      "count": "95"
+    },
+    {
+      "country": "Colombia",
+      "count": "94"
+    },
+    {
+      "country": "India",
+      "count": "94"
+    },
+    {
+      "country": "Italy",
+      "count": "93"
+    },
+    {
+      "country": "China",
+      "count": "83"
+    },
+    {
+      "country": "SPAIN",
+      "count": "81"
+    },
+    {
+      "country": "Argentina",
+      "count": "73"
+    },
+    {
+      "country": "Brazil",
+      "count": "71"
+    },
+    {
+      "country": "Germany",
+      "count": "67"
+    },
+    {
+      "country": "Turkey",
+      "count": "59"
+    },
+    {
+      "country": "Indonesia",
+      "count": "52"
+    },
+    {
+      "country": "Peru",
+      "count": "52"
+    },
+    {
+      "country": "Russia",
+      "count": "52"
+    },
+    {
+      "country": "United Kin",
+      "count": "43"
+    },
+    {
+      "country": "Costa Rica",
+      "count": "42"
+    }
+  ],
+  "messages": [],
+  "stdout": "country\tcount\nUSA\t16369\nmexico\t181\nUK\t148\nCanada\t106\nEgypt\t105\nFrance\t95\nColombia\t94\nIndia\t94\nItaly\t93\nChina\t83\nSPAIN\t81\nArgentina\t73\nBrazil\t71\nGermany\t67\nTurkey\t59\nIndonesia\t52\nPeru\t52\nRussia\t52\nUnited Kin\t43\nCosta Rica\t42\n",
+  "stderr": "",
+  "execution_time_ms": 81
+}

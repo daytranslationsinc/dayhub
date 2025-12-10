@@ -1,0 +1,150 @@
+{
+  "query": "SELECT sourceLanguage, targetLanguage, city, state, COUNT(*) as count FROM interpreters WHERE sourceLanguage LIKE '%-%' OR sourceLanguage LIKE '% -%' OR targetLanguage LIKE '%-%' OR LENGTH(sourceLanguage) > 50 GROUP BY sourceLanguage, targetLanguage, city, state ORDER BY count DESC LIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute SELECT sourceLanguage, targetLanguage, city, state, COUNT(*) as count FROM interpreters WHERE sourceLanguage LIKE '%-%' OR sourceLanguage LIKE '% -%' OR targetLanguage LIKE '%-%' OR LENGTH(sourceLanguage) > 50 GROUP BY sourceLanguage, targetLanguage, city, state ORDER BY count DESC LIMIT 20;",
+  "rows": [
+    {
+      "sourceLanguage": "Spanish",
+      "targetLanguage": "Spanish-english",
+      "city": "Santo Domingo",
+      "state": "Santo Domingo Este",
+      "count": "3"
+    },
+    {
+      "sourceLanguage": "Spanish",
+      "targetLanguage": "English-spanish",
+      "city": "Bogotá",
+      "state": "Cundinamarca",
+      "count": "3"
+    },
+    {
+      "sourceLanguage": "English-spanish",
+      "targetLanguage": "Spanish-english",
+      "city": "NULL",
+      "state": "NULL",
+      "count": "3"
+    },
+    {
+      "sourceLanguage": "English",
+      "targetLanguage": "Chinese-mandarin",
+      "city": "NULL",
+      "state": "NULL",
+      "count": "2"
+    },
+    {
+      "sourceLanguage": "Spanish",
+      "targetLanguage": "Spanish-english",
+      "city": "Santo Domingo",
+      "state": "Distrito Nacional",
+      "count": "2"
+    },
+    {
+      "sourceLanguage": "Spanish",
+      "targetLanguage": "Spanish-english",
+      "city": "Tegucigalpa",
+      "state": "Francisco Morazan",
+      "count": "2"
+    },
+    {
+      "sourceLanguage": "Spanish",
+      "targetLanguage": "English-spanish",
+      "city": "Santo Domingo",
+      "state": "DR",
+      "count": "2"
+    },
+    {
+      "sourceLanguage": "Turkish",
+      "targetLanguage": "English-turkish",
+      "city": "Istanbul",
+      "state": "Turkey",
+      "count": "2"
+    },
+    {
+      "sourceLanguage": "Spanish",
+      "targetLanguage": "Spanish-english",
+      "city": "Santo Domingo",
+      "state": "Santo Domingo",
+      "count": "2"
+    },
+    {
+      "sourceLanguage": "Spanish-english",
+      "targetLanguage": "English-spanish",
+      "city": "NULL",
+      "state": "NULL",
+      "count": "2"
+    },
+    {
+      "sourceLanguage": "Spanish",
+      "targetLanguage": "English-spanish",
+      "city": "El Paso",
+      "state": "TX",
+      "count": "2"
+    },
+    {
+      "sourceLanguage": "Spanish",
+      "targetLanguage": "English - Spanish",
+      "city": "Guadalajara",
+      "state": "Jalisco",
+      "count": "2"
+    },
+    {
+      "sourceLanguage": "Chinese",
+      "targetLanguage": "Chinese-english",
+      "city": "Shanghai",
+      "state": "Shanghai",
+      "count": "2"
+    },
+    {
+      "sourceLanguage": "Spanish",
+      "targetLanguage": "Spanish-english",
+      "city": "NULL",
+      "state": "NULL",
+      "count": "2"
+    },
+    {
+      "sourceLanguage": "Spanish-english",
+      "targetLanguage": "English-spanish",
+      "city": "Miami",
+      "state": "FL",
+      "count": "2"
+    },
+    {
+      "sourceLanguage": "English-spanish",
+      "targetLanguage": "Spanish-english",
+      "city": "Bogotà",
+      "state": "Cundinamarca",
+      "count": "2"
+    },
+    {
+      "sourceLanguage": "Spanish-english",
+      "targetLanguage": "Spanish-english",
+      "city": "NULL",
+      "state": "NULL",
+      "count": "2"
+    },
+    {
+      "sourceLanguage": "Spanish",
+      "targetLanguage": "English-spanish",
+      "city": "San Jose",
+      "state": "San jose",
+      "count": "2"
+    },
+    {
+      "sourceLanguage": "Arabic",
+      "targetLanguage": "English-arabic",
+      "city": "Cairo",
+      "state": "Cairo",
+      "count": "2"
+    },
+    {
+      "sourceLanguage": "Spanish",
+      "targetLanguage": "English-spanish",
+      "city": "Panama",
+      "state": "Panama",
+      "count": "2"
+    }
+  ],
+  "messages": [],
+  "stdout": "sourceLanguage\ttargetLanguage\tcity\tstate\tcount\nSpanish\tSpanish-english\tSanto Domingo\tSanto Domingo Este\t3\nSpanish\tEnglish-spanish\tBogotá\tCundinamarca\t3\nEnglish-spanish\tSpanish-english\tNULL\tNULL\t3\nEnglish\tChinese-mandarin\tNULL\tNULL\t2\nSpanish\tSpanish-english\tSanto Domingo\tDistrito Nacional\t2\nSpanish\tSpanish-english\tTegucigalpa\tFrancisco Morazan\t2\nSpanish\tEnglish-spanish\tSanto Domingo\tDR\t2\nTurkish\tEnglish-turkish\tIstanbul\tTurkey\t2\nSpanish\tSpanish-english\tSanto Domingo\tSanto Domingo\t2\nSpanish-english\tEnglish-spanish\tNULL\tNULL\t2\nSpanish\tEnglish-spanish\tEl Paso\tTX\t2\nSpanish\tEnglish - Spanish\tGuadalajara\tJalisco\t2\nChinese\tChinese-english\tShanghai\tShanghai\t2\nSpanish\tSpanish-english\tNULL\tNULL\t2\nSpanish-english\tEnglish-spanish\tMiami\tFL\t2\nEnglish-spanish\tSpanish-english\tBogotà\tCundinamarca\t2\nSpanish-english\tSpanish-english\tNULL\tNULL\t2\nSpanish\tEnglish-spanish\tSan Jose\tSan jose\t2\nArabic\tEnglish-arabic\tCairo\tCairo\t2\nSpanish\tEnglish-spanish\tPanama\tPanama\t2\n",
+  "stderr": "",
+  "execution_time_ms": 85
+}

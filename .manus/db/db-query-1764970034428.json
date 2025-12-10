@@ -1,0 +1,218 @@
+{
+  "query": "SELECT state, COUNT(*) as count FROM interpreters WHERE state IN ('AL','AK','AZ','AR','CA','CO','CT','DE','FL','GA','HI','ID','IL','IN','IA','KS','KY','LA','ME','MD','MA','MI','MN','MS','MO','MT','NE','NV','NH','NJ','NM','NY','NC','ND','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VT','VA','WA','WV','WI','WY','DC','PR') GROUP BY state ORDER BY count DESC;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute SELECT state, COUNT(*) as count FROM interpreters WHERE state IN ('AL','AK','AZ','AR','CA','CO','CT','DE','FL','GA','HI','ID','IL','IN','IA','KS','KY','LA','ME','MD','MA','MI','MN','MS','MO','MT','NE','NV','NH','NJ','NM','NY','NC','ND','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VT','VA','WA','WV','WI','WY','DC','PR') GROUP BY state ORDER BY count DESC;",
+  "rows": [
+    {
+      "state": "TX",
+      "count": "2996"
+    },
+    {
+      "state": "CA",
+      "count": "1495"
+    },
+    {
+      "state": "OR",
+      "count": "1395"
+    },
+    {
+      "state": "FL",
+      "count": "679"
+    },
+    {
+      "state": "AZ",
+      "count": "580"
+    },
+    {
+      "state": "MD",
+      "count": "561"
+    },
+    {
+      "state": "NY",
+      "count": "457"
+    },
+    {
+      "state": "WA",
+      "count": "439"
+    },
+    {
+      "state": "TN",
+      "count": "392"
+    },
+    {
+      "state": "IL",
+      "count": "309"
+    },
+    {
+      "state": "HI",
+      "count": "306"
+    },
+    {
+      "state": "GA",
+      "count": "237"
+    },
+    {
+      "state": "CO",
+      "count": "235"
+    },
+    {
+      "state": "PA",
+      "count": "234"
+    },
+    {
+      "state": "OH",
+      "count": "220"
+    },
+    {
+      "state": "NC",
+      "count": "214"
+    },
+    {
+      "state": "DC",
+      "count": "199"
+    },
+    {
+      "state": "VA",
+      "count": "183"
+    },
+    {
+      "state": "MA",
+      "count": "174"
+    },
+    {
+      "state": "LA",
+      "count": "141"
+    },
+    {
+      "state": "MI",
+      "count": "141"
+    },
+    {
+      "state": "NJ",
+      "count": "140"
+    },
+    {
+      "state": "NV",
+      "count": "133"
+    },
+    {
+      "state": "MN",
+      "count": "118"
+    },
+    {
+      "state": "OK",
+      "count": "116"
+    },
+    {
+      "state": "MO",
+      "count": "113"
+    },
+    {
+      "state": "UT",
+      "count": "103"
+    },
+    {
+      "state": "WI",
+      "count": "97"
+    },
+    {
+      "state": "KY",
+      "count": "87"
+    },
+    {
+      "state": "PR",
+      "count": "86"
+    },
+    {
+      "state": "IN",
+      "count": "61"
+    },
+    {
+      "state": "KS",
+      "count": "58"
+    },
+    {
+      "state": "AL",
+      "count": "55"
+    },
+    {
+      "state": "NM",
+      "count": "51"
+    },
+    {
+      "state": "SC",
+      "count": "42"
+    },
+    {
+      "state": "CT",
+      "count": "36"
+    },
+    {
+      "state": "AR",
+      "count": "31"
+    },
+    {
+      "state": "RI",
+      "count": "28"
+    },
+    {
+      "state": "IA",
+      "count": "25"
+    },
+    {
+      "state": "NE",
+      "count": "22"
+    },
+    {
+      "state": "MS",
+      "count": "20"
+    },
+    {
+      "state": "ID",
+      "count": "19"
+    },
+    {
+      "state": "DE",
+      "count": "17"
+    },
+    {
+      "state": "AK",
+      "count": "12"
+    },
+    {
+      "state": "ME",
+      "count": "8"
+    },
+    {
+      "state": "WY",
+      "count": "6"
+    },
+    {
+      "state": "WV",
+      "count": "6"
+    },
+    {
+      "state": "VT",
+      "count": "5"
+    },
+    {
+      "state": "NH",
+      "count": "4"
+    },
+    {
+      "state": "SD",
+      "count": "2"
+    },
+    {
+      "state": "MT",
+      "count": "2"
+    },
+    {
+      "state": "ND",
+      "count": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "state\tcount\nTX\t2996\nCA\t1495\nOR\t1395\nFL\t679\nAZ\t580\nMD\t561\nNY\t457\nWA\t439\nTN\t392\nIL\t309\nHI\t306\nGA\t237\nCO\t235\nPA\t234\nOH\t220\nNC\t214\nDC\t199\nVA\t183\nMA\t174\nLA\t141\nMI\t141\nNJ\t140\nNV\t133\nMN\t118\nOK\t116\nMO\t113\nUT\t103\nWI\t97\nKY\t87\nPR\t86\nIN\t61\nKS\t58\nAL\t55\nNM\t51\nSC\t42\nCT\t36\nAR\t31\nRI\t28\nIA\t25\nNE\t22\nMS\t20\nID\t19\nDE\t17\nAK\t12\nME\t8\nWY\t6\nWV\t6\nVT\t5\nNH\t4\nSD\t2\nMT\t2\nND\t1\n",
+  "stderr": "",
+  "execution_time_ms": 73
+}

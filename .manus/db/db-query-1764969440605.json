@@ -1,0 +1,160 @@
+{
+  "query": "SELECT DISTINCT sourceLanguage FROM interpreters WHERE sourceLanguage NOT IN ('English', 'Spanish', 'French', 'German', 'Italian', 'Portuguese', 'Russian', 'Chinese', 'Japanese', 'Korean', 'Arabic', 'Hindi', 'Bengali', 'Punjabi', 'Urdu', 'Vietnamese', 'Thai', 'Turkish', 'Polish', 'Dutch', 'Greek', 'Hebrew', 'Swedish', 'Norwegian', 'Danish', 'Finnish', 'Czech', 'Hungarian', 'Romanian', 'Ukrainian', 'Mandarin', 'Cantonese', 'Tagalog', 'Indonesian', 'Malay', 'Persian', 'Farsi', 'Swahili', 'Amharic', 'Somali', 'Haitian Creole', 'Albanian', 'Armenian', 'Bosnian', 'Bulgarian', 'Croatian', 'Estonian', 'Georgian', 'Gujarati', 'Hausa', 'Igbo', 'Kazakh', 'Khmer', 'Kurdish', 'Lao', 'Latvian', 'Lithuanian', 'Macedonian', 'Malayalam', 'Marathi', 'Mongolian', 'Nepali', 'Pashto', 'Serbian', 'Sinhala', 'Slovak', 'Slovenian', 'Tamil', 'Telugu', 'Tigrinya', 'Uzbek', 'Yoruba', 'Zulu') ORDER BY sourceLanguage LIMIT 50;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute SELECT DISTINCT sourceLanguage FROM interpreters WHERE sourceLanguage NOT IN ('English', 'Spanish', 'French', 'German', 'Italian', 'Portuguese', 'Russian', 'Chinese', 'Japanese', 'Korean', 'Arabic', 'Hindi', 'Bengali', 'Punjabi', 'Urdu', 'Vietnamese', 'Thai', 'Turkish', 'Polish', 'Dutch', 'Greek', 'Hebrew', 'Swedish', 'Norwegian', 'Danish', 'Finnish', 'Czech', 'Hungarian', 'Romanian', 'Ukrainian', 'Mandarin', 'Cantonese', 'Tagalog', 'Indonesian', 'Malay', 'Persian', 'Farsi', 'Swahili', 'Amharic', 'Somali', 'Haitian Creole', 'Albanian', 'Armenian', 'Bosnian', 'Bulgarian', 'Croatian', 'Estonian', 'Georgian', 'Gujarati', 'Hausa', 'Igbo', 'Kazakh', 'Khmer', 'Kurdish', 'Lao', 'Latvian', 'Lithuanian', 'Macedonian', 'Malayalam', 'Marathi', 'Mongolian', 'Nepali', 'Pashto', 'Serbian', 'Sinhala', 'Slovak', 'Slovenian', 'Tamil', 'Telugu', 'Tigrinya', 'Uzbek', 'Yoruba', 'Zulu') ORDER BY sourceLanguage LIMIT 50;",
+  "rows": [
+    {
+      "sourceLanguage": "-spanish"
+    },
+    {
+      "sourceLanguage": ".en"
+    },
+    {
+      "sourceLanguage": "1"
+    },
+    {
+      "sourceLanguage": "2=french"
+    },
+    {
+      "sourceLanguage": "21/01/21"
+    },
+    {
+      "sourceLanguage": "8:30"
+    },
+    {
+      "sourceLanguage": "Africa"
+    },
+    {
+      "sourceLanguage": "Afrikaans"
+    },
+    {
+      "sourceLanguage": "Akan"
+    },
+    {
+      "sourceLanguage": "Akateko"
+    },
+    {
+      "sourceLanguage": "Albanian - English"
+    },
+    {
+      "sourceLanguage": "Albanian And Serbian"
+    },
+    {
+      "sourceLanguage": "Ameharic"
+    },
+    {
+      "sourceLanguage": "American Sign Language"
+    },
+    {
+      "sourceLanguage": "Amharic Ad English"
+    },
+    {
+      "sourceLanguage": "Amharic And Oromo"
+    },
+    {
+      "sourceLanguage": "Amuzgo"
+    },
+    {
+      "sourceLanguage": "And Aramaic"
+    },
+    {
+      "sourceLanguage": "And English - French"
+    },
+    {
+      "sourceLanguage": "And From French"
+    },
+    {
+      "sourceLanguage": "Ar"
+    },
+    {
+      "sourceLanguage": "Ar-en"
+    },
+    {
+      "sourceLanguage": "Ar<>en"
+    },
+    {
+      "sourceLanguage": "Ara-eng"
+    },
+    {
+      "sourceLanguage": "Arabic - Arabic"
+    },
+    {
+      "sourceLanguage": "Arabic (egyptian)"
+    },
+    {
+      "sourceLanguage": "Arabic & English"
+    },
+    {
+      "sourceLanguage": "Arabic <> French"
+    },
+    {
+      "sourceLanguage": "Arabic <>english"
+    },
+    {
+      "sourceLanguage": "Arabic And French ) And In Between ( English"
+    },
+    {
+      "sourceLanguage": "Arabic And Somali"
+    },
+    {
+      "sourceLanguage": "Arabic- English"
+    },
+    {
+      "sourceLanguage": "Arabic-english"
+    },
+    {
+      "sourceLanguage": "Arabic/ Iraq"
+    },
+    {
+      "sourceLanguage": "Arabic/french"
+    },
+    {
+      "sourceLanguage": "Arabic& Assyrian"
+    },
+    {
+      "sourceLanguage": "Arabic<>english (iraqi Dialect)"
+    },
+    {
+      "sourceLanguage": "Arabic<>english (syrian Dialect)"
+    },
+    {
+      "sourceLanguage": "Arabic<>italian And Spanish>italian"
+    },
+    {
+      "sourceLanguage": "Arabic<>urdu"
+    },
+    {
+      "sourceLanguage": "Arabic>english"
+    },
+    {
+      "sourceLanguage": "Arabic>french"
+    },
+    {
+      "sourceLanguage": "Aramaic"
+    },
+    {
+      "sourceLanguage": "Armenian And English"
+    },
+    {
+      "sourceLanguage": "Armenian/english"
+    },
+    {
+      "sourceLanguage": "Asl"
+    },
+    {
+      "sourceLanguage": "Asl American Sign Language"
+    },
+    {
+      "sourceLanguage": "Asl- English"
+    },
+    {
+      "sourceLanguage": "Asl/english"
+    },
+    {
+      "sourceLanguage": "Assyrian"
+    }
+  ],
+  "messages": [],
+  "stdout": "sourceLanguage\n-spanish\n.en\n1\n2=french\n21/01/21\n8:30\nAfrica\nAfrikaans\nAkan\nAkateko\nAlbanian - English\nAlbanian And Serbian\nAmeharic\nAmerican Sign Language\nAmharic Ad English\nAmharic And Oromo\nAmuzgo\nAnd Aramaic\nAnd English - French\nAnd From French\nAr\nAr-en\nAr<>en\nAra-eng\nArabic - Arabic\nArabic (egyptian)\nArabic & English\nArabic <> French\nArabic <>english\nArabic And French ) And In Between ( English\nArabic And Somali\nArabic- English\nArabic-english\nArabic/ Iraq\nArabic/french\nArabic& Assyrian\nArabic<>english (iraqi Dialect)\nArabic<>english (syrian Dialect)\nArabic<>italian And Spanish>italian\nArabic<>urdu\nArabic>english\nArabic>french\nAramaic\nArmenian And English\nArmenian/english\nAsl\nAsl American Sign Language\nAsl- English\nAsl/english\nAssyrian\n",
+  "stderr": "",
+  "execution_time_ms": 65
+}

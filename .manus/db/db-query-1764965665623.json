@@ -1,0 +1,34 @@
+{
+  "query": "SELECT firstName, lastName, email, is_vetted, vetted_notes, hourly_rate FROM interpreters WHERE is_vetted = TRUE LIMIT 3;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute SELECT firstName, lastName, email, is_vetted, vetted_notes, hourly_rate FROM interpreters WHERE is_vetted = TRUE LIMIT 3;",
+  "rows": [
+    {
+      "firstName": "Alexis",
+      "lastName": "Doan",
+      "email": "NIC",
+      "is_vetted": "1",
+      "vetted_notes": "Completed Gary-9776933-ASL project. 2016-10-12 17:42:38",
+      "hourly_rate": "NULL"
+    },
+    {
+      "firstName": "Gang",
+      "lastName": "Li",
+      "email": "gli@gangliphd.com",
+      "is_vetted": "1",
+      "vetted_notes": "Completed interpretation project. 2023-07-31 13:57:02",
+      "hourly_rate": "NULL"
+    },
+    {
+      "firstName": "Amy",
+      "lastName": "Bailey",
+      "email": "amyinterprets@gmail.com",
+      "is_vetted": "1",
+      "vetted_notes": "Completed interpretation project. 2021-12-05 10:13:48",
+      "hourly_rate": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "firstName\tlastName\temail\tis_vetted\tvetted_notes\thourly_rate\nAlexis\tDoan\tNIC\t1\tCompleted Gary-9776933-ASL project. 2016-10-12 17:42:38\tNULL\nGang\tLi\tgli@gangliphd.com\t1\tCompleted interpretation project. 2023-07-31 13:57:02\tNULL\nAmy\tBailey\tamyinterprets@gmail.com\t1\tCompleted interpretation project. 2021-12-05 10:13:48\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 60
+}

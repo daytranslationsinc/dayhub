@@ -1,0 +1,90 @@
+{
+  "query": "SELECT state, COUNT(*) as count FROM interpreters WHERE state IS NOT NULL GROUP BY state ORDER BY count DESC LIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute SELECT state, COUNT(*) as count FROM interpreters WHERE state IS NOT NULL GROUP BY state ORDER BY count DESC LIMIT 20;",
+  "rows": [
+    {
+      "state": "TX",
+      "count": "2996"
+    },
+    {
+      "state": "CA",
+      "count": "1495"
+    },
+    {
+      "state": "OR",
+      "count": "1395"
+    },
+    {
+      "state": "FL",
+      "count": "679"
+    },
+    {
+      "state": "AZ",
+      "count": "580"
+    },
+    {
+      "state": "MD",
+      "count": "561"
+    },
+    {
+      "state": "NY",
+      "count": "457"
+    },
+    {
+      "state": "WA",
+      "count": "439"
+    },
+    {
+      "state": "TN",
+      "count": "392"
+    },
+    {
+      "state": "IL",
+      "count": "309"
+    },
+    {
+      "state": "HI",
+      "count": "306"
+    },
+    {
+      "state": "GA",
+      "count": "237"
+    },
+    {
+      "state": "CO",
+      "count": "235"
+    },
+    {
+      "state": "PA",
+      "count": "234"
+    },
+    {
+      "state": "OH",
+      "count": "220"
+    },
+    {
+      "state": "NC",
+      "count": "214"
+    },
+    {
+      "state": "DC",
+      "count": "199"
+    },
+    {
+      "state": "VA",
+      "count": "183"
+    },
+    {
+      "state": "MA",
+      "count": "174"
+    },
+    {
+      "state": "LA",
+      "count": "141"
+    }
+  ],
+  "messages": [],
+  "stdout": "state\tcount\nTX\t2996\nCA\t1495\nOR\t1395\nFL\t679\nAZ\t580\nMD\t561\nNY\t457\nWA\t439\nTN\t392\nIL\t309\nHI\t306\nGA\t237\nCO\t235\nPA\t234\nOH\t220\nNC\t214\nDC\t199\nVA\t183\nMA\t174\nLA\t141\n",
+  "stderr": "",
+  "execution_time_ms": 64
+}

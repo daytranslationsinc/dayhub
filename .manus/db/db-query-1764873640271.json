@@ -1,0 +1,14 @@
+{
+  "query": "SELECT COUNT(*) as total, SUM(CASE WHEN isActive = 1 THEN 1 ELSE 0 END) as active FROM interpreters",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2KPYfePGxxcEDZw.14e498f538c7 --database LWxqwN2gwfpCcvWwv8uzUX --execute SELECT COUNT(*) as total, SUM(CASE WHEN isActive = 1 THEN 1 ELSE 0 END) as active FROM interpreters",
+  "rows": [
+    {
+      "total": "6864",
+      "active": "6854"
+    }
+  ],
+  "messages": [],
+  "stdout": "total\tactive\n6864\t6854\n",
+  "stderr": "",
+  "execution_time_ms": 62
+}
