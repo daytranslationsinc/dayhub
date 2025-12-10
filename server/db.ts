@@ -7,7 +7,12 @@ import { addDistanceToInterpreters, filterByRadius } from "./geocoding";
 // Initialize database connection with proper SSL for TiDB
 const dbUrl = process.env.DATABASE_URL!;
 const cleanUrl = dbUrl.replace(/\?ssl=.*$/, "");
-const connection = mysql.createPool({ uri: cleanUrl, ssl: { rejectUnauthorized: true } });
+const connection = mysql.createPool({
+  uri: cleanUrl,
+  ssl: {},
+  waitForConnections: true,
+  connectionLimit: 10,
+});
 export const db = drizzle(connection);
 
 /**
